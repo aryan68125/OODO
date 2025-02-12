@@ -1,0 +1,48 @@
+<odoo>
+  <data>
+    <record id="wb_student_tree_view" model="ir.ui.view">
+      <field name="name">student.list.view</field>
+      <field name="model">student</field>
+      <field name="arch" type="xml">
+        <list>  
+          <field name="name"/>
+          <field name="roll"/>
+          <field name="email"/>
+          <field name="address"/>
+        </list>
+      </field>
+    </record>
+
+
+    <record id="wb_student_form_view" model="ir.ui.view">
+      <field name="name">student.form.view</field>
+      <field name="model">student</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="roll"/>
+                    <field name="email"/>
+                    <field name="address"/>
+                </group>
+            </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!--Server actions or UI actions-->
+    <!--Server actions or UI actions-->
+    <record id="wb_student_action" model="ir.actions.act_window">
+      <field name="name">Student</field>
+      <field name="res_model">student</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    
+    <!--menu links-->
+    <menuitem id="wb_student_root_menu" name="Student"/>
+    <menuitem id="wb_student_sub_root_menu" name="Weblearns" parent="wb_student_root_menu"/>
+    <menuitem id="wb_student_menu" action="wb_student_action" name="Students List" parent="wb_student_sub_root_menu"/>
+  </data>
+</odoo>
