@@ -9,3 +9,9 @@ This repository is for odoo project for self learning
 - Starting oddo using the config file that you created here in this case its called aditya.conf
     - Command to start odoo using this config file is : ```python3 odoo-bin -c aditya.conf```
 - This command will start odoo after upgrading all the installed module in an odoo project ```python3 odoo-bin -c aditya.conf -u all```
+### Disable database manager or selector options in odoo:
+Odoo gives you an option to disable http://localhost:8069/web/database/manager and http://localhost:8069/web/database/selector links because these two links can pose a security threat.
+
+<br>
+
+Use this command to disable database management and database list links : ```python3 odoo-bin -c aditya.conf --no-database-list``` 
