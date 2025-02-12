@@ -17,12 +17,12 @@ class Student(models.Model):
     Method 1:
     '''
     gender = fields.Selection(
-        [("Male","Male"),("Female","Female")]
+        selection = [("Male","Male"),("Female","Female")]
         )
 
     '''
     Method 2:
     '''
-    major = fields.Selection("_get_major_list", string="Select Major")
+    major = fields.Selection(selection = "_get_major_list", string="Select Major")
     def _get_major_list(self):
         return [("CS","Computer Science"),("IT","Information Technology"),("EC","Electronics and Communication"),("ME","Mechanical Engineering"), ("DA","Data Science and Artificial Engineering")]
