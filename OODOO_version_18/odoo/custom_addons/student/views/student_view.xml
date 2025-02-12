@@ -34,7 +34,7 @@
       </field>
     </record>
 
-    <!--Server actions or UI actions-->
+
     <!--Server actions or UI actions-->
     <record id="wb_student_action" model="ir.actions.act_window">
       <field name="name">Student</field>
