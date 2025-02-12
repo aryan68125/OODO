@@ -19,3 +19,5 @@ Use this command to disable database management and database list links : ```pyt
 <br>
 
 If you want to use a specific database then you can use this command : ```python3 odoo-bin -r aditya -w ilovemymom -d odoo_test_db```
+### Activate develoepr mode in odoo
+Activate developer mode in odoo from settings → Go to Settings ‣ General Settings ‣ Developer Tools and click on Activate the developer mode.
