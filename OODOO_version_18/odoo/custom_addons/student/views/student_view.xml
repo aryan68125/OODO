@@ -10,7 +10,7 @@
           <field name="email"/>
           <field name="address"/>
           <field name="html_field_demo"/>
-          <field name="is_agreed"/>
+          <field name="major" placeholder="Select Major in which you want to study"/>
         </list>
       </field>
     </record>
@@ -30,6 +30,8 @@
                     <!-- <field name="html_field_demo" options="{'sandboxedPreview':True}"/> -->
                     <field name="html_field_demo"/>
                     <field name="is_agreed"/>
+                    <field name="gender" placeholder="Select Gender"/>
+                    <field name="major" placeholder="Select Major in which you want to study"/>
                 </group>
             </sheet>
         </form>
