@@ -24,7 +24,7 @@
                     <field name="name"/>
                     <field name="roll"/>
                     <field name="email"/>
-                    <field name="address"/>
+                    <field name="address" placeholder = "Enter student's address here..."/>
                 </group>
             </sheet>
         </form>
