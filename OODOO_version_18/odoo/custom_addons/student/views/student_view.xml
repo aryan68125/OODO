@@ -9,6 +9,7 @@
           <field name="roll"/>
           <field name="email"/>
           <field name="address"/>
+          <field name="html_field_demo"/>
         </list>
       </field>
     </record>
@@ -25,6 +26,8 @@
                     <field name="roll"/>
                     <field name="email"/>
                     <field name="address" placeholder = "Enter student's address here..."/>
+                    <!-- <field name="html_field_demo" options="{'sandboxedPreview':True}"/> -->
+                    <field name="html_field_demo"/>
                 </group>
             </sheet>
         </form>

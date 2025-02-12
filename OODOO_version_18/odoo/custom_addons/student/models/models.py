@@ -8,3 +8,4 @@ class Student(models.Model):
     roll = fields.Integer(int="Age")
     email = fields.Char(string="Email")
     address = fields.Text(string="Student's address",help="Enter student's permanent address here")
+    html_field_demo = fields.Html(string="HTML Field Demo")
