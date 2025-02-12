@@ -14,4 +14,8 @@ Odoo gives you an option to disable http://localhost:8069/web/database/manager a
 
 <br>
 
-Use this command to disable database management and database list links : ```python3 odoo-bin -c aditya.conf --no-database-list``` 
+Use this command to disable database management and database list links : ```python3 odoo-bin -c aditya.conf --no-database-list```
+
+<br>
+
+If you want to use a specific database then you can use this command : ```python3 odoo-bin -r aditya -w ilovemymom -d odoo_test_db```
