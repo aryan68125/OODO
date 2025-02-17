@@ -12,6 +12,7 @@ class Student(models.Model):
     is_agreed = fields.Boolean(string="Do you agree to the terms and consitons?", default="False", help="check to agree with the terms and conditions or else leave it un-checked")
     fees = fields.Float(string="Student's Fees",digits=(4,4))
     school_data = fields.Json(string="School Data")
+    # joining_date = fields.Date(string="Joining Date",default="2025-02-16")
     joining_date = fields.Date(string="Joining Date")
     added_at = fields.Date(string="Added at",compute="compute_added_at")
 
