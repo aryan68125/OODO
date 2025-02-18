@@ -13,7 +13,8 @@ class Student(models.Model):
     fees = fields.Float(string="Student's Fees",digits=(4,4))
     school_data = fields.Json(string="School Data")
     # joining_date = fields.Date(string="Joining Date",default="2025-02-16")
-    joining_date = fields.Date(string="Joining Date")
+    # joining_date = fields.Date(string="Joining Date")
+    joining_date = fields.Datetime(string="Joining Date")
     added_at = fields.Date(string="Added at",compute="compute_added_at")
 
     '''

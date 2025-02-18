@@ -25,21 +25,21 @@
       <field name="arch" type="xml">
         <form>
           <sheet>
-                <group>
-                    <field name="name"/>
-                    <field name="roll"/>
-                    <field name="email"/>
-                    <field name="address" placeholder = "Enter student's address here..."/>
-                    <field name="fees"/>
-                    <!-- <field name="html_field_demo" options="{'sandboxedPreview':True}"/> -->
-                    <field name="html_field_demo"/>
-                    <field name="is_agreed"/>
-                    <field name="gender" placeholder="Select Gender"/>
-                    <field name="major" placeholder="Select Major in which you want to study"/>
-                    <field name="school_data" placeholder="Enter student's data here!"/>
-                    <button name="json_data_store" type="object" string="JSON FEED"></button>
-                    <field name="joining_date"/>
-                </group>
+              <group>
+                  <field name="name"/>
+                  <field name="roll"/>
+                  <field name="email"/>
+                  <field name="address" placeholder = "Enter student's address here..."/>
+                  <field name="fees"/>
+                  <!-- <field name="html_field_demo" options="{'sandboxedPreview':True}"/> -->
+                  <field name="html_field_demo"/>
+                  <field name="is_agreed"/>
+                  <field name="gender" placeholder="Select Gender"/>
+                  <field name="major" placeholder="Select Major in which you want to study"/>
+                  <field name="school_data" placeholder="Enter student's data here!"/>
+                  <button name="json_data_store" type="object" string="JSON FEED"></button>
+                  <field name="joining_date" placeholder="Enter the joining date for the student."/>
+              </group>
             </sheet>
         </form>
       </field>
