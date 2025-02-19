@@ -14,7 +14,7 @@ class Student(models.Model):
     school_data = fields.Json(string="School Data")
     # joining_date = fields.Date(string="Joining Date",default="2025-02-16")
     # joining_date = fields.Date(string="Joining Date")
-    joining_date = fields.Datetime(string="Joining Date")
+    joining_date = fields.Datetime(string="Joining Date",default=fields.Datetime.now)
     added_at = fields.Date(string="Added at",compute="compute_added_at")
 
     '''

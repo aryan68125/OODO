@@ -20,5 +20,39 @@
           </dl>
         </template>
 -->
+      <!-- Tree view (in html this will create a table that will render all the schools in that) -->
+      <record id="wb_college_tree_view" model="ir.ui.view">
+        <field name="name">college.list.view</field>
+        <field name="model">college</field>
+        <field name="arch" type="xml">
+          <list>
+            <field name="name"/>
+            <field name="address"/>
+          </list>
+        </field>
+      </record>
+
+      <!-- This is the form view that will be used to render update/add form -->
+      <record id="wb_college_form_view" model="ir.ui.view">
+        <field name="name">college.form.view</field>
+        <field name="model">college</field>
+        <field name="arch" type="xml">
+          <form>
+            <sheet>
+              <group>
+                <field name="name"/>
+                <field name="address"/>
+              </group>
+            </sheet>
+          </form>
+        </field>
+      </record>
+
+      <!-- UI server actions -->
+      <record id="wb_college_action" model="ir.actions.act_window">
+        <field name="name">College</field>
+        <field name="res_model">college</field>
+        <field name="view_mode">list,form</field>
+      </record>
     </data>
 </odoo>

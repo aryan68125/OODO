@@ -17,3 +17,11 @@
 #         for record in self:
 #             record.value2 = float(record.value) / 100
 
+from odoo import api, models, fields
+class College(models.Model):
+    _name = "college"
+    _description = "College Model"
+
+    name = fields.Char(string = "College name")
+    address = fields.Text(string = "Address")
+

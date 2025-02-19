@@ -40,7 +40,7 @@
                   <button name="json_data_store" type="object" string="JSON FEED"></button>
                   <field name="joining_date" placeholder="Enter the joining date for the student."/>
               </group>
-            </sheet>
+          </sheet>
         </form>
       </field>
     </record>
