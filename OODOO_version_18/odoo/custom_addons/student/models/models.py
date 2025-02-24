@@ -4,6 +4,8 @@ class Student(models.Model):
     _name = "student"  # Correct model name format
     _description = "Student Model"
 
+    '''TODO start from here This field is not working including the front-end'''
+    # school_id = fields.Many2one('college.college', string="School")
     name = fields.Char(string="Student Name", required=True)
     roll = fields.Integer(int="Age")
     email = fields.Char(string="Email")

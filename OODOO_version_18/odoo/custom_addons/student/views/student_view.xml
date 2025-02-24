@@ -5,6 +5,8 @@
       <field name="model">student</field>
       <field name="arch" type="xml">
         <list>  
+          <!-- <field name="id"/> -->
+          <!-- <field name="school_id"/> -->
           <field name="name"/>
           <field name="roll"/>
           <field name="email"/>
@@ -26,6 +28,8 @@
         <form>
           <sheet>
               <group>
+                  <!-- <field name="id"/> -->
+                  <!-- <field name="school_id"/> -->
                   <field name="name"/>
                   <field name="roll"/>
                   <field name="email"/>
