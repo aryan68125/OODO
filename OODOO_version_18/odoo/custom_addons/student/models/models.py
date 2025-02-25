@@ -5,12 +5,13 @@ class School(models.Model):
     _name = "school"
     _description = "Student School"
     name = fields.Char(string="Student's School",required=True)
+    student_list = fields.One2many("student","school_id")
 
 class Student(models.Model):
     _name = "student"  # Correct model name format
     _description = "Student Model"
 
-    school = fields.Many2one('school', string="School")
+    school_id = fields.Many2one(comodel_name = 'school', string="Select Student's School",help="Select student's school", default=2)
     name = fields.Char(string="Student Name", required=True)
     roll = fields.Integer(int="Age")
     email = fields.Char(string="Email")
