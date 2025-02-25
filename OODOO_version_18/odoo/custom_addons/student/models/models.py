@@ -10,7 +10,6 @@ class Student(models.Model):
     _name = "student"  # Correct model name format
     _description = "Student Model"
 
-    '''TODO start from here This field is not working including the front-end'''
     school = fields.Many2one('school', string="School")
     name = fields.Char(string="Student Name", required=True)
     roll = fields.Integer(int="Age")

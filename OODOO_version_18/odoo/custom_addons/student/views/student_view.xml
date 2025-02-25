@@ -1,5 +1,6 @@
 <odoo>
   <data>
+    <!-- For showing all students -->
     <record id="wb_student_tree_view" model="ir.ui.view">
       <field name="name">student.list.view</field>
       <field name="model">student</field>
@@ -20,7 +21,7 @@
         </list>
       </field>
     </record>
-
+    <!-- For showing adding/updating students -->
     <record id="wb_student_form_view" model="ir.ui.view">
       <field name="name">student.form.view</field>
       <field name="model">student</field>
@@ -49,6 +50,7 @@
       </field>
     </record>
 
+    <!-- For showing all student's school -->
     <record id="wb_student_school_tree_view" model="ir.ui.view">
       <field name="name">student.list.view</field>
       <field name="model">school</field>
@@ -60,7 +62,7 @@
         </list>
       </field>
     </record>
-
+    <!-- For showing adding/updating student's school -->
     <record id="wb_student_school_form_view" model="ir.ui.view">
       <field name="name">student.form.view</field>
       <field name="model">school</field>
