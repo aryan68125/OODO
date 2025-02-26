@@ -6,12 +6,16 @@ class School(models.Model):
     _description = "Student School"
     name = fields.Char(string="Student's School",required=True)
     student_list = fields.One2many("student","school_id")
-
+class Hobby(models.Model):
+    _name = "hobby"
+    _description = "Student Hobby"
+    name = fields.Char(string = "Hobby Name")
 class Student(models.Model):
     _name = "student"  # Correct model name format
     _description = "Student Model"
 
     school_id = fields.Many2one(comodel_name = 'school', string="Select Student's School",help="Select student's school", default=2)
+    hobby_list = fields.Many2many("hobby","student_hobby_list_relation","student_id","hobby_id")
     name = fields.Char(string="Student Name", required=True)
     roll = fields.Integer(int="Age")
     email = fields.Char(string="Email")

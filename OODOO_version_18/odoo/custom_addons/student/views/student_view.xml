@@ -8,6 +8,7 @@
         <list>  
           <!-- <field name="id"/> -->
           <field name="school_id"/>
+          <field name="hobby_list"/>
           <field name="name"/>
           <field name="roll"/>
           <field name="email"/>
@@ -32,6 +33,7 @@
                   <!-- <field name="id"/> -->
                   <field name="school_id"/>
                   <field name="name"/>
+                  <field name="hobby_list"/>
                   <field name="roll"/>
                   <field name="email"/>
                   <field name="address" placeholder = "Enter student's address here..."/>
