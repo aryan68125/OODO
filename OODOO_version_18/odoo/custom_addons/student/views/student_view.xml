@@ -33,7 +33,7 @@
                   <!-- <field name="id"/> -->
                   <field name="school_id"/>
                   <field name="name"/>
-                  <field name="hobby_list"/>
+                  <field name="hobby_list" widget="many2many_tags"/>
                   <field name="roll"/>
                   <field name="email"/>
                   <field name="address" placeholder = "Enter student's address here..."/>
@@ -61,7 +61,8 @@
           <!-- <field name="id"/> -->
           <field name="id"/>
           <field name="name"/>
-          <field name="student_list"/>
+          <field name="ref_field_id"/>
+          <!-- <field name="student_list"/> -->
         </list>
       </field>
     </record>
@@ -76,7 +77,8 @@
                 <!-- <field name="id"/> -->
                 <field name="id"/>
                 <field name="name"/>
-                <field name="student_list"/>
+                <field name="ref_field_id"/>
+                <!-- <field name="student_list"/> -->
               </group>
           </sheet>
         </form>
