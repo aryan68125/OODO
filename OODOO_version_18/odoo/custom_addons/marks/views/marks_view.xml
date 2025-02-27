@@ -9,7 +9,7 @@
           <field name="subject_name"/>
           <field name="marks"/>
           <field name="grade"/>
-          <field name="student_name"/>
+          <field name="student"/>
         </list>
       </field>
     </record>
@@ -24,7 +24,7 @@
                 <group>
                   <field name="subject_name" required="1"/>
                   <field name="marks" required="1"/>
-                  <field name="student_name" readonly="0"/>
+                  <field name="student" readonly="0"/>
                 </group>
             </sheet>
         </form>
