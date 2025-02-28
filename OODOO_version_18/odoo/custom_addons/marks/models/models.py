@@ -27,8 +27,7 @@ class Marks(models.Model):
     marks = fields.Integer(string="Marks")
     grade = fields.Char(string="Student's grade",compute="_compute_grade")
 
-    student_id = fields.Many2one("student", string="Student")  # Relation with Student Model
-    student_name = fields.Many2one(related="student_id.name", string="Student Name", store=True)
+    student_id = fields.Many2one("student", string="Student")
 
     @api.depends('marks')
     def _compute_grade(self):
