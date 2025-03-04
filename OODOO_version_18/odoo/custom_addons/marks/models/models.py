@@ -25,7 +25,7 @@ class Marks(models.Model):
 
     subject_name = fields.Char(string="Subject name")
     marks = fields.Integer(string="Marks")
-    grade = fields.Char(string="Student's grade",compute="_compute_grade")
+    grade = fields.Char(string="Student's grade",compute="_compute_grade",store=True)
 
     student_id = fields.Many2one("student", string="Student")
 
@@ -45,4 +45,4 @@ class Marks(models.Model):
             elif record.marks >=41 and record.marks <= 50:
                 record.grade = "E"
             else:
-                record.grade = "F" 
+                record.grade = "F"
