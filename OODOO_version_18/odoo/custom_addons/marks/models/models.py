@@ -45,4 +45,4 @@ class Marks(models.Model):
             elif record.marks >=41 and record.marks <= 50:
                 record.grade = "E"
             else:
-                record.grade = "F"
+                record.grade = "F" 
