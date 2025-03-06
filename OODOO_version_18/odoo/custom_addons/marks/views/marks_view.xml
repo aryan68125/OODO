@@ -10,6 +10,9 @@
           <field name="marks"/>
           <field name="grade"/>
           <field name="student_id"/>
+          <!-- <field name="document"/> -->
+          <field name="document" filename="document_name"/>
+          <field name="document_name" />
         </list>
       </field>
     </record>
@@ -25,6 +28,11 @@
                   <field name="subject_name" required="1"/>
                   <field name="marks" required="1"/>
                   <field name="student_id" readonly="0"/> 
+
+                  <!-- <field name="binary_fields" widget="many2many_binary"/> -->
+                  <!-- <field name="document"/> -->
+                  <field name="document" filename="document_name"/>
+                  <field name="document_name"/>
                 </group>
             </sheet>
         </form>

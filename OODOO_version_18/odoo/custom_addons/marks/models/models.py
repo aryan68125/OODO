@@ -26,8 +26,11 @@ class Marks(models.Model):
     subject_name = fields.Char(string="Subject name")
     marks = fields.Integer(string="Marks")
     grade = fields.Char(string="Student's grade",compute="_compute_grade",store=True)
-
     student_id = fields.Many2one("student", string="Student")
+
+    # binary_fields = fields.Many2many('ir.attachment',string="Multiple document upload")
+    document = fields.Binary(string="document")
+    document_name = fields.Char(string="document name")
 
     @api.depends('marks')
     def _compute_grade(self):
