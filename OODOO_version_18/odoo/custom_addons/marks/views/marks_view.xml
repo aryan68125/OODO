@@ -31,6 +31,7 @@
 
                   <!-- <field name="binary_fields" widget="many2many_binary"/> -->
                   <!-- <field name="document"/> -->
+                  
                   <field name="document" filename="document_name"/>
                   <field name="document_name"/>
                 </group>
