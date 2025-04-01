@@ -22,6 +22,7 @@
         </list>
       </field>
     </record>
+
     <!-- For showing adding/updating students -->
     <record id="wb_student_form_view" model="ir.ui.view">
       <field name="name">student.form.view</field>
@@ -66,6 +67,7 @@
         </list>
       </field>
     </record>
+    
     <!-- For showing adding/updating student's school -->
     <record id="wb_student_school_form_view" model="ir.ui.view">
       <field name="name">student.form.view</field>
@@ -97,6 +99,7 @@
         </list>
       </field>
     </record>
+    
     <!-- For showing adding/updating student's HOBBY -->
     <record id="wb_student_hobby_form_view" model="ir.ui.view">
       <field name="name">hobby.form.view</field>
