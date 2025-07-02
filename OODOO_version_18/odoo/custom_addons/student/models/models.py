@@ -14,7 +14,6 @@ class Hobby(models.Model):
 class Student(models.Model):
     _name = "student"  # Correct model name format
     _description = "Student Model"
-
     school_id = fields.Many2one(comodel_name = 'school', string="Select Student's School",help="Select student's school", default=1)
     hobby_list = fields.Many2many("hobby","student_hobby_list_relation","student_id","hobby_id")
     name = fields.Char(string="Student Name", required=True)
