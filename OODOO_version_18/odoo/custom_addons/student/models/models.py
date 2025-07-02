@@ -7,10 +7,14 @@ class School(models.Model):
     name = fields.Char(string="Student's School",required=True)
     student_list = fields.One2many("student","school_id")
     ref_field_id = fields.Reference([('hobby','Hobby'),('student','Student')])
+
+    
 class Hobby(models.Model):
     _name = "hobby"
     _description = "Student Hobby"
     name = fields.Char(string = "Hobby Name")
+
+
 class Student(models.Model):
     _name = "student"  # Correct model name format
     _description = "Student Model"
