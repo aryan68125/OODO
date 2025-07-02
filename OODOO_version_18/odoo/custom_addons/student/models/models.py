@@ -2,22 +2,28 @@ from odoo import api, models, fields
 from datetime import date
 
 class School(models.Model):
+    # model meta-data
     _name = "school"
     _description = "Student School"
+    # model fields
     name = fields.Char(string="Student's School",required=True)
     student_list = fields.One2many("student","school_id")
     ref_field_id = fields.Reference([('hobby','Hobby'),('student','Student')])
 
-    
+
 class Hobby(models.Model):
+    # model meta-data
     _name = "hobby"
     _description = "Student Hobby"
+    # model fields
     name = fields.Char(string = "Hobby Name")
 
 
 class Student(models.Model):
+    # model meta-data
     _name = "student"  # Correct model name format
     _description = "Student Model"
+    # model fields
     school_id = fields.Many2one(comodel_name = 'school', string="Select Student's School",help="Select student's school", default=1)
     hobby_list = fields.Many2many("hobby","student_hobby_list_relation","student_id","hobby_id")
     name = fields.Char(string="Student Name", required=True)
