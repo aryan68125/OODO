@@ -147,3 +147,5 @@
     <menuitem id="wb_student_hobby_menu" action="wb_student_hobby_action" name="Student's Hobby List" parent="wb_student_sub_root_menu"/>
   </data>
 </odoo>
+
+
