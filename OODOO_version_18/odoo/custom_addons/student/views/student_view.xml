@@ -62,8 +62,8 @@
           <!-- <field name="id"/> -->
           <field name="id"/>
           <field name="name"/>
-          <field name="ref_field_id"/>
-          <!-- <field name="student_list"/> -->
+          <!-- <field name="ref_field_id"/> -->
+          <field name="student_list"/>
         </list>
       </field>
     </record>
@@ -79,8 +79,8 @@
                 <!-- <field name="id"/> -->
                 <field name="id"/>
                 <field name="name"/>
-                <field name="ref_field_id"/>
-                <!-- <field name="student_list"/> -->
+                <!-- <field name="ref_field_id"/> -->
+                <field name="student_list"/>
               </group>
           </sheet>
         </form>
