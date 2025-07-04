@@ -45,7 +45,7 @@
                   <field name="gender" placeholder="Select Gender"/>
                   <field name="major" placeholder="Select Major in which you want to study"/>
                   <field name="school_data" placeholder="Enter student's data here!"/>
-                  <button name="json_data_store" type="object" string="JSON FEED"> </button>
+                  <button name="json_data_store" type="object" string="JSON FEED"></button>
                   <field name="joining_date" placeholder="Enter the joining date for the student."/>
               </group>
           </sheet>
