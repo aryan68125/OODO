@@ -7,7 +7,7 @@ class School(models.Model):
     _description = "Student School"
     # model fields
     name = fields.Char(string="Student's School",required=True)
-    ref_field_id = fields.Reference([('hobby','Hobby'),('student','Student')])
+    ref_field_id = fields.Reference(selection=[('hobby','Hobby'),('student','Student')], string="Reference field demo")
     student_list = fields.One2many(comodel_name="student",inverse_name="school_id")
     @api.constrains('student_list')
     def _check_student_list_not_empty(self):
