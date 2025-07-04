@@ -1,6 +1,6 @@
 from odoo import api, models, fields
 from datetime import date
-
+from odoo.exceptions import ValidationError
 class School(models.Model):
     # model meta-data
     _name = "school"
@@ -9,6 +9,11 @@ class School(models.Model):
     name = fields.Char(string="Student's School",required=True)
     student_list = fields.One2many("student","school_id")
     # ref_field_id = fields.Reference([('hobby','Hobby'),('student','Student')])
+    @api.constrains('student_list')
+    def _check_student_list_not_empty(self):
+        for record in self:
+            if not record.student_list:
+                raise ValidationError("You must add at least one student.")
 
 
 class Hobby(models.Model):
