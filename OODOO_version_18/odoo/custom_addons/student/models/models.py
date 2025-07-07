@@ -26,7 +26,12 @@ class Hobby(models.Model):
     
     def custom_method(self):
         print("clicked! custom method in the hobby model called!")
-        data = {"name":"Hunting down naxals"}
+        data = [
+            {"name":"Hunting down naxals"},
+            {"name":"Researching for Ai"},
+            {"name":"Axe throwing"},
+            {"name":"Archery"}
+        ]
         self.env["hobby"].create(data)
 
 
