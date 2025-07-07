@@ -38,15 +38,24 @@ class Hobby(models.Model):
     This method is called when the button is clicked in the form view of the hobby model.
     This method will create 4 new hobby records in the hobby model.
     """
+    # def custom_method(self):
+    #     print("clicked! custom method in the hobby model called!")
+    #     data = [
+    #         {"name":"Hunting down naxals"},
+    #         {"name":"Researching for Ai"},
+    #         {"name":"Axe throwing"},
+    #         {"name":"Archery"}
+    #     ]
+    #     self.env["hobby"].create(data)
+
+    """
+    A custom method to demonstrate the use of a button to update a record in the hobby model.
+    """
     def custom_method(self):
-        print("clicked! custom method in the hobby model called!")
-        data = [
-            {"name":"Hunting down naxals"},
-            {"name":"Researching for Ai"},
-            {"name":"Axe throwing"},
-            {"name":"Archery"}
-        ]
-        self.env["hobby"].create(data)
+        print(f"clicked! custom method will update a record in the hobby model")
+        print(f"self ===> {self}")
+        # update the first record in the hobby model with a new name
+        self.env["hobby"].search([], limit=1).write({"name":"Killing porkistani terrorists", "id":1})
 
 
 class Student(models.Model):
@@ -139,4 +148,5 @@ class Student(models.Model):
         # super will automatically return the record updated by the write method
         result = super(Student, self).write(vals)
         print(f"result in the write method for the Student model ===> {result}")
+        # the return type is boolean 
         return result
