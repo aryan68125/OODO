@@ -7,7 +7,9 @@
       <field name="arch" type="xml">
         <list>  
           <!-- <field name="id"/> -->
+          <field name="profile_picture" widget="image"/>
           <field name="school_id"/>
+          <field name="school_address"/>
           <field name="hobby_list"/>
           <field name="name"/>
           <field name="roll"/>
@@ -32,7 +34,9 @@
           <sheet>
               <group>
                   <!-- <field name="id"/> -->
+                  <field name="profile_picture" widget="image"/>
                   <field name="school_id"/>
+                  <field name="school_address"/>
                   <field name="name"/>
                   <field name="hobby_list" widget="many2many_tags"/>
                   <field name="roll"/>
@@ -63,6 +67,7 @@
           <field name="id"/>
           <field name="name"/>
           <field name="ref_field_id"/>
+          <field name="address"/>
           <field name="student_list"/>
         </list>
       </field>
@@ -80,6 +85,7 @@
                 <field name="id"/>
                 <field name="name"/>
                 <field name="ref_field_id"/>
+                <field name="address"/>
                 <field name="student_list"/>
               </group>
           </sheet>

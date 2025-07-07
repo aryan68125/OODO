@@ -9,6 +9,7 @@ class School(models.Model):
     name = fields.Char(string="Student's School",required=True)
     ref_field_id = fields.Reference(selection=[('hobby','Hobby'),('student','Student')], string="Reference field demo")
     student_list = fields.One2many(comodel_name="student",inverse_name="school_id")
+    address = fields.Char(string="School address")
     @api.constrains('student_list')
     def _check_student_list_not_empty(self):
         for record in self:
@@ -29,7 +30,9 @@ class Student(models.Model):
     _name = "student"  # Correct model name format
     _description = "Student Model"
     # model fields
+    profile_picture = fields.Image("Student's profile picture")
     school_id = fields.Many2one(comodel_name = 'school', string="Select Student's School",help="Select student's school", default=1)
+    school_address = fields.Char(related='school_id.address', string="School address", store=True)
     hobby_list = fields.Many2many(comodel_name="hobby",relation="student_hobby_list_relation",column1="student_id",column2="hobby_id")
     name = fields.Char(string="Student Name", required=True)
     roll = fields.Integer(int="Age")

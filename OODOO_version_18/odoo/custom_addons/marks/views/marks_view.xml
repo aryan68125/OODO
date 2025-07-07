@@ -27,6 +27,7 @@
                 <group>
                   <field name="subject_name" required="1"/>
                   <field name="marks" required="1"/>
+                  <field name="grade"/>
                   <field name="student_id" readonly="0"/> 
 
                   <!-- <field name="binary_fields" widget="many2many_binary"/> -->
