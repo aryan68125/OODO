@@ -72,9 +72,28 @@ class Student(models.Model):
         self.added_at = date.today()
 
     # override the create method
-    def create(self,vals):
-        print(f"vals in the create method for the Surtend model ===> {vals}")
+    # METHOD 1 : without using any decorators
+    # def create(self,vals):
+    #     print(f"vals in the create method for the Surtend model ===> {vals}")
+    #     # super will automatically return the record created by the create method
+    #     result = super(Student ,self).create(vals)
+    #     print(f"result in the create method for the Student model ===> {result}")
+    #     return result
+    # METHOD 2 : using decorators
+    # @api.model
+    # def create(self, vals):
+    #     print(f"create method using an api.model decorator")
+    #     print(f"vals in the create method for the Student model ===> {vals}")
+    #     # super will automatically return the record created by the create method
+    #     result = super(Student, self).create(vals)
+    #     print(f"result in the create method for the Student model ===> {result}")
+    #     return result
+    # METHOD 2 : using decorators
+    @api.model_create_multi
+    def create(self, vals):
+        print(f"create method using an api.model decorator")
+        print(f"vals in the create method for the Student model ===> {vals}")
         # super will automatically return the record created by the create method
-        result = super(Student ,self).create(vals)
+        result = super(Student, self).create(vals)
         print(f"result in the create method for the Student model ===> {result}")
         return result
