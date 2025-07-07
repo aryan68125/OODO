@@ -66,6 +66,15 @@ class Student(models.Model):
     def json_data_store(self):
         self.school_data = {'name':self.name, 'roll_no':self.roll}
     
+    # compute method
     @api.depends('name')
     def compute_added_at(self):
         self.added_at = date.today()
+
+    # override the create method
+    def create(self,vals):
+        print(f"vals in the create method for the Surtend model ===> {vals}")
+        # super will automatically return the record created by the create method
+        result = super(Student ,self).create(vals)
+        print(f"result in the create method for the Student model ===> {result}")
+        return result

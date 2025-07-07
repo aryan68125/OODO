@@ -7,7 +7,7 @@
       <field name="arch" type="xml">
         <list>  
           <!-- <field name="id"/> -->
-          <field name="profile_picture" widget="image"/>
+          <field name="profile_picture" widget="image" class="oe_avatar"/>
           <field name="school_id"/>
           <field name="school_address"/>
           <field name="hobby_list"/>
@@ -34,7 +34,7 @@
           <sheet>
               <group>
                   <!-- <field name="id"/> -->
-                  <field name="profile_picture" widget="image"/>
+                  <field name="profile_picture" widget="image" class="oe_avatar"/>
                   <field name="school_id"/>
                   <field name="school_address"/>
                   <field name="name"/>
