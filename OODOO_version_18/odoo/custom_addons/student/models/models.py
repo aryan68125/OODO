@@ -49,7 +49,7 @@ class Hobby(models.Model):
     #     self.env["hobby"].create(data)
 
     """
-    A custom method to demonstrate the use of a button to update a record in the hobby model.
+    A custom method to demonstrate the use of a button to update a single record in the hobby model.
     """
     def custom_method(self):
         print(f"clicked! custom method will update a record in the hobby model")
