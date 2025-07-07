@@ -24,6 +24,20 @@ class Hobby(models.Model):
     # model fields
     name = fields.Char(string = "Hobby Name")
     
+    """
+    A custom model to demonstrate the use of a button in the form view.
+    This model is used to create a button in the form view of the hobby model.
+    The button will call a custom method in the hobby model when clicked.
+    The custom method will create a new hobby records in the hobby model.
+    """
+    # def custom_method(self):
+    #     print("clicked! custom method in the hobby model called!")
+    #     data = {"name":"Archery"}
+    #     self.env["hobby"].create(data)
+    """A custom method to demonstrate the use of a button in the form view.
+    This method is called when the button is clicked in the form view of the hobby model.
+    This method will create 4 new hobby records in the hobby model.
+    """
     def custom_method(self):
         print("clicked! custom method in the hobby model called!")
         data = [
