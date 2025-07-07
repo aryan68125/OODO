@@ -23,6 +23,12 @@ class Hobby(models.Model):
     _description = "Student Hobby"
     # model fields
     name = fields.Char(string = "Hobby Name")
+    
+    def custom_method(self):
+        print("clicked! custom method in the hobby model called!")
+        data = {"name":"Hunting down naxals"}
+        self.env["hobby"].create(data)
+
 
 
 class Student(models.Model):
@@ -79,7 +85,7 @@ class Student(models.Model):
     #     result = super(Student ,self).create(vals)
     #     print(f"result in the create method for the Student model ===> {result}")
     #     return result
-    # METHOD 2 : using decorators
+    # METHOD 2 : using decorators using @api.model decorator
     # @api.model
     # def create(self, vals):
     #     print(f"create method using an api.model decorator")
@@ -88,12 +94,21 @@ class Student(models.Model):
     #     result = super(Student, self).create(vals)
     #     print(f"result in the create method for the Student model ===> {result}")
     #     return result
-    # METHOD 2 : using decorators
+    # METHOD 2 : using decorators @api.model_create_multi decorator
+    # @api.model_create_multi
+    # def create(self, vals):
+    #     print(f"create method using an api.model_create_multi decorator")
+    #     print(f"vals in the create method for the Student model ===> {vals}")
+    #     # super will automatically return the record created by the create method
+    #     result = super(Student, self).create(vals)
+    #     print(f"result in the create method for the Student model ===> {result}")
+    #     return result
+    # METHOD 2 : using decorators @api.model_create_multi decorator
     @api.model_create_multi
-    def create(self, vals):
-        print(f"create method using an api.model decorator")
-        print(f"vals in the create method for the Student model ===> {vals}")
+    def create(self, vals_list):
+        print(f"create method using an api.model_create_multi decorator")
+        print(f"vals in the create method for the Student model ===> {vals_list}")
         # super will automatically return the record created by the create method
-        result = super(Student, self).create(vals)
+        result = super().create(vals_list)
         print(f"result in the create method for the Student model ===> {result}")
         return result

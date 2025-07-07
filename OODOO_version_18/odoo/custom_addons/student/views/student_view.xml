@@ -112,6 +112,9 @@
       <field name="model">hobby</field>
       <field name="arch" type="xml">
         <form>
+          <header>
+            <button name="custom_method" type="object" string="Custom Method"></button>
+          </header>
           <sheet>
               <group>
                 <!-- <field name="id"/> -->
