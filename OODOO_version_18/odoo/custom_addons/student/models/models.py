@@ -55,7 +55,9 @@ class Hobby(models.Model):
         print(f"clicked! custom method will update a record in the hobby model")
         print(f"self ===> {self}")
         # update the first record in the hobby model with a new name
-        self.env["hobby"].search([], limit=1).write({"name":"Killing porkistani terrorists", "id":1})
+        # self.env["hobby"].search([('id', '=', 1)], limit=1).write({"name":"Killing terrorists"})
+        # update the first record in the hobby model with a new name 
+        self.env["hobby"].browse(1).write({"name":"Killing porkistani terrorists"})
 
 
 class Student(models.Model):
