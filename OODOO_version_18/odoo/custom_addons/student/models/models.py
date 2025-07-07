@@ -49,7 +49,6 @@ class Hobby(models.Model):
         self.env["hobby"].create(data)
 
 
-
 class Student(models.Model):
     # model meta-data
     _name = "student"  # Correct model name format
@@ -130,4 +129,14 @@ class Student(models.Model):
         # super will automatically return the record created by the create method
         result = super().create(vals_list)
         print(f"result in the create method for the Student model ===> {result}")
+        return result
+    
+    """
+    override the write method
+    """
+    def write(self,vals):
+        print(f"write method called for the Student model with vals ===> {vals}")
+        # super will automatically return the record updated by the write method
+        result = super(Student, self).write(vals)
+        print(f"result in the write method for the Student model ===> {result}")
         return result
