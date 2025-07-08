@@ -154,11 +154,23 @@ class Student(models.Model):
         return result
     
     """
-    override copy method to duplicate records
-    This method will not copy the data in those field when creating a duplicate record where it has the attribute `copy=False`
+    custom method that mimics the functionality of copy method the duplicate button in the form view
     """
     def duplicate_records(self):
         print(f"self ===> {self}") 
         duplicate_data = self.copy()
         print(f"duplicated_data ===> {duplicate_data}")
+
+    """
+    override copy method to duplicate records
+    This method will not copy the data in those field when creating a duplicate record where it has the attribute `copy=False`
+    """
+    def copy(self,default=None):
+        print(f"self ===> {self}")
+        print(f"default ===> {default}")
+        return_data = super(Student,self).copy(default=default)
+        print(f"return_data ===> {return_data}")
+        return return_data
+
+
 
