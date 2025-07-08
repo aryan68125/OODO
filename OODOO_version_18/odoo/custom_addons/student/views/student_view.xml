@@ -21,6 +21,8 @@
           <field name="school_data" placeholder="Enter student's school data here!"/>
           <field name="joining_date"/>
           <field name="added_at"/>
+
+          <button name="delete_record" string="Delete" type="object" icon="fa-trash" class="btn btn-danger"/>
         </list>
       </field>
     </record>

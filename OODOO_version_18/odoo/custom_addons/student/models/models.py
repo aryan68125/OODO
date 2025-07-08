@@ -165,12 +165,31 @@ class Student(models.Model):
     override copy method to duplicate records
     This method will not copy the data in those field when creating a duplicate record where it has the attribute `copy=False`
     """
+    @api.returns('self', lambda value: value.id)
     def copy(self,default=None):
         print(f"self ===> {self}")
         print(f"default ===> {default}")
         return_data = super(Student,self).copy(default=default)
-        print(f"return_data ===> {return_data}")
+        print(f"return_data from copy method ===> {return_data}")
         return return_data
+    
+    """
+    Use custom method to delete a record using our own button in the front-end side of the odoo
+    """
+    def delete_record(self):
+        print(f"self delete_record method ===> {self}")
+        result = self.unlink()
+        print(f"Record deleted success status ===> {result}")
+    """
+    override unlink method to delete records
+    """
+    def unlink(self):
+        print(f"self unlink method ===> {self}")
+        # super will automatically return the record deleted by the unlink method
+        result = super(Student, self).unlink()
+        print(f"result in the unlink method for the Student model ===> {result}")
+        # the return type is boolean 
+        return result
 
 
 
