@@ -31,6 +31,9 @@
       <field name="model">student</field>
       <field name="arch" type="xml">
         <form>
+          <header>
+            <button name="duplicate_records" type="object" string="Duplicate record (create)"></button>
+          </header>
           <sheet>
               <group>
                   <!-- <field name="id"/> -->

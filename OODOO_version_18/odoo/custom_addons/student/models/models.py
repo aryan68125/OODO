@@ -152,3 +152,10 @@ class Student(models.Model):
         print(f"result in the write method for the Student model ===> {result}")
         # the return type is boolean 
         return result
+    
+    """
+    override copy method to duplicate records
+    """
+    def duplicate_records(self):
+        print(f"self ===> {self}")
+        
