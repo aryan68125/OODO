@@ -155,6 +155,7 @@ class Student(models.Model):
     
     """
     override copy method to duplicate records
+    This method will not copy the data in those field when creating a duplicate record where it has the attribute `copy=False`
     """
     def duplicate_records(self):
         print(f"self ===> {self}") 
