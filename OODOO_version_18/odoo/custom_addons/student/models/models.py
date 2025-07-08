@@ -157,5 +157,7 @@ class Student(models.Model):
     override copy method to duplicate records
     """
     def duplicate_records(self):
-        print(f"self ===> {self}")
-        
+        print(f"self ===> {self}") 
+        duplicate_data = self.copy()
+        print(f"duplicated_data ===> {duplicate_data}")
+
