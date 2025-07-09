@@ -190,6 +190,33 @@ class Student(models.Model):
         print(f"result in the unlink method for the Student model ===> {result}")
         # the return type is boolean 
         return result
+    
+    """
+    custom search method. 
+    """
+    def print_table(self, records):
+        for rec in records:
+            print(f"Student: {rec.name}, Fees: {rec.fees}")
+    def search_record(self):
+        # print self method
+        print(f"self search_record method ===> {self}")
 
-
+        # search(domain, limit, offset, order)
+        # [condition, more conditions]
+        
+        print(f"search_record return student recordset ===> {self.search([])}") 
+        print(f"search_record return school recordset ===> {self.env["school"].search([])}")
+        # self.search([("name","ilike","web")]) ===> domain = [("name","ilike","web")]  ===> domain conditions
+        print(f"search_record return student recordset domain conditions ('name','ilike','web') ===> {self.search([("name","ilike","rol")])}")
+        # if you want to apply a limit
+        print(f"search_record return student recordset using limit ===> {self.search([("name","ilike","rol")], limit=5)}")
+        # if you want to apply offset
+        print(f"search_record return student recordset using limit on gender field ===> {self.search([("gender","ilike","Male")], limit=5)}")
+        print(f"search_record return student recordset using limit and offset on gender field ===> {self.search([("gender","ilike","Male")], limit=5,offset=1)}")
+        # order by
+        print(f"search_record return student recordset order by on name ===> {self.search([],order="name")}")
+        print(f"search_record return student recordset order by on id desc ===> {self.search([],order="id desc")}")
+        # apply sql where condition in odoo
+        print(f"where condition in search ===> {self.search([("fees","=",4000)])}")
+        self.print_table(self.search([("fees","=",4000)]))
 

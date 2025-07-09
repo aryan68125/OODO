@@ -35,6 +35,7 @@
         <form>
           <header>
             <button name="duplicate_records" type="object" string="Duplicate record (create)"></button>
+            <button name="search_record" type="object" string = "Search record button"></button>
           </header>
           <sheet>
               <group>
