@@ -219,4 +219,12 @@ class Student(models.Model):
         # apply sql where condition in odoo
         print(f"where condition in search ===> {self.search([("fees","=",4000)])}")
         self.print_table(self.search([("fees","=",4000)]))
+        print(f"I want to get all the records that are grater than 100")
+        self.print_table(self.search([("fees",">",100)]))
+        # where clause in operator.
+        print(f"check multiple records using where clause in a record set")
+        self.print_table(self.search([("fees","!=",(4000,100,5000,1000))]))
+
+
+
 
