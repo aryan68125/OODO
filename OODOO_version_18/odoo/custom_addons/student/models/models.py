@@ -253,10 +253,34 @@ class Student(models.Model):
         # join Query
         # any
         students = self.env["student"].search([
-            ("student_fee_ids.amount", "=", 0),
-            ("student_fee_ids.name", "ilike", "web")
+            ("school_id.name", "ilike", "stell"),
         ])
-        print(f"Join table using any {students}")
+        print(f"Join table using any \n {students}")
+
+        #  or operator
+        students = self.env["student"].search([
+            ("name", "!=", False),
+            ("roll", "=", False)
+        ])
+        self.print_table(records=students)
+
+        # select id,name from student where id > 4
+        total_records = self.env["student"].search_count([("id",">","4")],limit=10)
+        print("'select id,name from student where id > 4' ===> ",total_records)
+
+        # search_count()
+        print(f"search_count ===> {total_records}")
+
+        # read_method()
+        """
+        Read method usage
+        get data from a specific model.
+        """
+        print(f"read() ===> \n {self.read()}")
+        print(f"read('name','gender') ===> \n {self.read("name","gender")}")
+
+        # read_group()
+        print(f"read_group() ===> {self.env["student"].read_group(domain=[], fields=['gender'], groupby=['gender'])}")
 
     def print_location(self,records):
         print(f"Total Record Found :- {len(records)}")
