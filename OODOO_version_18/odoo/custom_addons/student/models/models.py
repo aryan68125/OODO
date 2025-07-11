@@ -204,7 +204,7 @@ class Student(models.Model):
         # search(domain, limit, offset, order)
         # [condition, more conditions]
         
-        print(f"search_record return student recordset ===> {self.search([])}") 
+        print(f"search_record return student recordset ===> {self.search(["student"].search())}") 
         print(f"search_record return school recordset ===> {self.env["school"].search([])}")
         # self.search([("name","ilike","web")]) ===> domain = [("name","ilike","web")]  ===> domain conditions
         print(f"search_record return student recordset domain conditions ('name','ilike','web') ===> {self.search([("name","ilike","rol")])}")
@@ -224,6 +224,34 @@ class Student(models.Model):
         # where clause in operator.
         print(f"check multiple records using where clause in a record set")
         self.print_table(self.search([("fees","!=",(4000,100,5000,1000))]))
+
+        # IN
+        print(f"in operator demo ===> {self.search([("fees", "in", (100, 4000))])}")
+        # NOT IN
+        print(f"not in operator demo ===> {self.search([("fees", "not in", (100, 4000))])}")
+        # LIKE
+        print(f"like operator demo ===> {self.search([("name", "like", "Ba")])}")
+        # NOT LIKE
+        print(f"not like in operator demo ===> {self.search([("name", "not like", "Ro")])}")
+        # ILIKE
+        print(f"ilike in operator demo ===> {self.search([("name", "ilike", "Ba")])}")
+        # NOT ILIKE
+        print(f"not ilike in operator demo ===> {self.search([("name", "not ilike", "Ba")])}")
+        # =ilike
+        print(f"=ilike operator ===> {self.search([("name","=like","%Ro%")])}")
+
+        # child_of
+        print(f"search_record return student recordset ===> {self.env['student'].search([])}")
+
+        records = self.env["hobby"].search(["name"])
+        self.print_location(records)
+
+    def print_location(self,records):
+        print(f"Total Record Found :- {len(records)}")
+        print(f"ID                  NAME            PARENT")
+        for rec in records:
+            print(f"{rec.id}        {rec.name}         {rec.parent_id.name} / {rec.parent_id.id}")
+        
 
 
 
