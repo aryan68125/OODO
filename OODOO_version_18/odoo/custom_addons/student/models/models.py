@@ -204,7 +204,7 @@ class Student(models.Model):
         # search(domain, limit, offset, order)
         # [condition, more conditions]
         
-        print(f"search_record return student recordset ===> {self.search(["student"].search())}") 
+        print(f"search_record return student recordset ===> {self.env['student'].search([])}")
         print(f"search_record return school recordset ===> {self.env["school"].search([])}")
         # self.search([("name","ilike","web")]) ===> domain = [("name","ilike","web")]  ===> domain conditions
         print(f"search_record return student recordset domain conditions ('name','ilike','web') ===> {self.search([("name","ilike","rol")])}")
@@ -243,8 +243,20 @@ class Student(models.Model):
         # child_of
         print(f"search_record return student recordset ===> {self.env['student'].search([])}")
 
-        records = self.env["hobby"].search(["name"])
-        self.print_location(records)
+        parent_hobby = self.env['hobby'].search([('name', '=', 'Music')], limit=1)
+        descendants = self.env['hobby'].search([('id', 'child_of', parent_hobby.id)])
+        print(f"Parent hobby table \n")
+        self.print_location(parent_hobby)
+        print(f"Descendants table \n")
+        self.print_location(descendants)
+
+        # join Query
+        # any
+        students = self.env["student"].search([
+            ("student_fee_ids.amount", "=", 0),
+            ("student_fee_ids.name", "ilike", "web")
+        ])
+        print(f"Join table using any {students}")
 
     def print_location(self,records):
         print(f"Total Record Found :- {len(records)}")
