@@ -277,10 +277,13 @@ class Student(models.Model):
         get data from a specific model.
         """
         print(f"read() ===> \n {self.read()}")
-        print(f"read('name','gender') ===> \n {self.read("name","gender")}")
+        print(f"read('name','gender') ===> \n {self.read(['name', 'gender'])}")
 
-        # read_group()
+        # read_group() how to use it in odoo
         print(f"read_group() ===> {self.env["student"].read_group(domain=[], fields=['gender'], groupby=['gender'])}")
+        student_group_by = self.env["student"].read_group([],['school_id'], ['school_id'])
+        for student in student_group_by:
+            print(f"{student}")
 
     def print_location(self,records):
         print(f"Total Record Found :- {len(records)}")
