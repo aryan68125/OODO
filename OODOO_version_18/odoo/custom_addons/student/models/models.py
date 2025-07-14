@@ -317,7 +317,6 @@ class Student(models.Model):
         print(f"Student group by gender and school_id where lazy = False ===> \n")
         for student in student_group_by_gender:
             print(f"{student}")
-
         """
         student_order_by_fees ===> 
         [{'fees': 100.0, '__count': 2, '__domain': [('fees', '=', 100.0)]}, {'fees': 117.0, '__count': 1, '__domain': [('fees', '=', 117.0)]}, {'fees': 360.0, '__count': 1, '__domain': [('fees', '=', 360.0)]}, {'fees': 1000.0, '__count': 1, '__domain': [('fees', '=', 1000.0)]}, {'fees': 3000.0, '__count': 2, '__domain': [('fees', '=', 3000.0)]}, {'fees': 4000.0, '__count': 1, '__domain': [('fees', '=', 4000.0)]}, {'fees': 5000.0, '__count': 1, '__domain': [('fees', '=', 5000.0)]}, {'fees': 36500.0, '__count': 1, '__domain': [('fees', '=', 36500.0)]}]
@@ -327,11 +326,24 @@ class Student(models.Model):
 
         # aggregation function sum, average : (by [day, month, count])
         """
+        Calculate the average of all the fees os student
         student_average_fees ===> 
         [{'__count': 10, 'fees': 5317.7, '__domain': []}]
         """
         student_average_fees = self.env["student"].read_group(domain=[], fields=["fees:avg"], groupby=[], lazy=False)
         print(f"student_average_fees ===> \n {student_average_fees}")
+        """
+        Calculate the total sum of the fees
+        total_fees_collected ===> 
+        [{'__count': 10, 'fees': 53177.0, '__domain': []}]
+        """
+        total_fees_collected = self.env["student"].read_group(domain=[],fields=["fees:sum"],groupby=[],lazy=False)
+        print(f"total_fees_collected ===> \n {total_fees_collected}")
+        """
+        total fees lax
+        """
+        total_fees_max = self.env["student"].read_group(domain=[],fields=["fees:max"],groupby=[],lazy=False)
+        print(f"total_fees_max ===> \n {total_fees_max}")
 
     def print_location(self,records):
         print(f"Total Record Found :- {len(records)}")
