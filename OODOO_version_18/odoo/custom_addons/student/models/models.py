@@ -345,6 +345,21 @@ class Student(models.Model):
         total_fees_max = self.env["student"].read_group(domain=[],fields=["fees:max"],groupby=[],lazy=False)
         print(f"total_fees_max ===> \n {total_fees_max}")
 
+        # search_read method
+        """
+        search method returns the record set and read method returns the list of dictionaries for that specific record.
+        SELECT * FROM student where id=1 --> This ** where ** condition is what you have to pass in the domain
+
+        if load = None then the display name of many2one field is not shown
+        search_read( domain , fields [id, name, student_id], offset=type(int), limit=type(int), order,load=None,)
+        """
+        """
+        student_search_read ===> 
+        [{'id': 9, 'name': 'Shotgun'}, {'id': 11, 'name': 'Recon'}, {'id': 7, 'name': 'Barbatos'}, {'id': 8, 'name': 'ShockWave'}, {'id': 1, 'name': 'Rollex997'}, {'id': 5, 'name': 'Ignition'}, {'id': 4, 'name': 'Bullet'}, {'id': 2, 'name': 'Ballistic'}, {'id': 3, 'name': 'Barricade'}, {'id': 6, 'name': 'Kombat'}, {'id': 20, 'name': 'Artillery'}]
+        """
+        student_search_read = self.env["student"].search_read(domain=[],fields=["name"],order="fees")
+        print(f"student_search_read ===> \n {student_search_read}")
+
     def print_location(self,records):
         print(f"Total Record Found :- {len(records)}")
         print(f"ID                  NAME            PARENT")
