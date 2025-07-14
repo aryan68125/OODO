@@ -282,8 +282,43 @@ class Student(models.Model):
         # read_group() how to use it in odoo
         print(f"read_group() ===> {self.env["student"].read_group(domain=[], fields=['gender'], groupby=['gender'])}")
         student_group_by = self.env["student"].read_group([],['school_id'], ['school_id'])
+        print("Student group by school_id ===> \n ")
         for student in student_group_by:
             print(f"{student}")
+        """
+        If you use 
+        ```
+            self.env["student"].read_group([],["school_id","gender"],["school_id","gender"])
+            here by default lazy=True
+        ```
+        In this case it will give you the result for the first parameter "School_id" but it will not give you the result in case of "gender"
+        {'school_id': (1, 'Stella Maris School'), 'school_id_count': 4, '__domain': [('school_id', '=', 1)], '__context': {'group_by': ['gender']}}
+        {'school_id': (2, 'Lamartinier School'), 'school_id_count': 3, '__domain': [('school_id', '=', 2)], '__context': {'group_by': ['gender']}}
+        {'school_id': (3, 'Delhi public school'), 'school_id_count': 1, '__domain': [('school_id', '=', 3)], '__context': {'group_by': ['gender']}}
+        {'school_id': (5, 'Berlin School of Learning'), 'school_id_count': 2, '__domain': [('school_id', '=', 5)], '__context': {'group_by': ['gender']}}
+        """
+        student_group_by_gender = self.env["student"].read_group([],["school_id","gender"],["school_id","gender"])
+        print(f"Student group by gender and school_id ===> \n")
+        for student in student_group_by_gender:
+            print(f"{student}")
+        """
+        If you use 
+        ```
+            self.env["student"].read_group([],["school_id","gender"],["school_id","gender"],lazy=True)
+            here I have set lazy=False
+        ```
+        In this case it will give you the result for the first parameter "School_id" but it will not give you the result in case of "gender"
+        {'school_id': (1, 'Stella Maris School'), 'school_id_count': 4, '__domain': [('school_id', '=', 1)], '__context': {'group_by': ['gender']}}
+        {'school_id': (2, 'Lamartinier School'), 'school_id_count': 3, '__domain': [('school_id', '=', 2)], '__context': {'group_by': ['gender']}}
+        {'school_id': (3, 'Delhi public school'), 'school_id_count': 1, '__domain': [('school_id', '=', 3)], '__context': {'group_by': ['gender']}}
+        {'school_id': (5, 'Berlin School of Learning'), 'school_id_count': 2, '__domain': [('school_id', '=', 5)], '__context': {'group_by': ['gender']}}
+        """
+        student_group_by_gender = self.env["student"].read_group([],["school_id","gender"],["school_id","gender"],lazy=False)
+        print(f"Student group by gender and school_id where lazy = False ===> \n")
+        for student in student_group_by_gender:
+            print(f"{student}")
+        # aggregation function sum, average : (by [day, month, count])
+
 
     def print_location(self,records):
         print(f"Total Record Found :- {len(records)}")
