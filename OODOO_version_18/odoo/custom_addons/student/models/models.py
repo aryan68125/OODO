@@ -433,29 +433,45 @@ class Student(models.Model):
             result["arch"] = etree.tostring(doc,encoding="unicode")
             print(f"get_view :: result ===> \n {result}")
         return result
-    
-    def sub_custom_method(self):
-        print(f"Sub custom method !!!!")
-        """
-        It uses self.ensure_one() to ensure only one record is being operated upon.
-        This is an Odoo utility method that raises an error if self (the recordset) contains more than one record.
 
-        If a blank or more than one recordset is found then it will throw an error!
-        """
-        self.ensure_one()
-        print(self)
-        print(f"printing student name in sub custom method >>> ")
-        print(self.name)
+    """
+    Demonstration of sub_custom_method along with self.ensure_one() method
+    """
+    # def sub_custom_method(self):
+    #     print(f"Sub custom method !!!!")
+    #     """
+    #     It uses self.ensure_one() to ensure only one record is being operated upon.
+    #     This is an Odoo utility method that raises an error if self (the recordset) contains more than one record.
 
+    #     If a blank or more than one recordset is found then it will throw an error!
+    #     """
+    #     self.ensure_one()
+    #     print(self)
+    #     print(f"printing student name in sub custom method >>> ")
+    #     print(self.name)
+
+    # def custom_method(self):
+    #     print("Custom method clicked !!!")
+    #     print(self)
+    #     # Here get school from the self.search([]) and then print school.sub_custom_method() inside the loop
+    #     for school in self.search([]):
+    #         school.sub_custom_method()
+    #         print(f"school.sub_custom_method() ===> {school.sub_custom_method()}")
+    #     print(f"sub_custom_method called from custom_method !!!")
+    #     self.sub_custom_method()
+
+    """
+    demo of how filter method works in odoo.
+    """
     def custom_method(self):
-        print("Custom method clicked !!!")
-        print(self)
-        # Here get school from the self.search([]) and then print school.sub_custom_method() inside the loop
-        for school in self.search([]):
-            school.sub_custom_method()
-            print(f"school.sub_custom_method() ===> {school.sub_custom_method()}")
-        print(f"sub_custom_method called from custom_method !!!")
-        self.sub_custom_method()
+        print(f"custom method clicked!!!")
+        print(f"self ===> {self}")
+        students = self.env["student"].search([])
+        print(f"students ===> {students}")
+        student_filtered = self.env["student"].search([("name","ilike","rollex")])
+        print(f'("name","ilike","ddd") ===> {student_filtered.name}')
+        student_filtered = self.env["student"].search([("id","in",students.ids),("name","ilike","balli")])
+        print(f'("id","in",students.ids),("name","ilike","ddd") ===> {student_filtered.name}')
 
 
 
