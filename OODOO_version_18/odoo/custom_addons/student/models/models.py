@@ -436,6 +436,13 @@ class Student(models.Model):
     
     def sub_custom_method(self):
         print(f"Sub custom method !!!!")
+        """
+        It uses self.ensure_one() to ensure only one record is being operated upon.
+        This is an Odoo utility method that raises an error if self (the recordset) contains more than one record.
+
+        If a blank or more than one recordset is found then it will throw an error!
+        """
+        self.ensure_one()
         print(self)
         print(f"printing student name in sub custom method >>> ")
         print(self.name)
@@ -443,6 +450,10 @@ class Student(models.Model):
     def custom_method(self):
         print("Custom method clicked !!!")
         print(self)
+        # Here get school from the self.search([]) and then print school.sub_custom_method() inside the loop
+        for school in self.search([]):
+            school.sub_custom_method()
+            print(f"school.sub_custom_method() ===> {school.sub_custom_method()}")
         print(f"sub_custom_method called from custom_method !!!")
         self.sub_custom_method()
 
