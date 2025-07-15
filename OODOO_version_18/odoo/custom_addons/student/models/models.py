@@ -59,7 +59,21 @@ class Hobby(models.Model):
         # update the first record in the hobby model with a new name 
         self.env["hobby"].browse(1).write({"name":"Killing porkistani terrorists"})
 
-
+class Curreny(models.Model):
+    _name = "student_currency"
+    _description = "Student Currency"
+    name = fields.Char(string="Student Currency", required=False)
+    # Override the name search method in odoo models 
+    @api.model
+    def _name_search(self, name, domain=None, operator='ilike', limit=100, order=None):
+        print(f"_name_search called on student_currency. Search term: {name}")
+        domain = domain or []
+        if name:
+            domain += [('name', operator, name)]
+        result = self._search(domain, limit=limit, order=order)
+        print(f"Result IDs: {result}")
+        return self.browse(result).name_get()
+    
 class Student(models.Model):
     # model meta-data
     _name = "student"  # Correct model name format
@@ -76,6 +90,7 @@ class Student(models.Model):
     html_field_demo = fields.Html(string="HTML Field Demo")
     is_agreed = fields.Boolean(string="Do you agree to the terms and consitons?", default="False", help="check to agree with the terms and conditions or else leave it un-checked")
     fees = fields.Float(string="Student's Fees",digits=(4,4))
+    currency = fields.Many2one(comodel_name = "student_currency",string = "Select student's currency", help="Select student's school", default=1)
     school_data = fields.Json(string="School Data")
     # joining_date = fields.Date(string="Joining Date",default="2025-02-16")
     # joining_date = fields.Date(string="Joining Date")
@@ -376,19 +391,18 @@ class Student(models.Model):
         return result
     
     # default_get method
-    @api.model
-    def default_get(self,fields_list):
-        print(f" Default get method ",self,fields_list)
-        result = super(School,self).default_get(fields_list)
-        print(f"result ===> {result}")
-        return result
+    # @api.model
+    # def default_get(self,fields_list):
+    #     print(f" Default get method ",self,fields_list)
+    #     result = super(School,self).default_get(fields_list)
+    #     print(f"result ===> {result}")
+    #     return result
 
     def print_location(self,records):
         print(f"Total Record Found :- {len(records)}")
         print(f"ID                  NAME            PARENT")
         for rec in records:
             print(f"{rec.id}        {rec.name}         {rec.parent_id.name} / {rec.parent_id.id}")
-        
 
 
 
