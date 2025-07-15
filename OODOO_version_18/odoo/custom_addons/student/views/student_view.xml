@@ -74,7 +74,7 @@
           <field name="name"/>
           <field name="ref_field_id"/>
           <field name="address"/>
-          <field name="student_list"/>
+          <!-- <field name="student_list"/> -->
         </list>
       </field>
     </record>
@@ -92,7 +92,7 @@
                 <field name="name"/>
                 <field name="ref_field_id"/>
                 <field name="address"/>
-                <field name="student_list"/>
+                <!-- <field name="student_list"/> -->
               </group>
           </sheet>
         </form>

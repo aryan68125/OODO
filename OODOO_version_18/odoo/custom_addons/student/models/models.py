@@ -8,7 +8,7 @@ class School(models.Model):
     # model fields
     name = fields.Char(string="Student's School",required=True)
     ref_field_id = fields.Reference(selection=[('hobby','Hobby'),('student','Student')], string="Reference field demo")
-    student_list = fields.One2many(comodel_name="student",inverse_name="school_id")
+    # student_list = fields.One2many(comodel_name="student",inverse_name="school_id",required=False)
     address = fields.Char(string="School address")
     @api.constrains('student_list')
     def _check_student_list_not_empty(self):
@@ -357,8 +357,31 @@ class Student(models.Model):
         student_search_read ===> 
         [{'id': 9, 'name': 'Shotgun'}, {'id': 11, 'name': 'Recon'}, {'id': 7, 'name': 'Barbatos'}, {'id': 8, 'name': 'ShockWave'}, {'id': 1, 'name': 'Rollex997'}, {'id': 5, 'name': 'Ignition'}, {'id': 4, 'name': 'Bullet'}, {'id': 2, 'name': 'Ballistic'}, {'id': 3, 'name': 'Barricade'}, {'id': 6, 'name': 'Kombat'}, {'id': 20, 'name': 'Artillery'}]
         """
-        student_search_read = self.env["student"].search_read(domain=[],fields=["name"],order="fees")
+        student_search_read = self.env["student"].search_read(domain=[],fields=["id","name","school_id"],order="fees")
         print(f"student_search_read ===> \n {student_search_read}")
+
+        """
+        student_search_read_with_domain where school_id = 1 ===> 
+        [{'id': 9, 'name': 'Shotgun', 'school_id': (1, 'Stella Maris School')}, {'id': 7, 'name': 'Barbatos', 'school_id': (1, 'Stella Maris School')}, {'id': 8, 'name': 'ShockWave', 'school_id': (1, 'Stella Maris School')}, {'id': 1, 'name': 'Rollex997', 'school_id': (1, 'Stella Maris School')}]
+        """
+        student_search_read_with_domain = self.env["student"].search_read(domain=[("school_id","=",1)],fields=["id","name","school_id"],order="fees",limit=2)
+        print(f"student_search_read_with_domain where school_id = 1 ===> \n {student_search_read_with_domain}")
+
+    # name_create method
+    @api.model
+    def name_create(self,name):
+        print(f"name_create method : ",self,name)
+        result = super(School,self).name_create(name)
+        print(f"name_create method result ==> {result}")
+        return result
+    
+    # default_get method
+    @api.model
+    def default_get(self,fields_list):
+        print(f" Default get method ",self,fields_list)
+        result = super(School,self).default_get(fields_list)
+        print(f"result ===> {result}")
+        return result
 
     def print_location(self,records):
         print(f"Total Record Found :- {len(records)}")
