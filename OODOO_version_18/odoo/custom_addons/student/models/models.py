@@ -1,6 +1,8 @@
 from odoo import api, models, fields
 from datetime import date
 from odoo.exceptions import ValidationError
+from lxml import etree
+
 class School(models.Model):
     # model meta-data
     _name = "school"
@@ -403,6 +405,35 @@ class Student(models.Model):
         print(f"ID                  NAME            PARENT")
         for rec in records:
             print(f"{rec.id}        {rec.name}         {rec.parent_id.name} / {rec.parent_id.id}")
+
+    """
+    This method is called as soon as the page is loaded on the browser.
+    
+    get_view returns an architecture in xml format. 
+    We have to parse this xml data for this we will be needing lxml library
+
+    This method can be used to change the field positions in the form view of the student model. 
+    """
+    @api.model
+    def get_view(self, view_id=None, view_type='form', **options):
+        print(f"get_view ===> view_id={view_id}, view_type={view_type}, options={options}")
+        result = super().get_view(view_id=view_id, view_type=view_type, **options)
+        if view_type == "form" and "arch" in result:
+            doc = etree.fromstring(result["arch"])
+            print(f"doc ===> \n {doc}")
+            # targetted field
+            school_field = etree.Element("field",{"name":"school_id"})
+            targeted_field = doc.xpath("//field[@name='name']")
+            if targeted_field:
+                """ In the form view of the student the Select Student's School field will be displayed after Student's name """
+                # targeted_field[0].addnext(school_field)
+                """ In the form view of the student the select Student's school field will be displayed before the student's name """
+                targeted_field[0].addprevious(school_field)
+            # again we need to convert this doc object into the string
+            result["arch"] = etree.tostring(doc,encoding="unicode")
+            print(f"get_view :: result ===> \n {result}")
+        return result
+
 
 
 
