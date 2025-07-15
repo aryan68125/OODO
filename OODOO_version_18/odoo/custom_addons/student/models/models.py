@@ -433,6 +433,19 @@ class Student(models.Model):
             result["arch"] = etree.tostring(doc,encoding="unicode")
             print(f"get_view :: result ===> \n {result}")
         return result
+    
+    def sub_custom_method(self):
+        print(f"Sub custom method !!!!")
+        print(self)
+        print(f"printing student name in sub custom method >>> ")
+        print(self.name)
+
+    def custom_method(self):
+        print("Custom method clicked !!!")
+        print(self)
+        print(f"sub_custom_method called from custom_method !!!")
+        self.sub_custom_method()
+
 
 
 

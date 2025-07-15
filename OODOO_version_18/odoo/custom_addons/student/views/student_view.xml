@@ -37,6 +37,7 @@
           <header>
             <button name="duplicate_records" type="object" string="Duplicate record (create)"></button>
             <button name="search_record" type="object" string = "Search record button"></button>
+            <button name="custom_method" type="object" string = "Trigger custom_method in student's model"></button>
           </header>
           <sheet>
               <group>
