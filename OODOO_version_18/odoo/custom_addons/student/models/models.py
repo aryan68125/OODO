@@ -466,6 +466,11 @@ class Student(models.Model):
     def custom_method(self):
         print(f"custom method clicked!!!")
         print(f"self ===> {self}")
+        """
+        Everytime you call search method odoo will hit the database.
+        If suppose there is a senario where data must be filtered multiple times from the recordset where we want to reduce the number of hits to the database
+        in that case we will have to use filter method.
+        """
         students = self.env["student"].search([])
         print(f"students ===> {students}")
         student_filtered = self.env["student"].search([("name","ilike","rollex")])
