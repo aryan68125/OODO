@@ -504,26 +504,90 @@ class Student(models.Model):
     """
     Demo of mapped method in odoo
     """
+    # def custom_method(self):
+    #     print(f"custom method with the demo of mapped method called!!")
+    #     print(self)
+    #     student_obj = self.env["student"]
+    #     student_ids = student_obj.search([])
+    #     print(f"Here school_id is a recordset ===> ")
+    #     print(f"student_ids ===> {student_ids}")
+
+    #     student_fees = []
+
+    #     # case 1 : what you will have to do if you don't use mapped
+    #     for student in student_ids:
+    #         student_fees.append(student.fees)
+    #     print(f"student_fees using for loop ===> {student_fees}")
+    #     print(f"Total fees collected ===> {sum(student_fees)}")
+
+    #     # case 2 : The same logic that is used to calcualte the sum of all the fees of students using mapped method()
+    #     """
+    #     Mapped method in odoo is a shortcut to extract values from the fields or apply methods accross a record set
+    #     It worked recursively and returns a list
+
+    #     student_ids = self.env["student"].search([])
+    #     # Get names of the school for each student
+    #     school_names = student_ids.mapped("school_id.name")
+    #     [It is equivalent to this]
+    #     school_names = [student.school_id.name for student in student_ids]
+    #     But .mapped() is more effitient , clean and readable.
+
+    #     | Use Case                                                         | Example                                                                |
+    #     | ---------------------------------------------------------------- | ---------------------------------------------------------------------- |
+    #     | You want to **extract a field value** from multiple records      | `students.mapped("name")`                                              |
+    #     | You want to **traverse relationships**                           | `students.mapped("school_id.name")`                                    |
+    #     | You want to **combine values from related fields**               | `orders.mapped("order_line.product_id.name")`                          |
+    #     | You want to call a **method on each record** and collect results | `students.mapped("custom_method")` (if `custom_method` returns values) |
+
+    #     Inside the mapped method you need to specify the specific field that you want to map here in this case the mapped field is "fees"
+
+    #     Returns of .mapped() method : 
+    #     | Type of Field       | Return Type             |
+    #     | ------------------- | ----------------------- |
+    #     | Many2one            | Recordset or list       |
+    #     | One2many            | Recordset               |
+    #     | Char, Integer, etc. | List                    |
+    #     | Method              | List (of return values) |
+
+    #     """
+    #     student_school_mapped = student_ids.mapped("school_id").mapped("name")
+    #     print(f"student_school_mapped ===> {student_school_mapped}")
+
+    """
+    Demo of sorted() method
+    """
     def custom_method(self):
-        print(f"custom method with the demo of mapped method called!!")
-        print(self)
-        student_obj = self.env["student"]
-        student_ids = student_obj.search([])
-        print(f"student_ids ===> {student_ids}")
-
-        student_fees = []
-
-        # case 1 : what you will have to do if you don't use mapped
-        for student in student_ids:
-            student_fees.append(student.fees)
-        print(f"student_fees using for loop ===> {student_fees}")
-        print(f"Total fees collected ===> {sum(student_fees)}")
-
-        # case 2 : The same logic that is used to calcualte the sum of all the fees of students using mapped method()
+        print(f"Custom method with to demo sorted function is called !!!")
+        students_recordset = self.env["student"].search([])
+        
         """
-        Inside the mapped method you need to specify the specific field that you want to map here in this case the mapped field is "fees"
+        As you can see in this case the order by ascending and descending order is being applied on the recordset and everytime the order_by is called then a new recordset
+        is created hence in this case database is being hit everytime.
         """
-        student_fees = student_ids.mapped("fees")
+        # order by id in ascending order
+        stud = students_recordset.search([],order="id")
+        print(f"student in ascending order ===> {stud}")
+        
+        # order by id in descending order
+        stud = students_recordset.search([],order="id desc")
+        print(f"student in descending order ===> {stud}")
+
+        """
+        Sorted function
+        """
+        stud_list = stud.sorted(key=lambda stud: stud.id)
+        """
+        NOTE : If you do this stud_list.name
+        then you will get this error ValueError: Expected singleton: student(1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 20)
+        This error means that you trying to access a field from a list of recordset and odoo cannot get that field value because its a list you need to loop through that list
+        and get each record to be able to even access that field value.
+        If you want to avoid for loops then you can use mapped function with the field name inside double quotes.
+        """
+        print(f"stud_list using sorted function ===> \n {stud_list} \n {stud_list.mapped("name")}")
+
+
+
+
 
 
 
