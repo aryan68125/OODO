@@ -478,6 +478,12 @@ class Student(models.Model):
         student_filtered = self.env["student"].search([("id","in",students.ids),("name","ilike","balli")])
         print(f'("id","in",students.ids),("name","ilike","ddd") ===> {student_filtered.name}')
 
+        stud_obj = self.env["student"]
+        for stud in students:
+            if "ro" in str(stud.name):
+                stud_obj += stud 
+        print(f"stud_obj ===> {stud_obj}")
+
 
 
 
