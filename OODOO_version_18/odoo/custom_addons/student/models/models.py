@@ -461,7 +461,7 @@ class Student(models.Model):
     #     self.sub_custom_method()
 
     """
-    demo of how filter method works in odoo.
+    Demo of how filter method works in odoo.
     """
     def custom_method(self):
         print(f"custom method clicked!!!")
@@ -493,6 +493,10 @@ class Student(models.Model):
         print(f"stud_obj without using filtered ===> {stud_obj}")
 
         # Case 4 where I want to find the student name that starts like "Ba" :: with filter method
+        """
+        Here the filtered method won't be making any calls to the database.
+        It filters the data from the existing queryset and only shows the results that matches the condition.
+        """
         stud_obj = students.filtered(lambda stud: "Ba" in str(stud.name))
         print(f"stud_obj using filtered ===> {stud_obj}")
 
