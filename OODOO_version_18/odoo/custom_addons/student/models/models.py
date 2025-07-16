@@ -475,18 +475,24 @@ class Student(models.Model):
         print(f"students ===> {students}")
         student_filtered = self.env["student"].search([("name","ilike","rollex")])
         print(f'("name","ilike","ddd") ===> {student_filtered.name}')
-        student_filtered = self.env["student"].search([("id","in",students.ids),("name","ilike","balli")])
-        print(f'("id","in",students.ids),("name","ilike","ddd") ===> {student_filtered.name}')
 
         """filter method demonstration"""
-        # Case 1 where I want to find the student name that starts like "Ba" :: without filter method
+        # Case 1 where search method and domain search is used to get the student using their names
+        student_filtered = self.env["student"].search([("name","ilike","rollex")])
+        print(f'("name","ilike","ddd") ===> {student_filtered.name}')
+
+        # Case 2 where the student is searched using student.ids and names in the domain 
+        student_filtered = self.env["student"].search([("id","in",students.ids),("name","ilike","balli")])
+        print(f'("id","in",students.ids),("name","ilike","ddd")  ===> {student_filtered.name}')
+
+        # Case 3 where I want to find the student name that starts like "Ba" :: without filter method
         stud_obj = self.env["student"]
         for stud in students:
             if "Ro" in str(stud.name):
                 stud_obj += stud 
         print(f"stud_obj without using filtered ===> {stud_obj}")
 
-        # Case 2 where I want to find the student name that starts like "Ba" :: with filter method
+        # Case 4 where I want to find the student name that starts like "Ba" :: with filter method
         stud_obj = students.filtered(lambda stud: "Ba" in str(stud.name))
         print(f"stud_obj using filtered ===> {stud_obj}")
 
