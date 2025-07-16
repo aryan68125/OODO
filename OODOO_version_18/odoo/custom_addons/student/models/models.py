@@ -513,12 +513,18 @@ class Student(models.Model):
 
         student_fees = []
 
-        # case 1 : 
+        # case 1 : what you will have to do if you don't use mapped
         for student in student_ids:
             student_fees.append(student.fees)
         print(f"student_fees using for loop ===> {student_fees}")
         print(f"Total fees collected ===> {sum(student_fees)}")
-        
+
+        # case 2 : The same logic that is used to calcualte the sum of all the fees of students using mapped method()
+        """
+        Inside the mapped method you need to specify the specific field that you want to map here in this case the mapped field is "fees"
+        """
+        student_fees = student_ids.mapped("fees")
+
 
 
         
