@@ -556,34 +556,62 @@ class Student(models.Model):
     """
     Demo of sorted() method
     """
+    # def custom_method(self):
+    #     print(f"Custom method with to demo sorted function is called !!!")
+    #     students_recordset = self.env["student"].search([])
+        
+    #     """
+    #     As you can see in this case the order by ascending and descending order is being applied on the recordset and everytime the order_by is called then a new recordset
+    #     is created hence in this case database is being hit everytime.
+    #     """
+    #     # order by id in ascending order
+    #     stud = students_recordset.search([],order="id")
+    #     print(f"student in ascending order ===> {stud}")
+        
+    #     # order by id in descending order
+    #     stud = students_recordset.search([],order="id desc")
+    #     print(f"student in descending order ===> {stud}")
+
+    #     """
+    #     Sorted function
+    #     """
+    #     # ascending order
+    #     stud_list = stud.sorted(key=lambda stud: stud.id)
+    #     """
+    #     NOTE : If you do this stud_list.name
+    #     then you will get this error ValueError: Expected singleton: student(1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 20)
+    #     This error means that you trying to access a field from a list of recordset and odoo cannot get that field value because its a list you need to loop through that list
+    #     and get each record to be able to even access that field value.
+    #     If you want to avoid for loops then you can use mapped function with the field name inside double quotes.
+    #     """
+    #     print(f"stud_list using sorted function ===> \n {stud_list} \n {stud_list.mapped("name")}")
+
+    #     # descending order
+    #     stud_list = stud.sorted(key=lambda stud: stud.id,reverse=True)
+    #     print(f"stud_list using sorted function ===> \n {stud_list} \n {stud_list.mapped("name")}")
+
+    """
+    How to use grouped function A different way to implement the functionality of a group_by function
+    """
     def custom_method(self):
-        print(f"Custom method with to demo sorted function is called !!!")
-        students_recordset = self.env["student"].search([])
-        
-        """
-        As you can see in this case the order by ascending and descending order is being applied on the recordset and everytime the order_by is called then a new recordset
-        is created hence in this case database is being hit everytime.
-        """
-        # order by id in ascending order
-        stud = students_recordset.search([],order="id")
-        print(f"student in ascending order ===> {stud}")
-        
-        # order by id in descending order
-        stud = students_recordset.search([],order="id desc")
-        print(f"student in descending order ===> {stud}")
+        print(f"Custom method to demo the group_by function is clicked!")
+        print(self)
+        student_list = self.env["student"].search([])
+        print(f"students list in the list of recordset ===> {student_list}")
 
         """
-        Sorted function
+        Group by 
+        
+        If you want to group by records from an existing recordset then it is possible using the group function
+        For example: 
+        - If you want to get the group by from the recordset itself
         """
-        stud_list = stud.sorted(key=lambda stud: stud.id)
-        """
-        NOTE : If you do this stud_list.name
-        then you will get this error ValueError: Expected singleton: student(1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 20)
-        This error means that you trying to access a field from a list of recordset and odoo cannot get that field value because its a list you need to loop through that list
-        and get each record to be able to even access that field value.
-        If you want to avoid for loops then you can use mapped function with the field name inside double quotes.
-        """
-        print(f"stud_list using sorted function ===> \n {stud_list} \n {stud_list.mapped("name")}")
+        student_grouped_list = student_list.grouped(key="major")
+        print(f"student_grouped_list ===> {student_grouped_list}")
+
+
+
+
 
 
 
