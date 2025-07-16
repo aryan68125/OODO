@@ -622,6 +622,8 @@ class Student(models.Model):
         """
         students_object.fields_get()
         This will return all the field list and its meta data along with all of its attributes
+        
+        To view the generated result you can use online json viewer https://jsonviewer.stack.hu/
         """
         student_group_list = students_object.fields_get()
         # print(f"students_object.fields_get() ===> {student_group_list}")
