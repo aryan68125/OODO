@@ -463,42 +463,63 @@ class Student(models.Model):
     """
     Demo of how filter method works in odoo.
     """
+    # def custom_method(self):
+    #     print(f"custom method clicked!!!")
+    #     print(f"self ===> {self}")
+    #     """
+    #     Everytime you call search method odoo will hit the database.
+    #     If suppose there is a senario where data must be filtered multiple times from the recordset where we want to reduce the number of hits to the database
+    #     in that case we will have to use filter method.
+    #     """
+    #     students = self.env["student"].search([])
+    #     print(f"students ===> {students}")
+    #     student_filtered = self.env["student"].search([("name","ilike","rollex")])
+    #     print(f'("name","ilike","ddd") ===> {student_filtered.name}')
+
+    #     """filter method demonstration"""
+    #     # Case 1 where search method and domain search is used to get the student using their names
+    #     student_filtered = self.env["student"].search([("name","ilike","rollex")])
+    #     print(f'("name","ilike","ddd") ===> {student_filtered.name}')
+
+    #     # Case 2 where the student is searched using student.ids and names in the domain 
+    #     student_filtered = self.env["student"].search([("id","in",students.ids),("name","ilike","balli")])
+    #     print(f'("id","in",students.ids),("name","ilike","ddd")  ===> {student_filtered.name}')
+
+    #     # Case 3 where I want to find the student name that starts like "Ba" :: without filter method
+    #     stud_obj = self.env["student"]
+    #     for stud in students:
+    #         if "Ro" in str(stud.name):
+    #             stud_obj += stud 
+    #     print(f"stud_obj without using filtered ===> {stud_obj}")
+
+    #     # Case 4 where I want to find the student name that starts like "Ba" :: with filter method
+    #     """
+    #     Here the filtered method won't be making any calls to the database.
+    #     It filters the data from the existing queryset and only shows the results that matches the condition.
+    #     """
+    #     stud_obj = students.filtered(lambda stud: "Ba" in str(stud.name))
+    #     print(f"stud_obj using filtered ===> {stud_obj}")
+
+
+    """
+    Demo of mapped method in odoo
+    """
     def custom_method(self):
-        print(f"custom method clicked!!!")
-        print(f"self ===> {self}")
-        """
-        Everytime you call search method odoo will hit the database.
-        If suppose there is a senario where data must be filtered multiple times from the recordset where we want to reduce the number of hits to the database
-        in that case we will have to use filter method.
-        """
-        students = self.env["student"].search([])
-        print(f"students ===> {students}")
-        student_filtered = self.env["student"].search([("name","ilike","rollex")])
-        print(f'("name","ilike","ddd") ===> {student_filtered.name}')
+        print(f"custom method with the demo of mapped method called!!")
+        print(self)
+        student_obj = self.env["student"]
+        student_ids = student_obj.search([])
+        print(f"student_ids ===> {student_ids}")
 
-        """filter method demonstration"""
-        # Case 1 where search method and domain search is used to get the student using their names
-        student_filtered = self.env["student"].search([("name","ilike","rollex")])
-        print(f'("name","ilike","ddd") ===> {student_filtered.name}')
+        student_fees = []
 
-        # Case 2 where the student is searched using student.ids and names in the domain 
-        student_filtered = self.env["student"].search([("id","in",students.ids),("name","ilike","balli")])
-        print(f'("id","in",students.ids),("name","ilike","ddd")  ===> {student_filtered.name}')
+        # case 1 : 
+        for student in student_ids:
+            student_fees.append(student.fees)
+        print(f"student_fees using for loop ===> {student_fees}")
+        print(f"Total fees collected ===> {sum(student_fees)}")
+        
 
-        # Case 3 where I want to find the student name that starts like "Ba" :: without filter method
-        stud_obj = self.env["student"]
-        for stud in students:
-            if "Ro" in str(stud.name):
-                stud_obj += stud 
-        print(f"stud_obj without using filtered ===> {stud_obj}")
-
-        # Case 4 where I want to find the student name that starts like "Ba" :: with filter method
-        """
-        Here the filtered method won't be making any calls to the database.
-        It filters the data from the existing queryset and only shows the results that matches the condition.
-        """
-        stud_obj = students.filtered(lambda stud: "Ba" in str(stud.name))
-        print(f"stud_obj using filtered ===> {stud_obj}")
 
         
 
