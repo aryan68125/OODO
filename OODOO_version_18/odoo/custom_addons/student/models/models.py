@@ -593,21 +593,56 @@ class Student(models.Model):
     """
     How to use grouped function A different way to implement the functionality of a group_by function
     """
+    # def custom_method(self):
+    #     print(f"Custom method to demo the group_by function is clicked!")
+    #     print(self)
+    #     student_list = self.env["student"].search([])
+    #     print(f"students list in the list of recordset ===> {student_list}")
+
+    #     """
+    #     Group by 
+        
+    #     If you want to group by records from an existing recordset then it is possible using the group function
+    #     For example: 
+    #     - If you want to get the group by from the recordset itself
+    #     """
+    #     student_grouped_list = student_list.grouped(key="major")
+    #     print(f"student_grouped_list ===> {student_grouped_list}")
+
+    """
+    custom function to demonstrate the fields_get() function
+    """
     def custom_method(self):
-        print(f"Custom method to demo the group_by function is clicked!")
-        print(self)
-        student_list = self.env["student"].search([])
-        print(f"students list in the list of recordset ===> {student_list}")
+        print(f"custom method clicked to demonstrate the fields_get() function")
+        # print(self)
+        
+        students_object = self.env["student"].search([])
+        # print(f"students_object ===> {students_object}")
 
         """
-        Group by 
-        
-        If you want to group by records from an existing recordset then it is possible using the group function
-        For example: 
-        - If you want to get the group by from the recordset itself
+        students_object.fields_get()
+        This will return all the field list and its meta data along with all of its attributes
         """
-        student_grouped_list = student_list.grouped(key="major")
-        print(f"student_grouped_list ===> {student_grouped_list}")
+        student_group_list = students_object.fields_get()
+        # print(f"students_object.fields_get() ===> {student_group_list}")
+
+        """
+        students_object.fields_get(field_list, attributes)
+        if field_list is given then only fields mentioned in the field list will be returned will all its attributes and its metadata
+        """
+        student_group_list = students_object.fields_get(["name","roll"])
+        print(f"students_object.fields_get() field_list ===> {student_group_list}")
+
+
+
+
+
+
+
+
+
+
+
 
 
 
