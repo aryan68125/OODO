@@ -661,6 +661,9 @@ class Student(models.Model):
         This method is very similar to the search method as well as the read method
 
         search_fetch method is faster when compared to the search method.
+
+        self.search_fetch([],["id","name]) this is not a read method that you will get id and the name but it will still return a recordset and using the fetch method only get "id" and "name" into the cache memory, It will update the cache memeory for these two fields.
+        will be updated accordingly.
         """
         student_obj = self.search_fetch([],[])
         print(f"student_obj ===> {student_obj}")
