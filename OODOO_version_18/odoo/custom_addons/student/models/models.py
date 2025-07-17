@@ -659,6 +659,8 @@ class Student(models.Model):
 
         fetch method doesn't return anything which is also and ORM method and it stores in the cache memory.
         This method is very similar to the search method as well as the read method
+
+        search_fetch method is faster when compared to the search method.
         """
         student_obj = self.search_fetch([],[])
         print(f"student_obj ===> {student_obj}")
