@@ -612,28 +612,59 @@ class Student(models.Model):
     """
     custom function to demonstrate the fields_get() function
     """
+    # def custom_method(self):
+    #     print(f"custom method clicked to demonstrate the fields_get() function")
+    #     # print(self)
+        
+    #     students_object = self.env["student"].search([])
+    #     # print(f"students_object ===> {students_object}")
+
+    #     """
+    #     students_object.fields_get()
+    #     This will return all the field list and its meta data along with all of its attributes
+
+    #     To view the generated result you can use online json viewer https://jsonviewer.stack.hu/
+    #     """
+    #     student_group_list = students_object.fields_get()
+    #     # print(f"students_object.fields_get() ===> {student_group_list}")
+
+    #     """
+    #     students_object.fields_get(field_list, attributes)
+    #     if field_list is given then only fields mentioned in the field list will be returned will all its attributes and its metadata
+    #     """
+    #     student_group_list = students_object.fields_get(["name","roll"])
+    #     print(f"students_object.fields_get() field_list ===> {student_group_list}")
+
+    """
+    get_metadata method implementation in custom method
+    """
+    # def custom_method(self):
+    #     print(f"custom method to demo the get_metadata method")
+    #     print(f"self ===> {self}")
+    #     print(f"{self.get_metadata()}")
+
+    #     # Use for loop to display field's meta data
+    #     for stud in self.env["student"].search([]):
+    #         print(stud, " ",stud.name, " ",stud.get_metadata())
+
+    """
+    search_fetch method implementation in custom method ODOO 18 only
+    """
     def custom_method(self):
-        print(f"custom method clicked to demonstrate the fields_get() function")
-        # print(self)
-        
-        students_object = self.env["student"].search([])
-        # print(f"students_object ===> {students_object}")
+        print(f"Custom method that demonstrates the search_fetch ")
+        print(f" self ===> {self} ")
 
         """
-        students_object.fields_get()
-        This will return all the field list and its meta data along with all of its attributes
-        
-        To view the generated result you can use online json viewer https://jsonviewer.stack.hu/
-        """
-        student_group_list = students_object.fields_get()
-        # print(f"students_object.fields_get() ===> {student_group_list}")
+        search_fetch method is the combination of search and the fetch method.
 
+        fetch method doesn't return anything which is also and ORM method and it stores in the cache memory.
+        This method is very similar to the search method as well as the read method
         """
-        students_object.fields_get(field_list, attributes)
-        if field_list is given then only fields mentioned in the field list will be returned will all its attributes and its metadata
-        """
-        student_group_list = students_object.fields_get(["name","roll"])
-        print(f"students_object.fields_get() field_list ===> {student_group_list}")
+        student_obj = self.env["student"].search([])
+
+
+
+
 
 
 
