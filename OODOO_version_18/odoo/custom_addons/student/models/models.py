@@ -3,6 +3,9 @@ from datetime import date
 from odoo.exceptions import ValidationError
 from lxml import etree
 
+import logging 
+_logger = logging.getLogger("Aditya's custom logger :-")
+
 class School(models.Model):
     # model meta-data
     _name = "school"
@@ -649,6 +652,9 @@ class Student(models.Model):
 
     """
     search_fetch method implementation in custom method ODOO 18 only
+    before you do anything you need to 
+    import logging 
+    _logger = logging.getLogger()
     """
     def custom_method(self):
         print(f"Custom method that demonstrates the search_fetch ")
@@ -670,6 +676,18 @@ class Student(models.Model):
 
         for student in student_obj:
             print(f"student_name ===> {student.name} :: student_school_name ===> {student.school_id.name} :: student_address ===> {student.school_id.address}")
+
+    """
+    custom method to demonstrate custom logs implementation in case of odoo server
+    """
+    def custom_method(self):
+        print(f"Custom method that demonstrates the custom_logs in odoo")
+        """There are 5 different types of logs available"""
+        student_obj = self.search_fetch([],[])
+
+        for student in student_obj:
+            _logger.info(f"student_name ===> {student.name} :: student_school_name ===> {student.school_id.name} :: student_address ===> {student.school_id.address}")
+
 
 
 
