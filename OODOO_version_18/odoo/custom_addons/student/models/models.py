@@ -669,7 +669,7 @@ class Student(models.Model):
         print(f"student_obj ===> {student_obj}")
 
         for student in student_obj:
-            print(student.name ,student.school_id.name, student.school_id.address)
+            print(f"student_name ===> {student.name} :: student_school_name ===> {student.school_id.name} :: student_address ===> {student.school_id.address}")
 
 
 
