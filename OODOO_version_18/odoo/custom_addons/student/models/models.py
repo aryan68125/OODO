@@ -689,6 +689,18 @@ class Student(models.Model):
             _logger.info(f"student_name ===> {student.name} :: student_school_name ===> {student.school_id.name} :: student_address ===> {student.school_id.address}")
 
 
+"""
+Demo of auto create fields in Model in odoo
+"""
+class Marks(models.Model):
+    _name = "student_marks_stu"
+    # this _table is used to give a name to the table on the postgres side regardless of what name is given to the marks model in the _name section
+    _table = "my_student_marks_table"
+    _description = "This is a marks model for student"
+
+    subject_name = fields.Char(string="Subject Name", required=False)
+
+
 
 
 

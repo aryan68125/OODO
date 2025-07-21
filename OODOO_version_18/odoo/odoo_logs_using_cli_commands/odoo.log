@@ -2039,3 +2039,1165 @@
 2025-07-18 12:31:44,925 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
 2025-07-18 12:31:44,931 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
 2025-07-18 12:31:44,932 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 01:50:47,839 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-07-21 01:50:48,055 675058 INFO odoo odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-07-21 01:50:48,069 675058 INFO odoo odoo.models.unlink: User #1 deleted ir.cron.progress records with IDs: [1102, 1103] 
+2025-07-21 01:50:48,444 675058 INFO odoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-07-21 01:50:48,450 675058 INFO odoo odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-07-21 01:50:48,454 675058 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-21 01:50:48,672 675058 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-21 01:50:48,683 675058 INFO odoo odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-07-21 01:50:48,688 675058 INFO odoo odoo.models.unlink: User #1 deleted bus.bus records with IDs: [777, 778, 779, 780, 781, 782] 
+2025-07-21 01:50:49,018 675058 INFO odoo odoo.models.unlink: User #1 deleted bus.presence records with IDs: [4] 
+2025-07-21 01:50:50,082 675058 INFO odoo odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-07-21 01:50:50,099 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 2.259s 
+2025-07-21 01:50:50,565 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-07-21 01:50:50,571 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-07-21 01:50:50,607 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Delete Notifications older than 6 Month' (5) starting 
+2025-07-21 01:50:50,611 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Delete Notifications older than 6 Month' (5) done in 0.004s 
+2025-07-21 01:50:50,628 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Delete Notifications older than 6 Month' (5) processed 0 records, 0 records remaining 
+2025-07-21 01:50:50,631 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Delete Notifications older than 6 Month' (5) completed 
+2025-07-21 01:50:50,668 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Post scheduled messages' (7) starting 
+2025-07-21 01:50:50,672 675058 INFO odoo odoo.addons.mail.models.mail_scheduled_message: Posting 0 scheduled messages 
+2025-07-21 01:50:50,672 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Post scheduled messages' (7) done in 0.003s 
+2025-07-21 01:50:50,691 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Post scheduled messages' (7) processed 0 records, 0 records remaining 
+2025-07-21 01:50:50,694 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Post scheduled messages' (7) completed 
+2025-07-21 01:50:50,728 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-07-21 01:50:50,731 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.003s 
+2025-07-21 01:50:50,760 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-07-21 01:50:50,764 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-07-21 01:50:50,783 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: send web push notification' (9) starting 
+2025-07-21 01:50:50,792 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: send web push notification' (9) done in 0.009s 
+2025-07-21 01:50:50,818 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: send web push notification' (9) processed 0 records, 0 records remaining 
+2025-07-21 01:50:50,820 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: send web push notification' (9) completed 
+2025-07-21 01:50:50,876 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: channel member unmute' (10) starting 
+2025-07-21 01:50:50,879 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: channel member unmute' (10) done in 0.003s 
+2025-07-21 01:50:50,903 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: channel member unmute' (10) processed 0 records, 0 records remaining 
+2025-07-21 01:50:50,907 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: channel member unmute' (10) completed 
+2025-07-21 01:50:50,945 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: users settings unmute' (11) starting 
+2025-07-21 01:50:50,950 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: users settings unmute' (11) done in 0.005s 
+2025-07-21 01:50:51,360 675058 INFO odoo odoo.addons.base.models.res_device: User 2 inserts device log (1fVav-eUGuflMUEkNxSxfIJvOYjn_U4i4aspLsPVcb) 
+2025-07-21 01:50:51,821 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: users settings unmute' (11) processed 0 records, 0 records remaining 
+2025-07-21 01:50:52,243 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: users settings unmute' (11) completed 
+2025-07-21 01:50:52,244 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 01:50:52] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 2 0.002 0.885
+2025-07-21 01:50:52,305 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-07-21 01:50:52,312 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.006s 
+2025-07-21 01:50:52,326 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-07-21 01:50:52,337 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-07-21 01:50:52,387 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-07-21 01:50:52,392 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.004s 
+2025-07-21 01:50:52,407 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-07-21 01:50:52,411 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-07-21 01:50:52,449 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (16) starting 
+2025-07-21 01:50:52,453 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (16) done in 0.004s 
+2025-07-21 01:50:52,517 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (16) processed 0 records, 0 records remaining 
+2025-07-21 01:50:52,523 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (16) completed 
+2025-07-21 01:50:52,653 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 01:50:52,683 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.030s 
+2025-07-21 01:50:52,724 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 01:50:52,731 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 01:50:52,770 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Calendar: Event Reminder' (23) starting 
+2025-07-21 01:50:52,824 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Calendar: Event Reminder' (23) done in 0.053s 
+2025-07-21 01:50:52,867 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Calendar: Event Reminder' (23) processed 0 records, 0 records remaining 
+2025-07-21 01:50:52,872 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Calendar: Event Reminder' (23) completed 
+2025-07-21 01:50:52,905 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-07-21 01:50:52,986 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.081s 
+2025-07-21 01:50:53,040 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-07-21 01:50:53,103 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-07-21 01:50:53,244 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Users: Notify About Unregistered Users' (12) starting 
+2025-07-21 01:50:53,374 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Users: Notify About Unregistered Users' (12) done in 0.129s 
+2025-07-21 01:50:53,424 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Users: Notify About Unregistered Users' (12) processed 0 records, 0 records remaining 
+2025-07-21 01:50:53,446 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Users: Notify About Unregistered Users' (12) completed 
+2025-07-21 01:50:53,501 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-07-21 01:50:53,511 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.010s 
+2025-07-21 01:50:53,531 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-07-21 01:50:53,536 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-07-21 01:50:53,569 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) starting 
+2025-07-21 01:50:53,603 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) done in 0.034s 
+2025-07-21 01:50:53,628 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) processed 0 records, 0 records remaining 
+2025-07-21 01:50:53,642 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) completed 
+2025-07-21 01:51:24,909 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 01:51:24,913 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 01:51:24,918 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 01:51:24,921 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 02:01:25,380 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 02:01:25,384 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 02:01:25,389 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 02:01:25,391 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 02:11:14,993 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 02:11:14,996 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
+2025-07-21 02:11:15,001 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 02:11:15,004 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 02:21:25,720 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 02:21:25,724 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 02:21:25,730 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 02:21:25,732 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 02:31:21,191 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 02:31:21,193 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 02:31:21,198 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 02:31:21,200 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 02:41:21,793 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-07-21 02:41:21,804 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.011s 
+2025-07-21 02:41:21,809 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-07-21 02:41:21,814 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-07-21 02:41:21,826 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-07-21 02:41:21,837 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.011s 
+2025-07-21 02:41:21,843 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-07-21 02:41:21,846 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-07-21 02:41:21,857 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-07-21 02:41:21,867 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.009s 
+2025-07-21 02:41:21,872 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-07-21 02:41:21,875 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-07-21 02:41:21,886 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 02:41:21,889 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
+2025-07-21 02:41:21,895 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 02:41:21,897 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 02:41:21,909 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-07-21 02:41:21,929 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.021s 
+2025-07-21 02:41:21,935 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-07-21 02:41:21,938 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-07-21 02:41:21,950 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-07-21 02:41:21,959 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.010s 
+2025-07-21 02:41:21,964 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-07-21 02:41:21,967 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-07-21 02:51:22,573 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 02:51:22,579 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.005s 
+2025-07-21 02:51:22,587 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 02:51:22,589 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 02:57:36,097 675058 INFO odoo odoo.addons.base.models.res_device: User 2 inserts device log (1fVav-eUGuflMUEkNxSxfIJvOYjn_U4i4aspLsPVcb) 
+2025-07-21 02:57:36,170 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 02:57:36] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 2 0.006 0.212
+2025-07-21 02:57:36,243 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 02:57:36] "POST /bus/get_autovacuum_info HTTP/1.1" 200 - 4 0.005 0.021
+2025-07-21 02:58:07,284 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 02:58:07] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.014
+2025-07-21 03:01:23,221 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 03:01:23,224 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 03:01:23,230 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 03:01:23,233 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 03:11:23,894 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 03:11:23,905 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.011s 
+2025-07-21 03:11:23,912 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 03:11:23,915 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 03:21:22,787 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 03:21:22,790 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 03:21:22,795 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 03:21:22,797 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 03:31:25,041 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 03:31:25,046 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.005s 
+2025-07-21 03:31:25,052 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 03:31:25,054 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 03:41:25,714 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-07-21 03:41:25,723 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.008s 
+2025-07-21 03:41:25,728 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-07-21 03:41:25,730 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-07-21 03:41:25,742 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-07-21 03:41:25,752 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.010s 
+2025-07-21 03:41:25,757 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-07-21 03:41:25,760 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-07-21 03:41:25,771 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-07-21 03:41:25,778 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.007s 
+2025-07-21 03:41:25,784 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-07-21 03:41:25,786 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-07-21 03:41:25,798 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 03:41:25,801 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
+2025-07-21 03:41:25,806 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 03:41:25,809 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 03:41:25,820 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-07-21 03:41:25,835 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.015s 
+2025-07-21 03:41:25,840 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-07-21 03:41:25,842 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-07-21 03:41:25,853 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-07-21 03:41:25,858 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.005s 
+2025-07-21 03:41:25,863 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-07-21 03:41:25,864 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-07-21 03:51:26,530 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 03:51:26,547 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.015s 
+2025-07-21 03:51:26,564 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 03:51:26,573 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 04:01:27,216 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 04:01:27,220 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 04:01:27,225 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 04:01:27,227 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 04:02:56,273 675058 INFO odoo odoo.addons.base.models.res_device: User 2 inserts device log (1fVav-eUGuflMUEkNxSxfIJvOYjn_U4i4aspLsPVcb) 
+2025-07-21 04:02:56,372 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 04:02:56] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 2 0.002 0.187
+2025-07-21 04:11:15,139 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 04:11:15,142 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
+2025-07-21 04:11:15,147 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 04:11:15,149 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 04:21:25,910 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 04:21:25,914 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 04:21:25,920 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 04:21:25,922 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 04:31:29,048 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 04:31:29,053 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 04:31:29,059 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 04:31:29,061 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 04:41:29,713 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-07-21 04:41:29,734 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.021s 
+2025-07-21 04:41:29,740 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-07-21 04:41:29,742 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-07-21 04:41:29,754 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-07-21 04:41:29,760 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.006s 
+2025-07-21 04:41:29,765 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-07-21 04:41:29,767 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-07-21 04:41:29,778 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-07-21 04:41:29,782 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.004s 
+2025-07-21 04:41:29,787 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-07-21 04:41:29,790 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-07-21 04:41:29,801 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 04:41:29,804 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
+2025-07-21 04:41:29,809 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 04:41:29,811 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 04:41:29,823 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-07-21 04:41:29,834 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.012s 
+2025-07-21 04:41:29,840 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-07-21 04:41:29,841 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-07-21 04:41:29,853 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-07-21 04:41:29,857 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.004s 
+2025-07-21 04:41:29,862 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-07-21 04:41:29,863 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-07-21 04:51:30,525 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 04:51:30,529 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 04:51:30,534 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 04:51:30,537 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 05:01:31,101 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 05:01:31,106 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.005s 
+2025-07-21 05:01:31,111 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 05:01:31,114 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 05:11:18,128 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 05:11:18,132 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
+2025-07-21 05:11:18,136 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 05:11:18,138 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 05:13:31,682 675058 INFO odoo odoo.addons.base.models.res_device: User 2 inserts device log (1fVav-eUGuflMUEkNxSxfIJvOYjn_U4i4aspLsPVcb) 
+2025-07-21 05:13:31,704 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 05:13:31] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 2 0.003 0.054
+2025-07-21 05:21:28,844 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 05:21:28,849 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 05:21:28,853 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 05:21:28,855 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 05:31:32,796 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 05:31:32,800 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 05:31:32,805 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 05:31:32,807 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 05:41:33,320 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-07-21 05:41:33,325 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.005s 
+2025-07-21 05:41:33,330 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-07-21 05:41:33,332 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-07-21 05:41:33,342 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-07-21 05:41:33,345 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.003s 
+2025-07-21 05:41:33,350 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-07-21 05:41:33,352 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-07-21 05:41:33,364 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-07-21 05:41:33,367 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.003s 
+2025-07-21 05:41:33,372 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-07-21 05:41:33,373 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-07-21 05:41:33,384 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 05:41:33,386 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 05:41:33,391 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 05:41:33,394 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 05:41:33,405 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-07-21 05:41:33,408 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.003s 
+2025-07-21 05:41:33,413 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-07-21 05:41:33,415 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-07-21 05:41:33,425 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-07-21 05:41:33,428 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.003s 
+2025-07-21 05:41:33,438 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-07-21 05:41:33,448 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-07-21 05:51:34,081 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 05:51:34,084 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 05:51:34,089 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 05:51:34,092 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 06:01:34,696 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 06:01:34,702 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.005s 
+2025-07-21 06:01:34,707 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 06:01:34,709 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 06:11:21,080 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 06:11:21,083 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 06:11:21,088 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 06:11:21,089 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 06:21:31,774 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 06:21:31,779 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.005s 
+2025-07-21 06:21:31,784 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 06:21:31,787 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 06:31:36,495 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 06:31:36,501 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.005s 
+2025-07-21 06:31:36,506 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 06:31:36,508 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 06:39:07,510 675058 INFO odoo odoo.addons.base.models.res_device: User 2 inserts device log (1fVav-eUGuflMUEkNxSxfIJvOYjn_U4i4aspLsPVcb) 
+2025-07-21 06:39:07,516 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 06:39:07] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 2 0.001 0.015
+2025-07-21 06:41:37,140 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Delete Notifications older than 6 Month' (5) starting 
+2025-07-21 06:41:37,166 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Delete Notifications older than 6 Month' (5) done in 0.025s 
+2025-07-21 06:41:37,171 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Delete Notifications older than 6 Month' (5) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,173 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Delete Notifications older than 6 Month' (5) completed 
+2025-07-21 06:41:37,184 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Post scheduled messages' (7) starting 
+2025-07-21 06:41:37,197 675058 INFO odoo odoo.addons.mail.models.mail_scheduled_message: Posting 0 scheduled messages 
+2025-07-21 06:41:37,212 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Post scheduled messages' (7) done in 0.028s 
+2025-07-21 06:41:37,223 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Post scheduled messages' (7) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,225 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Post scheduled messages' (7) completed 
+2025-07-21 06:41:37,236 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-07-21 06:41:37,240 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.004s 
+2025-07-21 06:41:37,245 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,247 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-07-21 06:41:37,258 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: send web push notification' (9) starting 
+2025-07-21 06:41:37,264 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: send web push notification' (9) done in 0.005s 
+2025-07-21 06:41:37,269 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: send web push notification' (9) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,272 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: send web push notification' (9) completed 
+2025-07-21 06:41:37,282 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: channel member unmute' (10) starting 
+2025-07-21 06:41:37,292 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: channel member unmute' (10) done in 0.010s 
+2025-07-21 06:41:37,297 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: channel member unmute' (10) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,299 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: channel member unmute' (10) completed 
+2025-07-21 06:41:37,310 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: users settings unmute' (11) starting 
+2025-07-21 06:41:37,317 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: users settings unmute' (11) done in 0.006s 
+2025-07-21 06:41:37,322 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: users settings unmute' (11) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,323 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Discuss: users settings unmute' (11) completed 
+2025-07-21 06:41:37,335 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-07-21 06:41:37,337 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.002s 
+2025-07-21 06:41:37,342 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,343 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-07-21 06:41:37,354 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-07-21 06:41:37,356 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.002s 
+2025-07-21 06:41:37,361 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,364 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-07-21 06:41:37,375 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 06:41:37,377 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
+2025-07-21 06:41:37,383 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,385 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 06:41:37,396 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-07-21 06:41:37,402 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.006s 
+2025-07-21 06:41:37,407 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,409 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-07-21 06:41:37,420 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Users: Notify About Unregistered Users' (12) starting 
+2025-07-21 06:41:37,435 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Users: Notify About Unregistered Users' (12) done in 0.015s 
+2025-07-21 06:41:37,439 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Users: Notify About Unregistered Users' (12) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,442 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Users: Notify About Unregistered Users' (12) completed 
+2025-07-21 06:41:37,453 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-07-21 06:41:37,455 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.003s 
+2025-07-21 06:41:37,460 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-07-21 06:41:37,473 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-07-21 06:51:38,111 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 06:51:38,116 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 06:51:38,121 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 06:51:38,122 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 07:01:38,695 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 07:01:38,699 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 07:01:38,704 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 07:01:38,705 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 07:11:24,117 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 07:11:24,120 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 07:11:24,125 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 07:11:24,127 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 07:21:34,874 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 07:21:34,877 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
+2025-07-21 07:21:34,883 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 07:21:34,885 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 07:31:40,433 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 07:31:40,437 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 07:31:40,442 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 07:31:40,444 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 07:39:56,819 675058 INFO odoo odoo.addons.base.models.res_device: User 2 inserts device log (1fVav-eUGuflMUEkNxSxfIJvOYjn_U4i4aspLsPVcb) 
+2025-07-21 07:39:56,825 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 07:39:56] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 2 0.001 0.009
+2025-07-21 07:41:41,101 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-07-21 07:41:41,106 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.005s 
+2025-07-21 07:41:41,112 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-07-21 07:41:41,114 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-07-21 07:41:41,125 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-07-21 07:41:41,128 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.003s 
+2025-07-21 07:41:41,133 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-07-21 07:41:41,135 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-07-21 07:41:41,146 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-07-21 07:41:41,149 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.003s 
+2025-07-21 07:41:41,154 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-07-21 07:41:41,155 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-07-21 07:41:41,166 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 07:41:41,169 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 07:41:41,174 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 07:41:41,175 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 07:41:41,186 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-07-21 07:41:41,190 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.004s 
+2025-07-21 07:41:41,195 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-07-21 07:41:41,197 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-07-21 07:41:41,208 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-07-21 07:41:41,211 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.004s 
+2025-07-21 07:41:41,216 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-07-21 07:41:41,219 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-07-21 07:51:41,792 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 07:51:41,797 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 07:51:41,807 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 07:51:41,817 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 08:01:16,556 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 08:01:16,558 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 08:01:16,563 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 08:01:16,565 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 08:11:27,272 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 08:11:27,296 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.006s 
+2025-07-21 08:11:27,302 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 08:11:27,307 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 08:21:37,994 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 08:21:37,998 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 08:21:38,004 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 08:21:38,006 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 08:29:54,259 675058 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'student', defaulting to LGPL-3 
+2025-07-21 08:29:54,264 675058 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'marks', defaulting to LGPL-3 
+2025-07-21 08:29:54,265 675058 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'school', defaulting to LGPL-3 
+2025-07-21 08:29:54,278 675058 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'college', defaulting to LGPL-3 
+2025-07-21 08:29:54,621 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:54] "GET /odoo/action-354/6 HTTP/1.1" 200 - 82 0.136 0.895
+2025-07-21 08:29:54,832 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:54] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.010 0.020
+2025-07-21 08:29:54,961 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:54] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.019 0.064
+2025-07-21 08:29:54,979 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:54] "POST /web/action/load HTTP/1.1" 200 - 9 0.043 0.054
+2025-07-21 08:29:55,149 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:55] "POST /mail/data HTTP/1.1" 200 - 40 0.147 0.113
+2025-07-21 08:29:55,150 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:55] "POST /web/dataset/call_kw/student/get_views HTTP/1.1" 200 - 24 0.055 0.107
+2025-07-21 08:29:55,202 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:55] "POST /web/dataset/call_kw/student/web_read HTTP/1.1" 200 - 7 0.008 0.014
+2025-07-21 08:29:56,631 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:56] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.004
+2025-07-21 08:29:57,576 675058 INFO odoo Aditya's custom logger :-: student_name ===> Rollex997 :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:29:57,576 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ballistic :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:29:57,577 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barricade :: student_school_name ===> Delhi public school :: student_address ===> New Delhi, 
+2025-07-21 08:29:57,577 675058 INFO odoo Aditya's custom logger :-: student_name ===> Bullet :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:29:57,577 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ignition :: student_school_name ===> False :: student_address ===> False 
+2025-07-21 08:29:57,577 675058 INFO odoo Aditya's custom logger :-: student_name ===> Kombat :: student_school_name ===> Berlin School of Learning :: student_address ===> Navi Mumbai 
+2025-07-21 08:29:57,577 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barbatos :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:29:57,577 675058 INFO odoo Aditya's custom logger :-: student_name ===> ShockWave :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:29:57,577 675058 INFO odoo Aditya's custom logger :-: student_name ===> Shotgun :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:29:57,577 675058 INFO odoo Aditya's custom logger :-: student_name ===> Recon :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:29:57,577 675058 INFO odoo Aditya's custom logger :-: student_name ===> Artillery :: student_school_name ===> Bambaani College of Business and Administration :: student_address ===> South Bombay 
+2025-07-21 08:29:57,578 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:57] "POST /web/dataset/call_button/student/custom_method HTTP/1.1" 200 - 4 0.003 0.008
+2025-07-21 08:29:57,593 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:29:57] "POST /web/dataset/call_kw/student/web_read HTTP/1.1" 200 - 7 0.003 0.006
+2025-07-21 08:30:01,180 675058 INFO odoo Aditya's custom logger :-: student_name ===> Rollex997 :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:01,180 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ballistic :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:01,180 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barricade :: student_school_name ===> Delhi public school :: student_address ===> New Delhi, 
+2025-07-21 08:30:01,180 675058 INFO odoo Aditya's custom logger :-: student_name ===> Bullet :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:01,181 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ignition :: student_school_name ===> False :: student_address ===> False 
+2025-07-21 08:30:01,181 675058 INFO odoo Aditya's custom logger :-: student_name ===> Kombat :: student_school_name ===> Berlin School of Learning :: student_address ===> Navi Mumbai 
+2025-07-21 08:30:01,181 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barbatos :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:01,181 675058 INFO odoo Aditya's custom logger :-: student_name ===> ShockWave :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:01,181 675058 INFO odoo Aditya's custom logger :-: student_name ===> Shotgun :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:01,181 675058 INFO odoo Aditya's custom logger :-: student_name ===> Recon :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:01,181 675058 INFO odoo Aditya's custom logger :-: student_name ===> Artillery :: student_school_name ===> Bambaani College of Business and Administration :: student_address ===> South Bombay 
+2025-07-21 08:30:01,181 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:01] "POST /web/dataset/call_button/student/custom_method HTTP/1.1" 200 - 4 0.002 0.006
+2025-07-21 08:30:01,194 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:01] "POST /web/dataset/call_kw/student/web_read HTTP/1.1" 200 - 7 0.003 0.005
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Rollex997 :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ballistic :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barricade :: student_school_name ===> Delhi public school :: student_address ===> New Delhi, 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Bullet :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ignition :: student_school_name ===> False :: student_address ===> False 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Kombat :: student_school_name ===> Berlin School of Learning :: student_address ===> Navi Mumbai 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barbatos :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> ShockWave :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Shotgun :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Recon :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:02,042 675058 INFO odoo Aditya's custom logger :-: student_name ===> Artillery :: student_school_name ===> Bambaani College of Business and Administration :: student_address ===> South Bombay 
+2025-07-21 08:30:02,043 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:02] "POST /web/dataset/call_button/student/custom_method HTTP/1.1" 200 - 4 0.002 0.004
+2025-07-21 08:30:02,059 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:02] "POST /web/dataset/call_kw/student/web_read HTTP/1.1" 200 - 7 0.004 0.008
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Rollex997 :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ballistic :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barricade :: student_school_name ===> Delhi public school :: student_address ===> New Delhi, 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Bullet :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ignition :: student_school_name ===> False :: student_address ===> False 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Kombat :: student_school_name ===> Berlin School of Learning :: student_address ===> Navi Mumbai 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barbatos :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> ShockWave :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Shotgun :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Recon :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:02,813 675058 INFO odoo Aditya's custom logger :-: student_name ===> Artillery :: student_school_name ===> Bambaani College of Business and Administration :: student_address ===> South Bombay 
+2025-07-21 08:30:02,814 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:02] "POST /web/dataset/call_button/student/custom_method HTTP/1.1" 200 - 4 0.002 0.004
+2025-07-21 08:30:02,823 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:02] "POST /web/dataset/call_kw/student/web_read HTTP/1.1" 200 - 7 0.001 0.005
+2025-07-21 08:30:08,166 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:08] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.003
+2025-07-21 08:30:08,224 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:08] "POST /web/dataset/call_kw/student/web_search_read HTTP/1.1" 200 - 7 0.005 0.058
+2025-07-21 08:30:09,333 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:09] "POST /web/dataset/call_kw/student/web_read HTTP/1.1" 200 - 7 0.002 0.005
+2025-07-21 08:30:10,342 675058 INFO odoo Aditya's custom logger :-: student_name ===> Rollex997 :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:10,342 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ballistic :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:10,342 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barricade :: student_school_name ===> Delhi public school :: student_address ===> New Delhi, 
+2025-07-21 08:30:10,343 675058 INFO odoo Aditya's custom logger :-: student_name ===> Bullet :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:10,343 675058 INFO odoo Aditya's custom logger :-: student_name ===> Ignition :: student_school_name ===> False :: student_address ===> False 
+2025-07-21 08:30:10,343 675058 INFO odoo Aditya's custom logger :-: student_name ===> Kombat :: student_school_name ===> Berlin School of Learning :: student_address ===> Navi Mumbai 
+2025-07-21 08:30:10,343 675058 INFO odoo Aditya's custom logger :-: student_name ===> Barbatos :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:10,343 675058 INFO odoo Aditya's custom logger :-: student_name ===> ShockWave :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:10,343 675058 INFO odoo Aditya's custom logger :-: student_name ===> Shotgun :: student_school_name ===> Stella Maris School :: student_address ===> Sector H , Lucknow 
+2025-07-21 08:30:10,343 675058 INFO odoo Aditya's custom logger :-: student_name ===> Recon :: student_school_name ===> Lamartinier School :: student_address ===> Hazarat Ganj, Lucknow 
+2025-07-21 08:30:10,343 675058 INFO odoo Aditya's custom logger :-: student_name ===> Artillery :: student_school_name ===> Bambaani College of Business and Administration :: student_address ===> South Bombay 
+2025-07-21 08:30:10,344 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:10] "POST /web/dataset/call_button/student/custom_method HTTP/1.1" 200 - 4 0.002 0.005
+2025-07-21 08:30:10,353 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:30:10] "POST /web/dataset/call_kw/student/web_read HTTP/1.1" 200 - 7 0.001 0.004
+2025-07-21 08:31:44,149 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 08:31:44,151 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 08:31:44,156 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 08:31:44,158 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 08:41:44,678 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-07-21 08:41:44,684 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.006s 
+2025-07-21 08:41:44,689 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-07-21 08:41:44,692 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-07-21 08:41:44,702 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-07-21 08:41:44,707 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.004s 
+2025-07-21 08:41:44,712 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-07-21 08:41:44,714 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-07-21 08:41:44,724 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-07-21 08:41:44,728 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.004s 
+2025-07-21 08:41:44,733 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-07-21 08:41:44,735 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-07-21 08:41:44,746 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 08:41:44,749 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.003s 
+2025-07-21 08:41:44,758 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 08:41:44,760 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 08:41:44,773 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-07-21 08:41:44,801 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.027s 
+2025-07-21 08:41:44,808 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-07-21 08:41:44,812 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-07-21 08:41:44,829 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-07-21 08:41:44,833 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.004s 
+2025-07-21 08:41:44,838 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-07-21 08:41:44,840 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-07-21 08:51:45,365 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 08:51:45,369 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 08:51:45,374 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 08:51:45,376 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 08:57:09,926 675058 INFO odoo odoo.addons.base.models.res_device: User 2 inserts device log (1fVav-eUGuflMUEkNxSxfIJvOYjn_U4i4aspLsPVcb) 
+2025-07-21 08:57:09,932 675058 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 08:57:09] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 2 0.003 0.016
+2025-07-21 09:01:19,488 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 09:01:19,490 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.002s 
+2025-07-21 09:01:19,495 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 09:01:19,497 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 09:11:30,222 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) starting 
+2025-07-21 09:11:30,227 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) done in 0.004s 
+2025-07-21 09:11:30,232 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) processed 0 records, 0 records remaining 
+2025-07-21 09:11:30,234 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Payment: Post-process transactions' (17) completed 
+2025-07-21 09:17:36,682 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Calendar: Event Reminder' (23) starting 
+2025-07-21 09:17:36,692 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Calendar: Event Reminder' (23) done in 0.009s 
+2025-07-21 09:17:36,698 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Calendar: Event Reminder' (23) processed 0 records, 0 records remaining 
+2025-07-21 09:17:36,700 675058 INFO odoo odoo.addons.base.models.ir_cron: Job 'Calendar: Event Reminder' (23) completed 
+2025-07-21 09:17:39,907 675058 INFO odoo odoo.service.server: Initiating shutdown 
+2025-07-21 09:17:39,907 675058 INFO odoo odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-07-21 09:17:42,768 1104626 INFO ? odoo: Odoo version 18.0 
+2025-07-21 09:17:42,769 1104626 INFO ? odoo: Using configuration file at /home/aditya/github/OODO/OODOO_version_18/odoo/aditya.conf 
+2025-07-21 09:17:42,769 1104626 INFO ? odoo: addons paths: ['/home/aditya/github/OODO/OODOO_version_18/odoo/odoo/addons', '/home/aditya/snap/code/179/.local/share/Odoo/addons/18.0', '/home/aditya/github/OODO/OODOO_version_18/odoo/addons', '/home/aditya/github/OODO/OODOO_version_18/odoo/custom_addons'] 
+2025-07-21 09:17:42,769 1104626 INFO ? odoo: database: default@localhost:5432 
+2025-07-21 09:17:42,904 1104626 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/bin/wkhtmltopdf 
+2025-07-21 09:17:43,083 1104626 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/bin/wkhtmltoimage 
+2025-07-21 09:17:43,292 1104626 INFO ? odoo.service.server: HTTP service (werkzeug) running on iqadmin:8069 
+2025-07-21 09:17:43,339 1104626 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-07-21 09:17:43,339 1104626 INFO odoo odoo.modules.loading: Loading module base (1/1) 
+2025-07-21 09:17:43,383 1104626 INFO odoo odoo.modules.registry: module base: creating or updating database tables 
+2025-07-21 09:17:43,889 1104626 INFO odoo odoo.modules.loading: loading base/data/res_bank.xml 
+2025-07-21 09:17:43,895 1104626 INFO odoo odoo.modules.loading: loading base/data/res.lang.csv 
+2025-07-21 09:17:44,066 1104626 INFO odoo odoo.modules.loading: loading base/data/res_lang_data.xml 
+2025-07-21 09:17:44,087 1104626 INFO odoo odoo.modules.loading: loading base/data/res_partner_data.xml 
+2025-07-21 09:17:44,099 1104626 INFO odoo odoo.modules.loading: loading base/data/res_currency_data.xml 
+2025-07-21 09:17:44,206 1104626 INFO odoo odoo.modules.loading: loading base/data/res_company_data.xml 
+2025-07-21 09:17:44,208 1104626 INFO odoo odoo.modules.loading: loading base/data/res_users_data.xml 
+2025-07-21 09:17:44,211 1104626 INFO odoo odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2025-07-21 09:17:44,214 1104626 INFO odoo odoo.modules.loading: loading base/data/res_country_data.xml 
+2025-07-21 09:17:44,317 1104626 INFO odoo odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2025-07-21 09:17:44,339 1104626 INFO odoo odoo.modules.loading: loading base/security/base_groups.xml 
+2025-07-21 09:17:44,646 1104626 INFO odoo odoo.modules.loading: loading base/security/base_security.xml 
+2025-07-21 09:17:44,664 1104626 INFO odoo odoo.modules.loading: loading base/views/base_menus.xml 
+2025-07-21 09:17:44,735 1104626 INFO odoo odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2025-07-21 09:17:44,751 1104626 INFO odoo odoo.modules.loading: loading base/views/res_config_views.xml 
+2025-07-21 09:17:44,761 1104626 INFO odoo odoo.modules.loading: loading base/data/res.country.state.csv 
+2025-07-21 09:17:45,361 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2025-07-21 09:17:45,480 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2025-07-21 09:17:45,499 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2025-07-21 09:17:45,514 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2025-07-21 09:17:45,538 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2025-07-21 09:17:45,553 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2025-07-21 09:17:45,572 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2025-07-21 09:17:45,590 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_model_views.xml 
+2025-07-21 09:17:45,709 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2025-07-21 09:17:45,727 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2025-07-21 09:17:45,746 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2025-07-21 09:17:45,763 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2025-07-21 09:17:45,779 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2025-07-21 09:17:45,816 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_default_views.xml 
+2025-07-21 09:17:45,834 1104626 INFO odoo odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2025-07-21 09:17:45,836 1104626 INFO odoo odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2025-07-21 09:17:45,844 1104626 INFO odoo odoo.modules.loading: loading base/report/ir_model_report.xml 
+2025-07-21 09:17:45,847 1104626 INFO odoo odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2025-07-21 09:17:45,855 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2025-07-21 09:17:45,871 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2025-07-21 09:17:45,884 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_module_views.xml 
+2025-07-21 09:17:45,930 1104626 INFO odoo odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2025-07-21 09:17:46,080 1104626 INFO odoo odoo.modules.loading: loading base/data/ir_module_module.xml 
+2025-07-21 09:17:46,118 1104626 INFO odoo odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2025-07-21 09:17:46,122 1104626 INFO odoo odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2025-07-21 09:17:46,131 1104626 INFO odoo odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2025-07-21 09:17:46,152 1104626 INFO odoo odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2025-07-21 09:17:46,166 1104626 INFO odoo odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2025-07-21 09:17:46,177 1104626 INFO odoo odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2025-07-21 09:17:46,195 1104626 INFO odoo odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2025-07-21 09:17:46,205 1104626 INFO odoo odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2025-07-21 09:17:46,217 1104626 INFO odoo odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2025-07-21 09:17:46,231 1104626 INFO odoo odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2025-07-21 09:17:46,246 1104626 INFO odoo odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2025-07-21 09:17:46,272 1104626 INFO odoo odoo.modules.loading: loading base/views/res_company_views.xml 
+2025-07-21 09:17:46,293 1104626 INFO odoo odoo.modules.loading: loading base/views/res_lang_views.xml 
+2025-07-21 09:17:46,316 1104626 INFO odoo odoo.modules.loading: loading base/views/res_partner_views.xml 
+2025-07-21 09:17:46,411 1104626 INFO odoo odoo.modules.loading: loading base/views/res_bank_views.xml 
+2025-07-21 09:17:46,440 1104626 INFO odoo odoo.modules.loading: loading base/views/res_country_views.xml 
+2025-07-21 09:17:46,476 1104626 INFO odoo odoo.modules.loading: loading base/views/res_currency_views.xml 
+2025-07-21 09:17:46,508 1104626 INFO odoo odoo.modules.loading: loading base/views/res_users_views.xml 
+2025-07-21 09:17:46,607 1104626 INFO odoo odoo.modules.loading: loading base/views/res_device_views.xml 
+2025-07-21 09:17:46,621 1104626 INFO odoo odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml 
+2025-07-21 09:17:46,627 1104626 INFO odoo odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2025-07-21 09:17:46,634 1104626 INFO odoo odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2025-07-21 09:17:46,654 1104626 INFO odoo odoo.modules.loading: loading base/security/ir.model.access.csv 
+2025-07-21 09:17:46,816 1104626 INFO odoo odoo.modules.loading: Module base: loading demo 
+2025-07-21 09:17:46,816 1104626 INFO odoo odoo.modules.loading: loading base/data/res_users_demo.xml 
+2025-07-21 09:17:46,821 1104626 INFO odoo odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2025-07-21 09:17:46,823 1104626 INFO odoo odoo.modules.loading: loading base/data/res_currency_demo.xml 
+2025-07-21 09:17:46,824 1104626 INFO odoo odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2025-07-21 09:17:46,875 1104626 INFO odoo odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2025-07-21 09:17:46,877 1104626 INFO odoo odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2025-07-21 09:17:47,046 1104626 INFO odoo odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2025-07-21 09:17:47,499 1104626 INFO odoo odoo.modules.loading: Module base loaded in 4.16s, 6382 queries (+6382 other) 
+2025-07-21 09:17:47,499 1104626 INFO odoo odoo.modules.loading: 1 modules loaded in 4.16s, 6382 queries (+6382 extra) 
+2025-07-21 09:17:47,514 1104626 INFO odoo odoo.modules.loading: updating modules list 
+2025-07-21 09:17:47,515 1104626 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-07-21 09:17:47,629 1104626 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'college', defaulting to LGPL-3 
+2025-07-21 09:17:48,060 1104626 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'marks', defaulting to LGPL-3 
+2025-07-21 09:17:48,242 1104626 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'school', defaulting to LGPL-3 
+2025-07-21 09:17:48,279 1104626 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'student', defaulting to LGPL-3 
+2025-07-21 09:17:48,434 1104626 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Base'] to user __system__ #1 via n/a 
+2025-07-21 09:17:48,435 1104626 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Base'] to user __system__ #1 via n/a 
+2025-07-21 09:17:49,079 1104626 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2025-07-21 09:17:49,311 1104626 INFO odoo odoo.modules.loading: loading 47 modules... 
+2025-07-21 09:17:49,311 1104626 INFO odoo odoo.modules.loading: Loading module l10n_us (2/47) 
+2025-07-21 09:17:49,403 1104626 INFO odoo odoo.modules.registry: module l10n_us: creating or updating database tables 
+2025-07-21 09:17:49,421 1104626 INFO odoo odoo.modules.loading: loading l10n_us/data/res_company_data.xml 
+2025-07-21 09:17:49,435 1104626 INFO odoo odoo.modules.loading: loading l10n_us/views/res_partner_bank_views.xml 
+2025-07-21 09:17:49,475 1104626 INFO odoo odoo.modules.loading: Module l10n_us loaded in 0.16s, 57 queries (+57 other) 
+2025-07-21 09:17:49,475 1104626 INFO odoo odoo.modules.loading: Loading module student (3/47) 
+2025-07-21 09:17:49,551 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:49,554 1104626 INFO odoo odoo.modules.registry: module student: creating or updating database tables 
+2025-07-21 09:17:49,628 1104626 INFO odoo odoo.modules.loading: loading student/security/ir.model.access.csv 
+2025-07-21 09:17:49,638 1104626 INFO odoo odoo.modules.loading: loading student/views/student_view.xml 
+2025-07-21 09:17:49,691 1104626 INFO odoo odoo.modules.loading: loading student/views/templates.xml 
+2025-07-21 09:17:49,709 1104626 INFO odoo odoo.modules.loading: Module student loaded in 0.23s, 203 queries (+203 other) 
+2025-07-21 09:17:49,709 1104626 INFO odoo odoo.modules.loading: Loading module uom (4/47) 
+2025-07-21 09:17:49,724 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:49,744 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:49,746 1104626 INFO odoo odoo.modules.registry: module uom: creating or updating database tables 
+2025-07-21 09:17:49,775 1104626 INFO odoo odoo.modules.loading: loading uom/data/uom_data.xml 
+2025-07-21 09:17:49,790 1104626 INFO odoo odoo.modules.loading: loading uom/security/uom_security.xml 
+2025-07-21 09:17:49,795 1104626 INFO odoo odoo.modules.loading: loading uom/security/ir.model.access.csv 
+2025-07-21 09:17:49,804 1104626 INFO odoo odoo.modules.loading: loading uom/views/uom_uom_views.xml 
+2025-07-21 09:17:49,858 1104626 INFO odoo odoo.modules.loading: Module uom loaded in 0.15s, 203 queries (+203 other) 
+2025-07-21 09:17:49,858 1104626 INFO odoo odoo.modules.loading: Loading module web (5/47) 
+2025-07-21 09:17:49,875 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:49,897 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:49,900 1104626 INFO odoo odoo.modules.registry: module web: creating or updating database tables 
+2025-07-21 09:17:50,299 1104626 INFO odoo odoo.modules.loading: loading web/security/ir.model.access.csv 
+2025-07-21 09:17:50,308 1104626 INFO odoo odoo.modules.loading: loading web/views/webclient_templates.xml 
+2025-07-21 09:17:50,371 1104626 INFO odoo odoo.modules.loading: loading web/views/report_templates.xml 
+2025-07-21 09:17:50,460 1104626 INFO odoo odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2025-07-21 09:17:50,470 1104626 INFO odoo odoo.modules.loading: loading web/views/partner_view.xml 
+2025-07-21 09:17:50,474 1104626 INFO odoo odoo.modules.loading: loading web/views/speedscope_template.xml 
+2025-07-21 09:17:50,479 1104626 INFO odoo odoo.modules.loading: loading web/views/neutralize_views.xml 
+2025-07-21 09:17:50,485 1104626 INFO odoo odoo.modules.loading: loading web/data/ir_attachment.xml 
+2025-07-21 09:17:50,488 1104626 INFO odoo odoo.modules.loading: loading web/data/report_layout.xml 
+2025-07-21 09:17:50,530 1104626 INFO odoo odoo.modules.loading: Module web loaded in 0.67s, 1309 queries (+1309 other) 
+2025-07-21 09:17:50,531 1104626 INFO odoo odoo.modules.loading: Loading module auth_totp (6/47) 
+2025-07-21 09:17:50,543 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:50,580 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:50,583 1104626 INFO odoo odoo.modules.registry: module auth_totp: creating or updating database tables 
+2025-07-21 09:17:50,614 1104626 INFO odoo odoo.modules.loading: loading auth_totp/security/security.xml 
+2025-07-21 09:17:50,632 1104626 INFO odoo odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2025-07-21 09:17:50,639 1104626 INFO odoo odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2025-07-21 09:17:50,644 1104626 INFO odoo odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2025-07-21 09:17:50,673 1104626 INFO odoo odoo.modules.loading: loading auth_totp/views/templates.xml 
+2025-07-21 09:17:50,679 1104626 INFO odoo odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2025-07-21 09:17:50,705 1104626 INFO odoo odoo.modules.loading: Module auth_totp loaded in 0.17s, 189 queries (+189 other) 
+2025-07-21 09:17:50,705 1104626 INFO odoo odoo.modules.loading: Loading module base_import (7/47) 
+2025-07-21 09:17:50,719 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:50,877 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:50,879 1104626 INFO odoo odoo.modules.registry: module base_import: creating or updating database tables 
+2025-07-21 09:17:51,246 1104626 INFO odoo odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2025-07-21 09:17:51,264 1104626 INFO odoo odoo.modules.loading: Module base_import loaded in 0.56s, 903 queries (+903 other) 
+2025-07-21 09:17:51,264 1104626 INFO odoo odoo.modules.loading: Loading module base_import_module (8/47) 
+2025-07-21 09:17:51,275 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,295 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,298 1104626 INFO odoo odoo.modules.registry: module base_import_module: creating or updating database tables 
+2025-07-21 09:17:51,325 1104626 INFO odoo odoo.modules.loading: loading base_import_module/security/ir.model.access.csv 
+2025-07-21 09:17:51,332 1104626 INFO odoo odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml 
+2025-07-21 09:17:51,345 1104626 INFO odoo odoo.modules.loading: loading base_import_module/views/ir_module_views.xml 
+2025-07-21 09:17:51,384 1104626 INFO odoo odoo.modules.loading: Module base_import_module loaded in 0.12s, 164 queries (+164 other) 
+2025-07-21 09:17:51,384 1104626 INFO odoo odoo.modules.loading: Loading module base_setup (9/47) 
+2025-07-21 09:17:51,396 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,414 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,417 1104626 INFO odoo odoo.modules.registry: module base_setup: creating or updating database tables 
+2025-07-21 09:17:51,443 1104626 INFO odoo odoo.modules.loading: loading base_setup/data/base_setup_data.xml 
+2025-07-21 09:17:51,445 1104626 INFO odoo odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml 
+2025-07-21 09:17:51,466 1104626 INFO odoo odoo.modules.loading: loading base_setup/views/res_partner_views.xml 
+2025-07-21 09:17:51,485 1104626 INFO odoo odoo.modules.loading: Module base_setup loaded in 0.10s, 129 queries (+129 other) 
+2025-07-21 09:17:51,485 1104626 INFO odoo odoo.modules.loading: Loading module bus (10/47) 
+2025-07-21 09:17:51,535 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,562 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,565 1104626 INFO odoo odoo.modules.registry: module bus: creating or updating database tables 
+2025-07-21 09:17:51,638 1104626 INFO odoo odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2025-07-21 09:17:51,657 1104626 INFO odoo odoo.modules.loading: Module bus loaded in 0.17s, 152 queries (+152 other) 
+2025-07-21 09:17:51,657 1104626 INFO odoo odoo.modules.loading: Loading module college (11/47) 
+2025-07-21 09:17:51,669 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,689 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,692 1104626 INFO odoo odoo.modules.registry: module college: creating or updating database tables 
+2025-07-21 09:17:51,706 1104626 INFO odoo odoo.modules.loading: loading college/security/ir.model.access.csv 
+2025-07-21 09:17:51,713 1104626 INFO odoo odoo.modules.loading: loading college/views/views.xml 
+2025-07-21 09:17:51,714 1104626 INFO odoo odoo.modules.loading: loading college/views/templates.xml 
+2025-07-21 09:17:51,745 1104626 INFO odoo odoo.modules.loading: Module college loaded in 0.09s, 93 queries (+93 other) 
+2025-07-21 09:17:51,746 1104626 INFO odoo odoo.modules.loading: Loading module http_routing (12/47) 
+2025-07-21 09:17:51,759 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,779 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,781 1104626 INFO odoo odoo.modules.registry: module http_routing: creating or updating database tables 
+2025-07-21 09:17:51,800 1104626 INFO odoo odoo.modules.loading: loading http_routing/views/http_routing_template.xml 
+2025-07-21 09:17:51,830 1104626 INFO odoo odoo.modules.loading: loading http_routing/views/res_lang_views.xml 
+2025-07-21 09:17:51,855 1104626 INFO odoo odoo.modules.loading: Module http_routing loaded in 0.11s, 146 queries (+146 other) 
+2025-07-21 09:17:51,855 1104626 INFO odoo odoo.modules.loading: Loading module marks (13/47) 
+2025-07-21 09:17:51,868 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,886 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,889 1104626 INFO odoo odoo.modules.registry: module marks: creating or updating database tables 
+2025-07-21 09:17:51,904 1104626 INFO odoo odoo.modules.loading: loading marks/security/ir.model.access.csv 
+2025-07-21 09:17:51,910 1104626 INFO odoo odoo.modules.loading: loading marks/views/marks_view.xml 
+2025-07-21 09:17:51,929 1104626 INFO odoo odoo.modules.loading: loading marks/views/templates.xml 
+2025-07-21 09:17:51,942 1104626 INFO odoo odoo.modules.loading: Module marks loaded in 0.09s, 94 queries (+94 other) 
+2025-07-21 09:17:51,943 1104626 INFO odoo odoo.modules.loading: Loading module onboarding (14/47) 
+2025-07-21 09:17:51,956 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,976 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:51,979 1104626 INFO odoo odoo.modules.registry: module onboarding: creating or updating database tables 
+2025-07-21 09:17:52,007 1104626 INFO odoo odoo.modules.loading: loading onboarding/views/onboarding_templates.xml 
+2025-07-21 09:17:52,022 1104626 INFO odoo odoo.modules.loading: loading onboarding/views/onboarding_views.xml 
+2025-07-21 09:17:52,041 1104626 INFO odoo odoo.modules.loading: loading onboarding/views/onboarding_menus.xml 
+2025-07-21 09:17:52,048 1104626 INFO odoo odoo.modules.loading: loading onboarding/security/ir.model.access.csv 
+2025-07-21 09:17:52,077 1104626 INFO odoo odoo.modules.loading: Module onboarding loaded in 0.13s, 184 queries (+184 other) 
+2025-07-21 09:17:52,077 1104626 INFO odoo odoo.modules.loading: Loading module resource (15/47) 
+2025-07-21 09:17:52,090 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,118 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,121 1104626 INFO odoo odoo.modules.registry: module resource: creating or updating database tables 
+2025-07-21 09:17:52,164 1104626 INFO odoo odoo.modules.loading: loading resource/data/resource_data.xml 
+2025-07-21 09:17:52,167 1104626 INFO odoo odoo.modules.loading: loading resource/security/ir.model.access.csv 
+2025-07-21 09:17:52,180 1104626 INFO odoo odoo.modules.loading: loading resource/security/resource_security.xml 
+2025-07-21 09:17:52,184 1104626 INFO odoo odoo.modules.loading: loading resource/views/resource_resource_views.xml 
+2025-07-21 09:17:52,204 1104626 INFO odoo odoo.modules.loading: loading resource/views/resource_calendar_leaves_views.xml 
+2025-07-21 09:17:52,225 1104626 INFO odoo odoo.modules.loading: loading resource/views/resource_calendar_attendance_views.xml 
+2025-07-21 09:17:52,234 1104626 INFO odoo odoo.modules.loading: loading resource/views/resource_calendar_views.xml 
+2025-07-21 09:17:52,249 1104626 INFO odoo odoo.modules.loading: loading resource/views/menuitems.xml 
+2025-07-21 09:17:52,274 1104626 INFO odoo odoo.modules.loading: Module resource loaded in 0.20s, 294 queries (+294 other) 
+2025-07-21 09:17:52,274 1104626 INFO odoo odoo.modules.loading: Loading module school (16/47) 
+2025-07-21 09:17:52,288 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,306 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,317 1104626 INFO odoo odoo.modules.loading: loading school/views/views.xml 
+2025-07-21 09:17:52,319 1104626 INFO odoo odoo.modules.loading: loading school/views/templates.xml 
+2025-07-21 09:17:52,329 1104626 INFO odoo odoo.modules.loading: Module school loaded in 0.06s, 15 queries (+15 other) 
+2025-07-21 09:17:52,330 1104626 INFO odoo odoo.modules.loading: Loading module utm (17/47) 
+2025-07-21 09:17:52,343 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,364 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,367 1104626 INFO odoo odoo.modules.registry: module utm: creating or updating database tables 
+2025-07-21 09:17:52,398 1104626 INFO odoo odoo.modules.loading: loading utm/data/utm_medium_data.xml 
+2025-07-21 09:17:52,407 1104626 INFO odoo odoo.modules.loading: loading utm/data/utm_source_data.xml 
+2025-07-21 09:17:52,414 1104626 INFO odoo odoo.modules.loading: loading utm/data/utm_stage_data.xml 
+2025-07-21 09:17:52,417 1104626 INFO odoo odoo.modules.loading: loading utm/data/utm_tag_data.xml 
+2025-07-21 09:17:52,419 1104626 INFO odoo odoo.modules.loading: loading utm/views/utm_campaign_views.xml 
+2025-07-21 09:17:52,443 1104626 INFO odoo odoo.modules.loading: loading utm/views/utm_medium_views.xml 
+2025-07-21 09:17:52,456 1104626 INFO odoo odoo.modules.loading: loading utm/views/utm_source_views.xml 
+2025-07-21 09:17:52,466 1104626 INFO odoo odoo.modules.loading: loading utm/views/utm_stage_views.xml 
+2025-07-21 09:17:52,480 1104626 INFO odoo odoo.modules.loading: loading utm/views/utm_tag_views.xml 
+2025-07-21 09:17:52,489 1104626 INFO odoo odoo.modules.loading: loading utm/views/utm_menus.xml 
+2025-07-21 09:17:52,512 1104626 INFO odoo odoo.modules.loading: loading utm/security/ir.model.access.csv 
+2025-07-21 09:17:52,541 1104626 INFO odoo odoo.modules.loading: Module utm loaded in 0.21s, 340 queries (+340 other) 
+2025-07-21 09:17:52,541 1104626 INFO odoo odoo.modules.loading: Loading module web_tour (18/47) 
+2025-07-21 09:17:52,554 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,574 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,577 1104626 INFO odoo odoo.modules.registry: module web_tour: creating or updating database tables 
+2025-07-21 09:17:52,605 1104626 INFO odoo odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2025-07-21 09:17:52,614 1104626 INFO odoo odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2025-07-21 09:17:52,637 1104626 INFO odoo odoo.modules.loading: loading web_tour/views/res_users_views.xml 
+2025-07-21 09:17:52,664 1104626 INFO odoo odoo.modules.loading: Module web_tour loaded in 0.12s, 160 queries (+160 other) 
+2025-07-21 09:17:52,664 1104626 INFO odoo odoo.modules.loading: Loading module html_editor (19/47) 
+2025-07-21 09:17:52,677 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,770 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,773 1104626 INFO odoo odoo.modules.registry: module html_editor: creating or updating database tables 
+2025-07-21 09:17:52,800 1104626 INFO odoo odoo.modules.loading: Module html_editor loaded in 0.14s, 38 queries (+38 other) 
+2025-07-21 09:17:52,800 1104626 INFO odoo odoo.modules.loading: Loading module iap (20/47) 
+2025-07-21 09:17:52,820 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,836 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,840 1104626 INFO odoo odoo.modules.registry: module iap: creating or updating database tables 
+2025-07-21 09:17:52,862 1104626 INFO odoo odoo.modules.loading: loading iap/data/services.xml 
+2025-07-21 09:17:52,866 1104626 INFO odoo odoo.modules.loading: loading iap/security/ir.model.access.csv 
+2025-07-21 09:17:52,875 1104626 INFO odoo odoo.modules.loading: loading iap/security/ir_rule.xml 
+2025-07-21 09:17:52,876 1104626 INFO odoo odoo.modules.loading: loading iap/views/iap_views.xml 
+2025-07-21 09:17:52,893 1104626 INFO odoo odoo.modules.loading: loading iap/views/res_config_settings.xml 
+2025-07-21 09:17:52,922 1104626 INFO odoo odoo.modules.loading: Module iap loaded in 0.12s, 146 queries (+146 other) 
+2025-07-21 09:17:52,922 1104626 INFO odoo odoo.modules.loading: Loading module mail (21/47) 
+2025-07-21 09:17:52,936 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,974 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:52,980 1104626 INFO odoo odoo.modules.registry: module mail: creating or updating database tables 
+2025-07-21 09:17:53,626 1104626 INFO odoo odoo.modules.loading: loading mail/data/mail_groups.xml 
+2025-07-21 09:17:53,630 1104626 INFO odoo odoo.modules.loading: loading mail/wizard/mail_activity_schedule_views.xml 
+2025-07-21 09:17:53,640 1104626 INFO odoo odoo.modules.loading: loading mail/wizard/mail_blacklist_remove_views.xml 
+2025-07-21 09:17:53,645 1104626 INFO odoo odoo.modules.loading: loading mail/wizard/mail_compose_message_views.xml 
+2025-07-21 09:17:53,659 1104626 INFO odoo odoo.modules.loading: loading mail/wizard/mail_resend_message_views.xml 
+2025-07-21 09:17:53,668 1104626 INFO odoo odoo.modules.loading: loading mail/wizard/mail_resend_partner_views.xml 
+2025-07-21 09:17:53,674 1104626 INFO odoo odoo.modules.loading: loading mail/wizard/mail_template_preview_views.xml 
+2025-07-21 09:17:53,681 1104626 INFO odoo odoo.modules.loading: loading mail/wizard/mail_wizard_invite_views.xml 
+2025-07-21 09:17:53,687 1104626 INFO odoo odoo.modules.loading: loading mail/wizard/mail_template_reset_views.xml 
+2025-07-21 09:17:53,694 1104626 INFO odoo odoo.modules.loading: loading mail/views/fetchmail_views.xml 
+2025-07-21 09:17:53,708 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml 
+2025-07-21 09:17:53,721 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_tracking_value_views.xml 
+2025-07-21 09:17:53,731 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_notification_views.xml 
+2025-07-21 09:17:53,741 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_message_views.xml 
+2025-07-21 09:17:53,764 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_message_schedule_views.xml 
+2025-07-21 09:17:53,779 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_mail_views.xml 
+2025-07-21 09:17:53,797 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_followers_views.xml 
+2025-07-21 09:17:53,806 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_ice_server_views.xml 
+2025-07-21 09:17:53,816 1104626 INFO odoo odoo.modules.loading: loading mail/views/discuss_channel_member_views.xml 
+2025-07-21 09:17:53,827 1104626 INFO odoo odoo.modules.loading: loading mail/views/discuss_channel_rtc_session_views.xml 
+2025-07-21 09:17:53,838 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_link_preview_views.xml 
+2025-07-21 09:17:53,848 1104626 INFO odoo odoo.modules.loading: loading mail/views/discuss/discuss_gif_favorite_views.xml 
+2025-07-21 09:17:53,857 1104626 INFO odoo odoo.modules.loading: loading mail/views/discuss_channel_views.xml 
+2025-07-21 09:17:53,877 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_canned_response_views.xml 
+2025-07-21 09:17:53,891 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_activity_views.xml 
+2025-07-21 09:17:54,258 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_activity_plan_views.xml 
+2025-07-21 09:17:54,295 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_activity_plan_template_views.xml 
+2025-07-21 09:17:54,304 1104626 INFO odoo odoo.modules.loading: loading mail/views/res_config_settings_views.xml 
+2025-07-21 09:17:54,320 1104626 INFO odoo odoo.modules.loading: loading mail/data/ir_config_parameter_data.xml 
+2025-07-21 09:17:54,323 1104626 INFO odoo odoo.modules.loading: loading mail/data/res_partner_data.xml 
+2025-07-21 09:17:54,326 1104626 INFO odoo odoo.modules.loading: loading mail/data/mail_message_subtype_data.xml 
+2025-07-21 09:17:54,329 1104626 INFO odoo odoo.modules.loading: loading mail/data/mail_templates_chatter.xml 
+2025-07-21 09:17:54,345 1104626 INFO odoo odoo.modules.loading: loading mail/data/mail_templates_email_layouts.xml 
+2025-07-21 09:17:54,363 1104626 INFO odoo odoo.modules.loading: loading mail/data/mail_templates_mailgateway.xml 
+2025-07-21 09:17:54,380 1104626 INFO odoo odoo.modules.loading: loading mail/data/discuss_channel_data.xml 
+2025-07-21 09:17:54,385 1104626 INFO odoo odoo.modules.loading: loading mail/data/mail_activity_data.xml 
+2025-07-21 09:17:54,390 1104626 INFO odoo odoo.modules.loading: loading mail/data/security_notifications_templates.xml 
+2025-07-21 09:17:54,398 1104626 INFO odoo odoo.modules.loading: loading mail/data/ir_cron_data.xml 
+2025-07-21 09:17:54,406 1104626 INFO odoo odoo.modules.loading: loading mail/data/ir_actions_client.xml 
+2025-07-21 09:17:54,410 1104626 INFO odoo odoo.modules.loading: loading mail/security/mail_security.xml 
+2025-07-21 09:17:54,423 1104626 INFO odoo odoo.modules.loading: loading mail/security/ir.model.access.csv 
+2025-07-21 09:17:54,516 1104626 INFO odoo odoo.modules.loading: loading mail/views/discuss_public_templates.xml 
+2025-07-21 09:17:54,522 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_alias_domain_views.xml 
+2025-07-21 09:17:54,534 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_alias_views.xml 
+2025-07-21 09:17:54,548 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_gateway_allowed_views.xml 
+2025-07-21 09:17:54,557 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_guest_views.xml 
+2025-07-21 09:17:54,567 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_message_reaction_views.xml 
+2025-07-21 09:17:54,577 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_templates_public.xml 
+2025-07-21 09:17:54,586 1104626 INFO odoo odoo.modules.loading: loading mail/views/res_users_views.xml 
+2025-07-21 09:17:54,606 1104626 INFO odoo odoo.modules.loading: loading mail/views/res_users_settings_views.xml 
+2025-07-21 09:17:54,618 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_template_views.xml 
+2025-07-21 09:17:54,636 1104626 INFO odoo odoo.modules.loading: loading mail/views/ir_actions_server_views.xml 
+2025-07-21 09:17:54,647 1104626 INFO odoo odoo.modules.loading: loading mail/views/ir_model_views.xml 
+2025-07-21 09:17:54,673 1104626 INFO odoo odoo.modules.loading: loading mail/views/res_partner_views.xml 
+2025-07-21 09:17:54,707 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_blacklist_views.xml 
+2025-07-21 09:17:54,721 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_menus.xml 
+2025-07-21 09:17:54,808 1104626 INFO odoo odoo.modules.loading: loading mail/views/res_company_views.xml 
+2025-07-21 09:17:54,818 1104626 INFO odoo odoo.modules.loading: loading mail/views/mail_scheduled_message_views.xml 
+2025-07-21 09:17:54,825 1104626 INFO odoo odoo.modules.loading: loading mail/data/mail_canned_response_data.xml 
+2025-07-21 09:17:54,829 1104626 INFO odoo odoo.modules.loading: loading mail/data/mail_templates_invite.xml 
+2025-07-21 09:17:54,836 1104626 INFO odoo odoo.modules.loading: loading mail/data/web_tour_tour.xml 
+2025-07-21 09:17:54,867 1104626 INFO odoo odoo.modules.loading: Module mail loaded in 1.94s, 3287 queries (+3287 other) 
+2025-07-21 09:17:54,867 1104626 INFO odoo odoo.modules.loading: Loading module web_editor (22/47) 
+2025-07-21 09:17:54,887 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:54,958 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:54,965 1104626 INFO odoo odoo.modules.registry: module web_editor: creating or updating database tables 
+2025-07-21 09:17:55,542 1104626 INFO odoo odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2025-07-21 09:17:55,550 1104626 INFO odoo odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2025-07-21 09:17:55,553 1104626 INFO odoo odoo.modules.loading: loading web_editor/views/editor.xml 
+2025-07-21 09:17:55,564 1104626 INFO odoo odoo.modules.loading: loading web_editor/views/snippets.xml 
+2025-07-21 09:17:55,611 1104626 INFO odoo odoo.modules.loading: Module web_editor loaded in 0.74s, 1562 queries (+1562 other) 
+2025-07-21 09:17:55,611 1104626 INFO odoo odoo.modules.loading: Loading module analytic (23/47) 
+2025-07-21 09:17:55,634 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:55,675 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:55,682 1104626 INFO odoo odoo.modules.registry: module analytic: creating or updating database tables 
+2025-07-21 09:17:55,714 1104626 INFO odoo odoo.schema: Keep unexpected index account_analytic_line__x_plan2_id_index on table account_analytic_line 
+2025-07-21 09:17:55,714 1104626 INFO odoo odoo.schema: Keep unexpected index account_analytic_line__x_plan3_id_index on table account_analytic_line 
+2025-07-21 09:17:55,727 1104626 INFO odoo odoo.modules.loading: loading analytic/security/analytic_security.xml 
+2025-07-21 09:17:55,732 1104626 INFO odoo odoo.modules.loading: loading analytic/security/ir.model.access.csv 
+2025-07-21 09:17:55,746 1104626 INFO odoo odoo.modules.loading: loading analytic/views/analytic_line_views.xml 
+2025-07-21 09:17:55,779 1104626 INFO odoo odoo.modules.loading: loading analytic/views/analytic_account_views.xml 
+2025-07-21 09:17:55,803 1104626 INFO odoo odoo.modules.loading: loading analytic/views/analytic_plan_views.xml 
+2025-07-21 09:17:55,820 1104626 INFO odoo odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [347, 348] 
+2025-07-21 09:17:55,824 1104626 INFO odoo odoo.modules.loading: loading analytic/views/analytic_distribution_model_views.xml 
+2025-07-21 09:17:55,833 1104626 INFO odoo odoo.modules.loading: loading analytic/data/analytic_data.xml 
+2025-07-21 09:17:55,850 1104626 INFO odoo odoo.modules.loading: Module analytic loaded in 0.24s, 279 queries (+279 other) 
+2025-07-21 09:17:55,850 1104626 INFO odoo odoo.modules.loading: Loading module auth_signup (24/47) 
+2025-07-21 09:17:55,872 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:55,906 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:55,913 1104626 INFO odoo odoo.modules.registry: module auth_signup: creating or updating database tables 
+2025-07-21 09:17:55,962 1104626 INFO odoo odoo.modules.loading: loading auth_signup/data/ir_config_parameter_data.xml 
+2025-07-21 09:17:55,964 1104626 INFO odoo odoo.modules.loading: loading auth_signup/data/ir_cron_data.xml 
+2025-07-21 09:17:55,971 1104626 INFO odoo odoo.modules.loading: loading auth_signup/data/mail_template_data.xml 
+2025-07-21 09:17:55,975 1104626 INFO odoo odoo.modules.loading: loading auth_signup/views/res_config_settings_views.xml 
+2025-07-21 09:17:55,993 1104626 INFO odoo odoo.modules.loading: loading auth_signup/views/res_users_views.xml 
+2025-07-21 09:17:56,012 1104626 INFO odoo odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml 
+2025-07-21 09:17:56,028 1104626 INFO odoo odoo.modules.loading: loading auth_signup/views/auth_signup_templates_email.xml 
+2025-07-21 09:17:56,038 1104626 INFO odoo odoo.modules.loading: loading auth_signup/views/webclient_templates.xml 
+2025-07-21 09:17:56,060 1104626 INFO odoo odoo.modules.loading: Module auth_signup loaded in 0.21s, 249 queries (+249 other) 
+2025-07-21 09:17:56,060 1104626 INFO odoo odoo.modules.loading: Loading module auth_totp_mail (25/47) 
+2025-07-21 09:17:56,082 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:56,113 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:56,120 1104626 INFO odoo odoo.modules.registry: module auth_totp_mail: creating or updating database tables 
+2025-07-21 09:17:56,148 1104626 INFO odoo odoo.modules.loading: loading auth_totp_mail/data/ir_action_data.xml 
+2025-07-21 09:17:56,155 1104626 INFO odoo odoo.modules.loading: loading auth_totp_mail/data/mail_template_data.xml 
+2025-07-21 09:17:56,157 1104626 INFO odoo odoo.modules.loading: loading auth_totp_mail/data/security_notifications_template.xml 
+2025-07-21 09:17:56,164 1104626 INFO odoo odoo.modules.loading: loading auth_totp_mail/views/res_users_views.xml 
+2025-07-21 09:17:56,201 1104626 INFO odoo odoo.modules.loading: Module auth_totp_mail loaded in 0.14s, 132 queries (+132 other) 
+2025-07-21 09:17:56,201 1104626 INFO odoo odoo.modules.loading: Loading module base_install_request (26/47) 
+2025-07-21 09:17:56,223 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:56,255 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:56,263 1104626 INFO odoo odoo.modules.registry: module base_install_request: creating or updating database tables 
+2025-07-21 09:17:56,289 1104626 INFO odoo odoo.modules.loading: loading base_install_request/security/ir.model.access.csv 
+2025-07-21 09:17:56,299 1104626 INFO odoo odoo.modules.loading: loading base_install_request/wizard/base_module_install_request_views.xml 
+2025-07-21 09:17:56,312 1104626 INFO odoo odoo.modules.loading: loading base_install_request/data/mail_template_data.xml 
+2025-07-21 09:17:56,314 1104626 INFO odoo odoo.modules.loading: loading base_install_request/data/mail_templates_module_install.xml 
+2025-07-21 09:17:56,319 1104626 INFO odoo odoo.modules.loading: loading base_install_request/views/ir_module_module_views.xml 
+2025-07-21 09:17:56,350 1104626 INFO odoo odoo.modules.loading: Module base_install_request loaded in 0.15s, 135 queries (+135 other) 
+2025-07-21 09:17:56,350 1104626 INFO odoo odoo.modules.loading: Loading module calendar (27/47) 
+2025-07-21 09:17:56,374 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:56,420 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:56,428 1104626 INFO odoo odoo.modules.registry: module calendar: creating or updating database tables 
+2025-07-21 09:17:56,566 1104626 INFO odoo odoo.modules.loading: loading calendar/security/ir.model.access.csv 
+2025-07-21 09:17:56,587 1104626 INFO odoo odoo.modules.loading: loading calendar/security/calendar_security.xml 
+2025-07-21 09:17:56,590 1104626 INFO odoo odoo.modules.loading: loading calendar/data/calendar_cron.xml 
+2025-07-21 09:17:56,592 1104626 INFO odoo odoo.modules.loading: loading calendar/data/mail_template_data.xml 
+2025-07-21 09:17:56,595 1104626 INFO odoo odoo.modules.loading: loading calendar/data/calendar_data.xml 
+2025-07-21 09:17:56,599 1104626 INFO odoo odoo.modules.loading: loading calendar/data/mail_activity_type_data.xml 
+2025-07-21 09:17:56,601 1104626 INFO odoo odoo.modules.loading: loading calendar/data/mail_message_subtype_data.xml 
+2025-07-21 09:17:56,602 1104626 INFO odoo odoo.modules.loading: loading calendar/views/mail_activity_views.xml 
+2025-07-21 09:17:56,613 1104626 INFO odoo odoo.modules.loading: loading calendar/views/calendar_templates.xml 
+2025-07-21 09:17:56,618 1104626 INFO odoo odoo.modules.loading: loading calendar/views/calendar_views.xml 
+2025-07-21 09:17:56,711 1104626 INFO odoo odoo.modules.loading: loading calendar/views/res_config_settings_views.xml 
+2025-07-21 09:17:56,727 1104626 INFO odoo odoo.modules.loading: loading calendar/views/res_partner_views.xml 
+2025-07-21 09:17:56,744 1104626 INFO odoo odoo.modules.loading: loading calendar/views/res_users_views.xml 
+2025-07-21 09:17:56,762 1104626 INFO odoo odoo.modules.loading: loading calendar/wizard/calendar_provider_config.xml 
+2025-07-21 09:17:56,768 1104626 INFO odoo odoo.modules.loading: loading calendar/wizard/calendar_popover_delete_wizard.xml 
+2025-07-21 09:17:56,773 1104626 INFO odoo odoo.modules.loading: loading calendar/wizard/mail_activity_schedule_views.xml 
+2025-07-21 09:17:56,797 1104626 INFO odoo odoo.modules.loading: Module calendar loaded in 0.45s, 603 queries (+603 other) 
+2025-07-21 09:17:56,797 1104626 INFO odoo odoo.modules.loading: Loading module contacts (28/47) 
+2025-07-21 09:17:56,821 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:56,856 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:56,864 1104626 INFO odoo odoo.modules.registry: module contacts: creating or updating database tables 
+2025-07-21 09:17:56,913 1104626 INFO odoo odoo.modules.loading: loading contacts/views/contact_views.xml 
+2025-07-21 09:17:57,003 1104626 INFO odoo odoo.modules.loading: Module contacts loaded in 0.21s, 213 queries (+213 other) 
+2025-07-21 09:17:57,004 1104626 INFO odoo odoo.modules.loading: Loading module google_gmail (29/47) 
+2025-07-21 09:17:57,027 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:57,136 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:57,144 1104626 INFO odoo odoo.modules.registry: module google_gmail: creating or updating database tables 
+2025-07-21 09:17:57,176 1104626 INFO odoo odoo.modules.loading: loading google_gmail/views/fetchmail_server_views.xml 
+2025-07-21 09:17:57,189 1104626 INFO odoo odoo.modules.loading: loading google_gmail/views/ir_mail_server_views.xml 
+2025-07-21 09:17:57,198 1104626 INFO odoo odoo.modules.loading: loading google_gmail/views/res_config_settings_views.xml 
+2025-07-21 09:17:57,227 1104626 INFO odoo odoo.modules.loading: Module google_gmail loaded in 0.22s, 118 queries (+118 other) 
+2025-07-21 09:17:57,227 1104626 INFO odoo odoo.modules.loading: Loading module iap_mail (30/47) 
+2025-07-21 09:17:57,254 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:57,286 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:57,294 1104626 INFO odoo odoo.modules.registry: module iap_mail: creating or updating database tables 
+2025-07-21 09:17:57,317 1104626 INFO odoo odoo.modules.loading: loading iap_mail/data/mail_templates.xml 
+2025-07-21 09:17:57,324 1104626 INFO odoo odoo.modules.loading: loading iap_mail/views/iap_views.xml 
+2025-07-21 09:17:57,344 1104626 INFO odoo odoo.modules.loading: Module iap_mail loaded in 0.12s, 75 queries (+75 other) 
+2025-07-21 09:17:57,344 1104626 INFO odoo odoo.modules.loading: Loading module mail_bot (31/47) 
+2025-07-21 09:17:57,368 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:57,402 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:57,410 1104626 INFO odoo odoo.modules.registry: module mail_bot: creating or updating database tables 
+2025-07-21 09:17:57,446 1104626 INFO odoo odoo.modules.loading: loading mail_bot/views/res_users_views.xml 
+2025-07-21 09:17:57,474 1104626 INFO odoo odoo.modules.loading: loading mail_bot/data/mailbot_data.xml 
+2025-07-21 09:17:57,491 1104626 INFO odoo odoo.modules.loading: Module mail_bot loaded in 0.15s, 134 queries (+134 other) 
+2025-07-21 09:17:57,492 1104626 INFO odoo odoo.modules.loading: Loading module phone_validation (32/47) 
+2025-07-21 09:17:57,516 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:57,572 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:57,583 1104626 INFO odoo odoo.modules.registry: module phone_validation: creating or updating database tables 
+2025-07-21 09:17:58,232 1104626 INFO odoo odoo.schema: Keep unexpected index account_analytic_line__x_plan2_id_index on table account_analytic_line 
+2025-07-21 09:17:58,232 1104626 INFO odoo odoo.schema: Keep unexpected index account_analytic_line__x_plan3_id_index on table account_analytic_line 
+2025-07-21 09:17:58,251 1104626 INFO odoo odoo.modules.loading: loading phone_validation/security/ir.model.access.csv 
+2025-07-21 09:17:58,260 1104626 INFO odoo odoo.modules.loading: loading phone_validation/views/phone_blacklist_views.xml 
+2025-07-21 09:17:58,282 1104626 INFO odoo odoo.modules.loading: loading phone_validation/wizard/phone_blacklist_remove_view.xml 
+2025-07-21 09:17:58,302 1104626 INFO odoo odoo.modules.loading: Module phone_validation loaded in 0.81s, 1668 queries (+1668 other) 
+2025-07-21 09:17:58,302 1104626 INFO odoo odoo.modules.loading: Loading module privacy_lookup (33/47) 
+2025-07-21 09:17:58,326 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:58,362 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:58,370 1104626 INFO odoo odoo.modules.registry: module privacy_lookup: creating or updating database tables 
+2025-07-21 09:17:58,470 1104626 INFO odoo odoo.modules.loading: loading privacy_lookup/wizard/privacy_lookup_wizard_views.xml 
+2025-07-21 09:17:58,494 1104626 INFO odoo odoo.modules.loading: loading privacy_lookup/views/privacy_log_views.xml 
+2025-07-21 09:17:58,509 1104626 INFO odoo odoo.modules.loading: loading privacy_lookup/security/ir.model.access.csv 
+2025-07-21 09:17:58,522 1104626 INFO odoo odoo.modules.loading: loading privacy_lookup/data/ir_actions_server_data.xml 
+2025-07-21 09:17:58,544 1104626 INFO odoo odoo.modules.loading: Module privacy_lookup loaded in 0.24s, 213 queries (+213 other) 
+2025-07-21 09:17:58,544 1104626 INFO odoo odoo.modules.loading: Loading module product (34/47) 
+2025-07-21 09:17:58,569 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:58,633 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:58,646 1104626 INFO odoo odoo.modules.registry: module product: creating or updating database tables 
+2025-07-21 09:17:58,815 1104626 INFO odoo odoo.modules.loading: loading product/data/product_data.xml 
+2025-07-21 09:17:58,822 1104626 INFO odoo odoo.modules.loading: loading product/security/product_security.xml 
+2025-07-21 09:17:58,880 1104626 INFO odoo odoo.modules.loading: loading product/security/ir.model.access.csv 
+2025-07-21 09:17:58,919 1104626 INFO odoo odoo.modules.loading: loading product/wizard/product_label_layout_views.xml 
+2025-07-21 09:17:58,932 1104626 INFO odoo odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [349] 
+2025-07-21 09:17:58,935 1104626 INFO odoo odoo.modules.loading: loading product/wizard/update_product_attribute_value_views.xml 
+2025-07-21 09:17:58,941 1104626 INFO odoo odoo.modules.loading: loading product/views/product_tag_views.xml 
+2025-07-21 09:17:58,954 1104626 INFO odoo odoo.modules.loading: loading product/views/product_views.xml 
+2025-07-21 09:17:58,993 1104626 INFO odoo odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [350, 351, 352] 
+2025-07-21 09:17:59,042 1104626 INFO odoo odoo.modules.loading: loading product/views/res_config_settings_views.xml 
+2025-07-21 09:17:59,059 1104626 INFO odoo odoo.modules.loading: loading product/views/product_attribute_views.xml 
+2025-07-21 09:17:59,094 1104626 INFO odoo odoo.modules.loading: loading product/views/product_attribute_value_views.xml 
+2025-07-21 09:17:59,098 1104626 INFO odoo odoo.modules.loading: loading product/views/product_category_views.xml 
+2025-07-21 09:17:59,111 1104626 INFO odoo odoo.modules.loading: loading product/views/product_combo_views.xml 
+2025-07-21 09:17:59,121 1104626 INFO odoo odoo.modules.loading: loading product/views/product_document_views.xml 
+2025-07-21 09:17:59,137 1104626 INFO odoo odoo.modules.loading: loading product/views/product_packaging_views.xml 
+2025-07-21 09:17:59,165 1104626 INFO odoo odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [353, 354] 
+2025-07-21 09:17:59,168 1104626 INFO odoo odoo.modules.loading: loading product/views/product_pricelist_item_views.xml 
+2025-07-21 09:17:59,186 1104626 INFO odoo odoo.modules.loading: loading product/views/product_pricelist_views.xml 
+2025-07-21 09:17:59,207 1104626 INFO odoo odoo.modules.loading: loading product/views/product_supplierinfo_views.xml 
+2025-07-21 09:17:59,227 1104626 INFO odoo odoo.modules.loading: loading product/views/product_template_attribute_line_views.xml 
+2025-07-21 09:17:59,233 1104626 INFO odoo odoo.modules.loading: loading product/views/product_template_views.xml 
+2025-07-21 09:17:59,260 1104626 INFO odoo odoo.modules.loading: loading product/views/res_country_group_views.xml 
+2025-07-21 09:17:59,267 1104626 INFO odoo odoo.modules.loading: loading product/views/res_partner_views.xml 
+2025-07-21 09:17:59,278 1104626 INFO odoo odoo.modules.loading: loading product/report/product_reports.xml 
+2025-07-21 09:17:59,289 1104626 INFO odoo odoo.modules.loading: loading product/report/product_product_templates.xml 
+2025-07-21 09:17:59,316 1104626 INFO odoo odoo.modules.loading: loading product/report/product_template_templates.xml 
+2025-07-21 09:17:59,335 1104626 INFO odoo odoo.modules.loading: loading product/report/product_packaging.xml 
+2025-07-21 09:17:59,340 1104626 INFO odoo odoo.modules.loading: loading product/report/product_pricelist_report_templates.xml 
+2025-07-21 09:17:59,374 1104626 INFO odoo odoo.modules.loading: Module product loaded in 0.83s, 1268 queries (+1268 other) 
+2025-07-21 09:17:59,374 1104626 INFO odoo odoo.modules.loading: Loading module resource_mail (35/47) 
+2025-07-21 09:17:59,402 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:59,443 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:59,454 1104626 INFO odoo odoo.modules.registry: module resource_mail: creating or updating database tables 
+2025-07-21 09:17:59,487 1104626 INFO odoo odoo.modules.loading: Module resource_mail loaded in 0.11s, 37 queries (+37 other) 
+2025-07-21 09:17:59,487 1104626 INFO odoo odoo.modules.loading: Loading module sales_team (36/47) 
+2025-07-21 09:17:59,516 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:59,558 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:59,569 1104626 INFO odoo odoo.modules.registry: module sales_team: creating or updating database tables 
+2025-07-21 09:17:59,610 1104626 INFO odoo odoo.modules.loading: loading sales_team/security/sales_team_security.xml 
+2025-07-21 09:17:59,668 1104626 INFO odoo odoo.modules.loading: loading sales_team/security/ir.model.access.csv 
+2025-07-21 09:17:59,684 1104626 INFO odoo odoo.modules.loading: loading sales_team/data/crm_team_data.xml 
+2025-07-21 09:17:59,690 1104626 INFO odoo odoo.modules.loading: loading sales_team/views/crm_tag_views.xml 
+2025-07-21 09:17:59,704 1104626 INFO odoo odoo.modules.loading: loading sales_team/views/crm_team_views.xml 
+2025-07-21 09:17:59,732 1104626 INFO odoo odoo.modules.loading: loading sales_team/views/crm_team_member_views.xml 
+2025-07-21 09:17:59,762 1104626 INFO odoo odoo.modules.loading: loading sales_team/views/mail_activity_views.xml 
+2025-07-21 09:17:59,780 1104626 INFO odoo odoo.modules.loading: Module sales_team loaded in 0.29s, 338 queries (+338 other) 
+2025-07-21 09:17:59,780 1104626 INFO odoo odoo.modules.loading: Loading module web_unsplash (37/47) 
+2025-07-21 09:17:59,808 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:59,853 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:17:59,864 1104626 INFO odoo odoo.modules.registry: module web_unsplash: creating or updating database tables 
+2025-07-21 09:17:59,904 1104626 INFO odoo odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml 
+2025-07-21 09:17:59,934 1104626 INFO odoo odoo.modules.loading: Module web_unsplash loaded in 0.15s, 112 queries (+112 other) 
+2025-07-21 09:17:59,934 1104626 INFO odoo odoo.modules.loading: Loading module partner_autocomplete (38/47) 
+2025-07-21 09:17:59,964 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:00,011 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:00,022 1104626 INFO odoo odoo.modules.registry: module partner_autocomplete: creating or updating database tables 
+2025-07-21 09:18:00,090 1104626 INFO odoo odoo.modules.loading: loading partner_autocomplete/security/ir.model.access.csv 
+2025-07-21 09:18:00,100 1104626 INFO odoo odoo.modules.loading: loading partner_autocomplete/views/res_partner_views.xml 
+2025-07-21 09:18:00,129 1104626 INFO odoo odoo.modules.loading: loading partner_autocomplete/views/res_company_views.xml 
+2025-07-21 09:18:00,138 1104626 INFO odoo odoo.modules.loading: loading partner_autocomplete/views/res_config_settings_views.xml 
+2025-07-21 09:18:00,157 1104626 INFO odoo odoo.modules.loading: loading partner_autocomplete/data/cron.xml 
+2025-07-21 09:18:00,164 1104626 INFO odoo odoo.modules.loading: loading partner_autocomplete/data/iap_service_data.xml 
+2025-07-21 09:18:00,180 1104626 INFO odoo odoo.modules.loading: Module partner_autocomplete loaded in 0.25s, 220 queries (+220 other) 
+2025-07-21 09:18:00,180 1104626 INFO odoo odoo.modules.loading: Loading module portal (39/47) 
+2025-07-21 09:18:00,258 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:00,310 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:00,326 1104626 INFO odoo odoo.modules.registry: module portal: creating or updating database tables 
+2025-07-21 09:18:00,520 1104626 INFO odoo odoo.modules.loading: loading portal/security/ir.model.access.csv 
+2025-07-21 09:18:00,531 1104626 INFO odoo odoo.modules.loading: loading portal/data/mail_template_data.xml 
+2025-07-21 09:18:00,533 1104626 INFO odoo odoo.modules.loading: loading portal/data/mail_templates.xml 
+2025-07-21 09:18:00,535 1104626 INFO odoo odoo.modules.loading: loading portal/views/mail_templates_public.xml 
+2025-07-21 09:18:00,542 1104626 INFO odoo odoo.modules.loading: loading portal/views/portal_templates.xml 
+2025-07-21 09:18:00,664 1104626 INFO odoo odoo.modules.loading: loading portal/views/res_config_settings_views.xml 
+2025-07-21 09:18:00,686 1104626 INFO odoo odoo.modules.loading: loading portal/wizard/portal_share_views.xml 
+2025-07-21 09:18:00,696 1104626 INFO odoo odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml 
+2025-07-21 09:18:00,732 1104626 INFO odoo odoo.modules.loading: Module portal loaded in 0.55s, 666 queries (+666 other) 
+2025-07-21 09:18:00,732 1104626 INFO odoo odoo.modules.loading: Loading module sms (40/47) 
+2025-07-21 09:18:00,764 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:00,827 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:00,840 1104626 INFO odoo odoo.modules.registry: module sms: creating or updating database tables 
+2025-07-21 09:18:01,022 1104626 INFO odoo odoo.modules.loading: loading sms/data/iap_service_data.xml 
+2025-07-21 09:18:01,025 1104626 INFO odoo odoo.modules.loading: loading sms/data/ir_cron_data.xml 
+2025-07-21 09:18:01,026 1104626 INFO odoo odoo.modules.loading: loading sms/wizard/sms_account_code_views.xml 
+2025-07-21 09:18:01,034 1104626 INFO odoo odoo.modules.loading: loading sms/wizard/sms_account_phone_views.xml 
+2025-07-21 09:18:01,040 1104626 INFO odoo odoo.modules.loading: loading sms/wizard/sms_account_sender_views.xml 
+2025-07-21 09:18:01,045 1104626 INFO odoo odoo.modules.loading: loading sms/wizard/sms_composer_views.xml 
+2025-07-21 09:18:01,053 1104626 INFO odoo odoo.modules.loading: loading sms/wizard/sms_template_preview_views.xml 
+2025-07-21 09:18:01,060 1104626 INFO odoo odoo.modules.loading: loading sms/wizard/sms_resend_views.xml 
+2025-07-21 09:18:01,070 1104626 INFO odoo odoo.modules.loading: loading sms/wizard/sms_template_reset_views.xml 
+2025-07-21 09:18:01,076 1104626 INFO odoo odoo.modules.loading: loading sms/views/ir_actions_server_views.xml 
+2025-07-21 09:18:01,087 1104626 INFO odoo odoo.modules.loading: loading sms/views/mail_notification_views.xml 
+2025-07-21 09:18:01,098 1104626 INFO odoo odoo.modules.loading: loading sms/views/res_config_settings_views.xml 
+2025-07-21 09:18:01,115 1104626 INFO odoo odoo.modules.loading: loading sms/views/res_partner_views.xml 
+2025-07-21 09:18:01,139 1104626 INFO odoo odoo.modules.loading: loading sms/views/iap_account_views.xml 
+2025-07-21 09:18:01,148 1104626 INFO odoo odoo.modules.loading: loading sms/views/sms_sms_views.xml 
+2025-07-21 09:18:01,166 1104626 INFO odoo odoo.modules.loading: loading sms/views/sms_template_views.xml 
+2025-07-21 09:18:01,181 1104626 INFO odoo odoo.modules.loading: loading sms/security/ir.model.access.csv 
+2025-07-21 09:18:01,208 1104626 INFO odoo odoo.modules.loading: loading sms/security/sms_security.xml 
+2025-07-21 09:18:01,231 1104626 INFO odoo odoo.modules.loading: Module sms loaded in 0.50s, 704 queries (+704 other) 
+2025-07-21 09:18:01,231 1104626 INFO odoo odoo.modules.loading: Loading module snailmail (41/47) 
+2025-07-21 09:18:01,265 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:01,321 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:01,333 1104626 INFO odoo odoo.modules.registry: module snailmail: creating or updating database tables 
+2025-07-21 09:18:01,481 1104626 INFO odoo odoo.modules.loading: loading snailmail/data/iap_service_data.xml 
+2025-07-21 09:18:01,484 1104626 INFO odoo odoo.modules.loading: loading snailmail/data/snailmail_data.xml 
+2025-07-21 09:18:01,491 1104626 INFO odoo odoo.modules.loading: loading snailmail/views/report_assets.xml 
+2025-07-21 09:18:01,504 1104626 INFO odoo odoo.modules.loading: loading snailmail/views/snailmail_views.xml 
+2025-07-21 09:18:01,520 1104626 INFO odoo odoo.modules.loading: loading snailmail/wizard/snailmail_letter_format_error_views.xml 
+2025-07-21 09:18:01,528 1104626 INFO odoo odoo.modules.loading: loading snailmail/wizard/snailmail_letter_missing_required_fields_views.xml 
+2025-07-21 09:18:01,535 1104626 INFO odoo odoo.modules.loading: loading snailmail/security/ir.model.access.csv 
+2025-07-21 09:18:01,563 1104626 INFO odoo odoo.modules.loading: Module snailmail loaded in 0.33s, 419 queries (+419 other) 
+2025-07-21 09:18:01,564 1104626 INFO odoo odoo.modules.loading: Loading module auth_totp_portal (42/47) 
+2025-07-21 09:18:01,594 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:01,639 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:01,652 1104626 INFO odoo odoo.modules.registry: module auth_totp_portal: creating or updating database tables 
+2025-07-21 09:18:01,681 1104626 INFO odoo odoo.modules.loading: loading auth_totp_portal/security/security.xml 
+2025-07-21 09:18:01,685 1104626 INFO odoo odoo.modules.loading: loading auth_totp_portal/views/templates.xml 
+2025-07-21 09:18:01,705 1104626 INFO odoo odoo.modules.loading: Module auth_totp_portal loaded in 0.14s, 73 queries (+73 other) 
+2025-07-21 09:18:01,705 1104626 INFO odoo odoo.modules.loading: Loading module calendar_sms (43/47) 
+2025-07-21 09:18:01,737 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:01,782 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:01,794 1104626 INFO odoo odoo.modules.registry: module calendar_sms: creating or updating database tables 
+2025-07-21 09:18:01,874 1104626 INFO odoo odoo.modules.loading: loading calendar_sms/data/sms_data.xml 
+2025-07-21 09:18:01,877 1104626 INFO odoo odoo.modules.loading: loading calendar_sms/views/calendar_views.xml 
+2025-07-21 09:18:01,915 1104626 INFO odoo odoo.modules.loading: Module calendar_sms loaded in 0.21s, 99 queries (+99 other) 
+2025-07-21 09:18:01,915 1104626 INFO odoo odoo.modules.loading: Loading module digest (44/47) 
+2025-07-21 09:18:01,947 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:01,995 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:02,007 1104626 INFO odoo odoo.modules.registry: module digest: creating or updating database tables 
+2025-07-21 09:18:02,051 1104626 INFO odoo odoo.modules.loading: loading digest/security/ir.model.access.csv 
+2025-07-21 09:18:02,060 1104626 INFO odoo odoo.modules.loading: loading digest/data/digest_data.xml 
+2025-07-21 09:18:02,064 1104626 INFO odoo odoo.modules.loading: loading digest/data/digest_tips_data.xml 
+2025-07-21 09:18:02,078 1104626 INFO odoo odoo.modules.loading: loading digest/data/ir_cron_data.xml 
+2025-07-21 09:18:02,087 1104626 INFO odoo odoo.modules.loading: loading digest/data/res_config_settings_data.xml 
+2025-07-21 09:18:02,089 1104626 INFO odoo odoo.modules.loading: loading digest/views/digest_views.xml 
+2025-07-21 09:18:02,124 1104626 INFO odoo odoo.modules.loading: loading digest/views/digest_templates.xml 
+2025-07-21 09:18:02,130 1104626 INFO odoo odoo.modules.loading: loading digest/views/res_config_settings_views.xml 
+2025-07-21 09:18:02,168 1104626 INFO odoo odoo.modules.loading: Module digest loaded in 0.25s, 279 queries (+279 other) 
+2025-07-21 09:18:02,169 1104626 INFO odoo odoo.modules.loading: Loading module payment (45/47) 
+2025-07-21 09:18:02,199 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:02,261 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:02,274 1104626 INFO odoo odoo.modules.registry: module payment: creating or updating database tables 
+2025-07-21 09:18:02,370 1104626 INFO odoo odoo.modules.loading: loading payment/data/ir_actions_server_data.xml 
+2025-07-21 09:18:02,374 1104626 INFO odoo odoo.modules.loading: loading payment/data/onboarding_data.xml 
+2025-07-21 09:18:02,377 1104626 INFO odoo odoo.modules.loading: loading payment/data/payment_method_data.xml 
+2025-07-21 09:18:02,443 1104626 INFO odoo odoo.modules.loading: loading payment/data/payment_provider_data.xml 
+2025-07-21 09:18:02,451 1104626 INFO odoo odoo.modules.loading: loading payment/data/payment_cron.xml 
+2025-07-21 09:18:02,458 1104626 INFO odoo odoo.modules.loading: loading payment/views/express_checkout_templates.xml 
+2025-07-21 09:18:02,464 1104626 INFO odoo odoo.modules.loading: loading payment/views/payment_form_templates.xml 
+2025-07-21 09:18:02,504 1104626 INFO odoo odoo.modules.loading: loading payment/views/portal_templates.xml 
+2025-07-21 09:18:02,541 1104626 INFO odoo odoo.modules.loading: loading payment/views/payment_provider_views.xml 
+2025-07-21 09:18:02,564 1104626 INFO odoo odoo.modules.loading: loading payment/views/payment_method_views.xml 
+2025-07-21 09:18:02,584 1104626 INFO odoo odoo.modules.loading: loading payment/views/payment_transaction_views.xml 
+2025-07-21 09:18:02,604 1104626 INFO odoo odoo.modules.loading: loading payment/views/payment_token_views.xml 
+2025-07-21 09:18:02,617 1104626 INFO odoo odoo.modules.loading: loading payment/views/res_partner_views.xml 
+2025-07-21 09:18:02,632 1104626 INFO odoo odoo.modules.loading: loading payment/security/ir.model.access.csv 
+2025-07-21 09:18:02,675 1104626 INFO odoo odoo.modules.loading: loading payment/security/payment_security.xml 
+2025-07-21 09:18:02,680 1104626 INFO odoo odoo.modules.loading: loading payment/wizards/payment_capture_wizard_views.xml 
+2025-07-21 09:18:02,694 1104626 INFO odoo odoo.modules.loading: loading payment/wizards/payment_link_wizard_views.xml 
+2025-07-21 09:18:02,706 1104626 INFO odoo odoo.modules.loading: loading payment/wizards/payment_onboarding_views.xml 
+2025-07-21 09:18:02,743 1104626 INFO odoo odoo.modules.loading: Module payment loaded in 0.57s, 1045 queries (+1045 other) 
+2025-07-21 09:18:02,744 1104626 INFO odoo odoo.modules.loading: Loading module spreadsheet (46/47) 
+2025-07-21 09:18:02,776 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:02,826 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:02,841 1104626 INFO odoo odoo.modules.registry: module spreadsheet: creating or updating database tables 
+2025-07-21 09:18:02,883 1104626 INFO odoo odoo.modules.loading: loading spreadsheet/views/public_readonly_spreadsheet_templates.xml 
+2025-07-21 09:18:02,905 1104626 INFO odoo odoo.modules.loading: Module spreadsheet loaded in 0.16s, 91 queries (+91 other) 
+2025-07-21 09:18:02,905 1104626 INFO odoo odoo.modules.loading: Loading module spreadsheet_dashboard (47/47) 
+2025-07-21 09:18:02,943 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:02,995 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:03,011 1104626 INFO odoo odoo.modules.registry: module spreadsheet_dashboard: creating or updating database tables 
+2025-07-21 09:18:03,043 1104626 INFO odoo odoo.modules.loading: loading spreadsheet_dashboard/security/security.xml 
+2025-07-21 09:18:03,082 1104626 INFO odoo odoo.modules.loading: loading spreadsheet_dashboard/security/ir.model.access.csv 
+2025-07-21 09:18:03,092 1104626 INFO odoo odoo.modules.loading: loading spreadsheet_dashboard/views/spreadsheet_dashboard_views.xml 
+2025-07-21 09:18:03,110 1104626 INFO odoo odoo.modules.loading: loading spreadsheet_dashboard/views/menu_views.xml 
+2025-07-21 09:18:03,131 1104626 INFO odoo odoo.modules.loading: loading spreadsheet_dashboard/data/dashboard.xml 
+2025-07-21 09:18:03,157 1104626 INFO odoo odoo.modules.loading: Module spreadsheet_dashboard loaded in 0.25s, 236 queries (+236 other) 
+2025-07-21 09:18:03,157 1104626 INFO odoo odoo.modules.loading: 47 modules loaded in 13.85s, 19074 queries (+19074 extra) 
+2025-07-21 09:18:03,189 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:03,232 1104626 WARNING odoo odoo.fields: Field student.roll: unknown parameter 'int', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-21 09:18:03,620 1104626 INFO odoo odoo.modules.loading: Modules loaded. 
+2025-07-21 09:18:03,626 1104626 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2025-07-21 09:18:03,627 1104626 INFO odoo odoo.modules.registry: Registry loaded in 20.334s 
+2025-07-21 09:18:03,629 1104626 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-07-21 09:18:03,718 1104626 INFO odoo werkzeug: 127.0.0.1 - - [21/Jul/2025 09:18:03] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 4 0.001 18.856
+2025-07-21 09:18:04,034 1104626 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-07-21 09:18:06,355 1104626 INFO odoo odoo.service.server: Initiating shutdown 
+2025-07-21 09:18:06,356 1104626 INFO odoo odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-07-21 09:18:06,541 1104626 INFO odoo odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 3 connections  
