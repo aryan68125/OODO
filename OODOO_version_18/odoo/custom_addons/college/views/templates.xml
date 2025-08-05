@@ -40,6 +40,7 @@
           <form>
             <sheet>
               <group>
+                <!-- <field name="name" required = "1"/> -->
                 <field name="name"/>
                 <field name="address"/>
               </group>
