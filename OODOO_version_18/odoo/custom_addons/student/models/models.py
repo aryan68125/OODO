@@ -419,11 +419,11 @@ class Student(models.Model):
     """
     @api.model
     def get_view(self, view_id=None, view_type='form', **options):
-        print(f"get_view ===> view_id={view_id}, view_type={view_type}, options={options}")
+        # print(f"get_view ===> view_id={view_id}, view_type={view_type}, options={options}")
         result = super().get_view(view_id=view_id, view_type=view_type, **options)
         if view_type == "form" and "arch" in result:
             doc = etree.fromstring(result["arch"])
-            print(f"doc ===> \n {doc}")
+            # print(f"doc ===> \n {doc}")
             # targetted field
             school_field = etree.Element("field",{"name":"school_id"})
             targeted_field = doc.xpath("//field[@name='name']")
