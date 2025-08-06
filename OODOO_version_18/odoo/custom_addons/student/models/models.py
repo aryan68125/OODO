@@ -84,6 +84,8 @@ class Student(models.Model):
     _name = "student"  # Correct model name format
     _description = "Student Model"
     # model fields
+    # to make model soft delete instead of hard delete
+    active = fields.Boolean(string="Archive / Soft delete / Remove from filter",default=True)
     profile_picture = fields.Image("Student's profile picture")
     school_id = fields.Many2one(comodel_name = 'school', string="Select Student's School",help="Select student's school", default=1)
     school_address = fields.Char(related='school_id.address', string="School address", store=True)
@@ -387,6 +389,12 @@ class Student(models.Model):
         student_search_read_with_domain = self.env["student"].search_read(domain=[("school_id","=",1)],fields=["id","name","school_id"],order="fees",limit=2)
         print(f"student_search_read_with_domain where school_id = 1 ===> \n {student_search_read_with_domain}")
 
+        """
+        search the archived fields in odoo
+        """
+        archived_student_search = self.env["student"].search_read(domain = [("active","=",False)])
+        print(f"archived_student_search ===> {len(archived_student_search)}")
+
     # name_create method
     @api.model
     def name_create(self,name):
@@ -434,7 +442,7 @@ class Student(models.Model):
                 targeted_field[0].addprevious(school_field)
             # again we need to convert this doc object into the string
             result["arch"] = etree.tostring(doc,encoding="unicode")
-            print(f"get_view :: result ===> \n {result}")
+            # print(f"get_view :: result ===> \n {result}")
         return result
 
     """
@@ -656,37 +664,45 @@ class Student(models.Model):
     import logging 
     _logger = logging.getLogger()
     """
-    def custom_method(self):
-        print(f"Custom method that demonstrates the search_fetch ")
-        print(f" self ===> {self} ")
+    # def custom_method(self):
+    #     print(f"Custom method that demonstrates the search_fetch ")
+    #     print(f" self ===> {self} ")
 
-        """
-        search_fetch method is the combination of search and the fetch method.
+    #     """
+    #     search_fetch method is the combination of search and the fetch method.
 
-        fetch method doesn't return anything which is also and ORM method and it stores in the cache memory.
-        This method is very similar to the search method as well as the read method
+    #     fetch method doesn't return anything which is also and ORM method and it stores in the cache memory.
+    #     This method is very similar to the search method as well as the read method
 
-        search_fetch method is faster when compared to the search method.
+    #     search_fetch method is faster when compared to the search method.
 
-        self.search_fetch([],["id","name]) this is not a read method that you will get id and the name but it will still return a recordset and using the fetch method only get "id" and "name" into the cache memory, It will update the cache memeory for these two fields.
-        will be updated accordingly.
-        """
-        student_obj = self.search_fetch([],[])
-        print(f"student_obj ===> {student_obj}")
+    #     self.search_fetch([],["id","name]) this is not a read method that you will get id and the name but it will still return a recordset and using the fetch method only get "id" and "name" into the cache memory, It will update the cache memeory for these two fields.
+    #     will be updated accordingly.
+    #     """
+    #     student_obj = self.search_fetch([],[])
+    #     print(f"student_obj ===> {student_obj}")
 
-        for student in student_obj:
-            print(f"student_name ===> {student.name} :: student_school_name ===> {student.school_id.name} :: student_address ===> {student.school_id.address}")
+    #     for student in student_obj:
+    #         print(f"student_name ===> {student.name} :: student_school_name ===> {student.school_id.name} :: student_address ===> {student.school_id.address}")
 
     """
     custom method to demonstrate custom logs implementation in case of odoo server
     """
-    def custom_method(self):
-        print(f"Custom method that demonstrates the custom_logs in odoo")
-        """There are 5 different types of logs available"""
-        student_obj = self.search_fetch([],[])
+    # def custom_method(self):
+    #     print(f"Custom method that demonstrates the custom_logs in odoo")
+    #     """There are 5 different types of logs available"""
+    #     student_obj = self.search_fetch([],[])
 
-        for student in student_obj:
-            _logger.info(f"student_name ===> {student.name} :: student_school_name ===> {student.school_id.name} :: student_address ===> {student.school_id.address}")
+    #     for student in student_obj:
+    #         _logger.info(f"student_name ===> {student.name} :: student_school_name ===> {student.school_id.name} :: student_address ===> {student.school_id.address}")
+
+    """
+    This custom method demonstrates odoo special commands
+    """
+    def custom_method(self):
+        sale_order_vals = [{'locked': False, 'partner_id': 27, 'validity_date': '2025-09-04', 'date_order': '2025-08-05 10:46:58', 'show_update_pricelist': False, 'company_id': 1, 'pricelist_id': False, 'payment_term_id': 2, 'order_line': [[0, 'virtual_74', {'sequence': 10, 'display_type': False, 'is_downpayment': False, 'product_id': 32, 'product_template_id': 23, 'product_custom_attribute_value_ids': [[6, False, []]], 'product_no_variant_attribute_value_ids': [[6, False, []]], 'linked_line_id': False, 'virtual_id': False, 'linked_virtual_id': False, 'selected_combo_items': False, 'combo_item_id': False, 'name': '[FURN_6667] Acoustic Bloc Screens (Wood)', 'product_uom_qty': 1, 'product_uom': 1, 'customer_lead': 0, 'price_unit': 295, 'technical_price_unit': 295, 'tax_id': [], 'product_document_ids': []}], [0, 'virtual_83', {'sequence': 11, 'display_type': False, 'is_downpayment': False, 'product_id': 21, 'product_template_id': 15, 'product_custom_attribute_value_ids': [], 'product_no_variant_attribute_value_ids': [], 'linked_line_id': False, 'virtual_id': False, 'linked_virtual_id': False, 'selected_combo_items': False, 'combo_item_id': False, 'name': '[E-COM11] Cabinet with Doors', 'product_uom_qty': 1, 'product_uom': 1, 'customer_lead': 0, 'price_unit': 140, 'technical_price_unit': 140, 'tax_id': [], 'product_document_ids': []}]], 'note': False, 'sale_order_option_ids': [], 'quotation_document_ids': [], 'customizable_pdf_form_fields': False, 'user_id': 2, 'team_id': 1, 'require_signature': True, 'require_payment': False, 'prepayment_percent': 1, 'client_order_ref': False, 'tag_ids': [], 'show_update_fpos': False, 'fiscal_position_id': False, 'partner_invoice_id': 27, 'commitment_date': False, 'origin': False, 'campaign_id': False, 'medium_id': False, 'source_id': False}]
+
+        print(f"self.env['sale.order'].create(sale_order_vals) ===> {self.env["sale.order"].create(sale_order_vals)}")
 
 
 """
@@ -702,8 +718,32 @@ class Marks(models.Model):
 
 
 
+class sale(models.Model):
+    _inherit = "sale.order"
+
+    # @api.model_create_multi
+    # def create(self,vals):
+    #     print(self,vals)
+    #     return super(sale,self).create(vals)
+
+    def write(self, vals):
+        print(self,vals)
+        return super(sale,self).write(vals)
+
+class saleline(models.Model):
+    _inherit = "sale.order.line"
+
+    # @api.model_create_multi
+    # def create(self,vals):
+    #     print(self,vals)
+    #     return super(saleline,self).create(vals)
+
+    def write(self,vals):
+        print(self,vals)
+        return super(saleline,self).write(vals)
 
 
+    
 
 
 
