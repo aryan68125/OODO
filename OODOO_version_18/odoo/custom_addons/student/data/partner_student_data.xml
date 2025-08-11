@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="student_0023" model="student">
+        <field name="active">True</field>
+        <!-- <field name="profile_picture"></field> -->
+        <field name="school_id" eval="8"/> <!-- Or put numeric ID if you have one -->
+        <field name="school_address">Hadapser, Pune</field>
+        <field name="hobby_list" eval="[(6, 0, [16])]"/>
+        <field name="name">Oscar Lamborghini</field>
+        <field name="roll">560</field>
+        <field name="email">lamborghini@email.com</field>
+        <field name="address">Malad Maharastra</field>
+        <field name="html_field_demo"><![CDATA[<h3>This is a test html input</h3>]]></field>
+        <field name="is_agreed">True</field>
+        <field name="fees">12651</field>
+        <field name="currency" eval="1"/> <!-- Use ref to XML ID -->
+        <field name="school_data">{'name':'Oscar Lamborghini','roll_no':'560'}</field>
+        <field name="gender">Male</field>
+        <field name="major">CS</field>
+    </record>
+</odoo>
