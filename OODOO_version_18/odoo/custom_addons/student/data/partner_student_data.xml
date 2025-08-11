@@ -18,4 +18,43 @@
         <field name="gender">Male</field>
         <field name="major">CS</field>
     </record>
+
+    <record id="student_0024" model="student">
+        <field name="active">True</field>
+        <!-- <field name="profile_picture"></field> -->
+        <field name="school_id" eval="8"/> <!-- Or put numeric ID if you have one -->
+        <field name="school_address">Hadapser, Pune</field>
+        <field name="hobby_list" eval="[(6, 0, [16])]"/>
+        <field name="name">Firuccio Ferrari</field>
+        <field name="roll">362</field>
+        <field name="email">Ferrari@email.com</field>
+        <field name="address">Navi Mumbai Maharastra</field>
+        <field name="html_field_demo"><![CDATA[<h3>This is a test html input</h3>]]></field>
+        <field name="is_agreed">True</field>
+        <field name="fees">12651</field>
+        <field name="currency" eval="1"/> <!-- Use ref to XML ID -->
+        <field name="school_data">{'name':'Oscar Lamborghini','roll_no':'362'}</field>
+        <field name="gender">Male</field>
+        <field name="major">CS</field>
+    </record>
+
+    
+    <record id="student_0025" model="student">
+        <field name="active">True</field>
+        <!-- <field name="profile_picture"></field> -->
+        <field name="school_id" eval="8"/> <!-- Or put numeric ID if you have one -->
+        <field name="school_address">Hadapser, Pune</field>
+        <field name="hobby_list" eval="[(6, 0, [16])]"/>
+        <field name="name">Vermillion Rimac</field>
+        <field name="roll">72</field>
+        <field name="email">Rimac@email.com</field>
+        <field name="address">Panvel Maharastra</field>
+        <field name="html_field_demo"><![CDATA[<h3>This is a test html input</h3>]]></field>
+        <field name="is_agreed">True</field>
+        <field name="fees">12651</field>
+        <field name="currency" eval="1"/> <!-- Use ref to XML ID -->
+        <field name="school_data">{'name':'Vermillion Rimac','roll_no':'72'}</field>
+        <field name="gender">Female</field>
+        <field name="major">CS</field>
+    </record>
 </odoo>
