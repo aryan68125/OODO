@@ -2,7 +2,7 @@
 <odoo>
     <record id="student_0023" model="student">
         <field name="active">True</field>
-        <!-- <field name="profile_picture"></field> -->
+        <field name="profile_picture" file="student/static/description/solo_1.jpg" type="base64"></field>
         <field name="school_id" eval="8"/> <!-- Or put numeric ID if you have one -->
         <field name="school_address">Hadapser, Pune</field>
         <field name="hobby_list" eval="[(6, 0, [16])]"/>
@@ -21,7 +21,7 @@
 
     <record id="student_0024" model="student">
         <field name="active">True</field>
-        <!-- <field name="profile_picture"></field> -->
+        <field name="profile_picture" file="student/static/description/solo_2.jpg" type="base64"></field>
         <field name="school_id" eval="8"/> <!-- Or put numeric ID if you have one -->
         <field name="school_address">Hadapser, Pune</field>
         <field name="hobby_list" eval="[(6, 0, [16])]"/>
@@ -41,7 +41,7 @@
     
     <record id="student_0025" model="student">
         <field name="active">True</field>
-        <!-- <field name="profile_picture"></field> -->
+        <field name="profile_picture" file="student/static/description/solo_3.jpg" type="base64"></field>
         <field name="school_id" eval="8"/> <!-- Or put numeric ID if you have one -->
         <field name="school_address">Hadapser, Pune</field>
         <field name="hobby_list" eval="[(6, 0, [16])]"/>
