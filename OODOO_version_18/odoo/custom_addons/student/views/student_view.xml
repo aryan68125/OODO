@@ -6,7 +6,7 @@
       <field name="model">student</field>
       <field name="arch" type="xml">
         <list>  
-          <!-- <field name="id"/> -->
+          <field name="id"/>
           <field name="profile_picture" widget="image" class="oe_avatar"/>
           <field name="school_id"/>
           <field name="school_address"/>
@@ -42,7 +42,7 @@
           </header>
           <sheet>
               <group>
-                  <!-- <field name="id"/> -->
+                  <field name="id"/>
                   <field name="profile_picture" widget="image" class="oe_avatar"/>
                   <field name="school_id"/>
                   <field name="school_address"/>
@@ -145,6 +145,7 @@
       <field name="model">student_currency</field>
       <field name="arch" type="xml">
         <list>
+          <field name="id"/>
           <field name="name"/>
         </list>
       </field>
@@ -158,6 +159,7 @@
         <form>
           <sheet>
             <group>
+              <field name="id"/>
               <field name="name"/>
             </group>
           </sheet>

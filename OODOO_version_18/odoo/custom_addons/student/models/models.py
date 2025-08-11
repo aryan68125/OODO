@@ -219,6 +219,7 @@ class Student(models.Model):
     def print_table(self, records):
         for rec in records:
             print(f"Student: {rec.name}, Fees: {rec.fees}")
+            
     def search_record(self):
         # print self method
         print(f"self search_record method ===> {self}")

@@ -21,10 +21,16 @@
     'depends': ['base','account','sale'],
 
     # always loaded
+    # 'data': [
+    #     'security/ir.model.access.csv',
+    #     'views/student_view.xml',
+    #     'views/templates.xml',
+    # ],
     'data': [
         'security/ir.model.access.csv',
         'views/student_view.xml',
         'views/templates.xml',
+        'data/partner_data.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

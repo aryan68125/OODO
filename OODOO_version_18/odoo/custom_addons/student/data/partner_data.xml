@@ -1,0 +1,6 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<odoo>
+    <record id="student_data_1" model="hobby">
+        <field name="name">Go carting</field>
+    </record>
+</odoo>
