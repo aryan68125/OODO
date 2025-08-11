@@ -24,7 +24,7 @@
         <field name="profile_picture" file="student/static/description/solo_2.jpg" type="base64"></field>
         <field name="school_id" eval="8"/> <!-- Or put numeric ID if you have one -->
         <field name="school_address">Hadapser, Pune</field>
-        <field name="hobby_list" eval="[(6, 0, [16])]"/>
+        <field name="hobby_list" eval="[(6, 0, [16,4,6])]"/>
         <field name="name">Firuccio Ferrari</field>
         <field name="roll">362</field>
         <field name="email">Ferrari@email.com</field>
