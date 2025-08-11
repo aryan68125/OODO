@@ -79,6 +79,7 @@ class Curreny(models.Model):
         print(f"Result IDs: {result}")
         return self.browse(result).name_get()
     
+    
 class Student(models.Model):
     # model meta-data
     _name = "student"  # Correct model name format
