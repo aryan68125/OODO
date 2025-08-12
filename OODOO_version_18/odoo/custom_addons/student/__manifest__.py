@@ -33,7 +33,7 @@
         'data/partner_hobby_data.xml',
         'data/partner_student_data.xml',
         'data/hobby.csv',
-        'data/student.csv',
+        # 'data/student.csv',
     ],
     # only loaded in demonstration mode
     'demo': [
