@@ -25,7 +25,8 @@
         <field name="name">college.list.view</field>
         <field name="model">college</field>
         <field name="arch" type="xml">
-          <list>
+          <!-- <list editable="bottom"> -->
+          <list multi_edit="1">
             <field name="name"/>
             <field name="address"/>
           </list>
