@@ -6,6 +6,9 @@
       <field name="model">student</field>
       <field name="arch" type="xml">
         <list>  
+          <header>
+            <button name="abc_test" type="object" string="Click me!"/>
+          </header>
           <field name="id"/>
           <field name="profile_picture" widget="image" class="oe_avatar"/>
           <!-- <field name="school_id" width="200px"/> -->

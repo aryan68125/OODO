@@ -118,6 +118,10 @@ class Student(models.Model):
     Method 2:
     '''
     major = fields.Selection(selection = "_get_major_list", string="Select Major")
+
+    def abc_test(self):
+        print(f"abc_test ---> {self}")
+
     def _get_major_list(self):
         return [("CS","Computer Science"),("IT","Information Technology"),("EC","Electronics and Communication"),("ME","Mechanical Engineering"), ("DA","Data Science and Artificial Engineering")]
 
