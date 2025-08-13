@@ -8,14 +8,18 @@
         <list>  
           <field name="id"/>
           <field name="profile_picture" widget="image" class="oe_avatar"/>
-          <field name="school_id"/>
+          <!-- <field name="school_id" width="200px"/> -->
+          <groupby name="school_id">
+            <button type="edit" name="edit" icon="fa-edit" title="Edit"></button>
+          </groupby>
           <field name="school_address"/>
           <field name="hobby_list"/>
           <field name="name"/>
           <field name="roll"/>
-          <field name="email"/>
+          <field name="email" width="200px"/>
           <field name="address"/>
-          <field name="fees"/>
+          <!-- <field name="fees" sum="Total Fees" /> -->
+          <field name="fees" avg="Average of fees" />
           <field name="currency"/>
           <field name="html_field_demo"/>
           <field name="major" placeholder="Select Major in which you want to study"/>

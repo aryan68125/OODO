@@ -26,15 +26,17 @@
         <field name="model">college</field>
         <field name="arch" type="xml">
           <!-- <list editable="bottom"> -->
-          <list multi_edit="1" decoration-bf="id==1"
+          <!-- <list editable="bottom" multi_edit="1" decoration-bf="id==1"
           decoration-info="id==1"
           decoration-success="id==2"
           decoration-warning="id==10"
           decoration-danger="id==11"
           decoration-muted="id==12"
           decoration-primary="id==13"
-          >
-            <field name="id"/>
+          > -->
+          <!-- <list editable="bottom" open_form_view = "True"> -->
+          <list editable="bottom" open_form_view = "True" default_order = "id desc">
+            <field name="id" optional="show"/>
             <field name="name"/>
             <field name="address"/>
           </list>
