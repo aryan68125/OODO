@@ -34,7 +34,7 @@
 
          <!-- How to add search panel in odoo -->
          <searchpanel>
-           <field name="gender" string="Gender" icon="fa-truck"/>
+           <field name="gender" string="Gender" icon="fa-truck" color="#8B5A49"/>
          </searchpanel>
       </search>
     </field>
