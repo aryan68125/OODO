@@ -84,6 +84,7 @@ class Student(models.Model):
     # model meta-data
     _name = "student"  # Correct model name format
     _description = "Student Model"
+    
     # model fields
     # to make model soft delete instead of hard delete
     active = fields.Boolean(string="Archive / Soft delete / Remove from filter",default=True)
