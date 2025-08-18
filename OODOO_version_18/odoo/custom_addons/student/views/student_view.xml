@@ -19,7 +19,14 @@
          <filter name="roll" domain="[('roll','ilike','997')]" string="Student's roll number 997" />
          <filter name="email" domain="[('email','ilike','rollex')]" string="Student's email address rollex" />
          <filter name="school_name" domain="[('school_id.name','ilike','stella')]" string="School name stella" />
+         <filter name="male_students" domain="[('gender','=','Male')]" string="Male Students"/>
+         <filter name="female_students" domain="[('gender','=','Female')]" string="Female Students"/>
 
+         <!-- Inside this group tag exists all the group by options in odoo -->
+         <group>
+           <filter name="gender_groupby_male" context="{'group_by':'gender'}" domain="[]" string="Gender" />
+           <filter name="name" context="{'group_by':'school_id'}" domain="[]" string="School" />
+         </group>
       </search>
     </field>
   </record>
