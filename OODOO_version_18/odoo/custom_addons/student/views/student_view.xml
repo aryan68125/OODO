@@ -15,10 +15,14 @@
         <!-- <field name="school_id"/> -->
       
         <!-- Apply the same filter but in the custom filter section under the filters option in the search box in the view -->
-         <filter name="name" domain="[('name','ilike','rollex')]" string="Student's name Rollex" />
+        <filter name="name" domain="[('name','ilike','rollex')]" string="Student's name Rollex" />
+         <separator/>
          <filter name="roll" domain="[('roll','ilike','997')]" string="Student's roll number 997" />
+         <separator/>
          <filter name="email" domain="[('email','ilike','rollex')]" string="Student's email address rollex" />
+         <separator/>
          <filter name="school_name" domain="[('school_id.name','ilike','stella')]" string="School name stella" />
+         <separator/>
          <filter name="male_students" domain="[('gender','=','Male')]" string="Male Students"/>
          <filter name="female_students" domain="[('gender','=','Female')]" string="Female Students"/>
 
