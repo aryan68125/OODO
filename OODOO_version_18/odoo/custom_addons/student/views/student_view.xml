@@ -36,7 +36,8 @@
          <searchpanel>
             <!-- <field name="gender" string="Gender" icon="fa-truck" color="#8B5A49"/> -->
             <field name="gender" string="Gender" select="multi"/>
-            <field name="school_id" string="School" color="green" icon="fa-company"/>
+           <!-- <field name="school_id" string="School" color="green" icon="fa-company"/> -->
+           <field name="school_id" string="School" select="multi"/>
          </searchpanel>
       </search>
     </field>
