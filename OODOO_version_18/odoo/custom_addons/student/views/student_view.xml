@@ -35,9 +35,10 @@
          <!-- How to add search panel in odoo -->
          <searchpanel>
             <!-- <field name="gender" string="Gender" icon="fa-truck" color="#8B5A49"/> -->
-            <field name="gender" string="Gender" select="multi"/>
+            <field name="gender" string="Gender" select="multi" enable_counters="1"/>
            <!-- <field name="school_id" string="School" color="green" icon="fa-company"/> -->
-           <field name="school_id" string="School" select="multi"/>
+           <!-- <field name="school_id" string="School" select="multi"/> -->
+            <field name="school_id" string="School" color="green" icon="fa-cutlery" enable_counters="1"/>
          </searchpanel>
       </search>
     </field>
