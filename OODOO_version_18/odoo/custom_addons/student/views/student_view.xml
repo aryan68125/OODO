@@ -19,12 +19,16 @@
         <!-- <filter name="joining_date" string="Student's Joining Date" date="joining_date"/> -->
 
         <!-- When using filter tag with domain attribute then date attribute must be removed or else it will show all the records and it will not work as expected -->
-        
-        <filter name="7_days" string="Show students that joined 7 days ago"
-          domain="[('joining_date', '>=', (context_today() - relativedelta(days=7)).strftime('%%Y-%%m-%%d 00:00:00'))]"/>
 
-        <filter name="14_days" string="Show students that joined 14 days ago"
+        <!-- If you want to add the date type filter under this 7_days filter -->
+        <filter name="7_days" string="Show students that joined 7 days ago"
+          domain="[('joining_date', '>=', (context_today() - relativedelta(days=7)).strftime('%%Y-%%m-%%d 00:00:00'))]">
+          <filter name="14_days" string="Show students that joined 14 days ago"
           domain="[('joining_date', '>=', (context_today() - relativedelta(days=14)).strftime('%%Y-%%m-%%d 00:00:00'))]"/>
+      </filter>
+
+        <!-- <filter name="14_days" string="Show students that joined 14 days ago" -->
+        <!--   domain="[('joining_date', '>=', (context_today() - relativedelta(days=14)).strftime('%%Y-%%m-%%d 00:00:00'))]"/> -->
 
         <!-- normal filters in default filter view provided by odoo -->
         <filter name="name" domain="[('name','ilike','rollex')]" string="Student's name Rollex" />
