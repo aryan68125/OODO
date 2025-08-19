@@ -15,6 +15,8 @@
         <!-- <field name="school_id"/> -->
       
         <!-- Apply the same filter but in the custom filter section under the filters option in the search box in the view -->
+        <!-- Add a filter that allows us to filter the records based on dates -->
+        <filter name="joining_date" string="Student's Joining Date" date="joining_date"/>
         <filter name="name" domain="[('name','ilike','rollex')]" string="Student's name Rollex" />
          <separator/>
          <filter name="roll" domain="[('roll','ilike','997')]" string="Student's roll number 997" />
