@@ -19,7 +19,16 @@
         <!-- <filter name="joining_date" string="Student's Joining Date" date="joining_date"/> -->
 
         <!-- If you want the 14_days ago date filter to show up inside the joining_date filter as an option then you can do something like this -->
-        <filter name="joining_date" string="Student's joining date" date="joining_date">
+        <!-- <filter name="joining_date" string="Student's joining date" date="joining_date"> -->
+        <!--    <filter name="14_days" string="Show students that joined 14 days ago" -->
+        <!--   domain="[('joining_date', '>=', (context_today() - relativedelta(days=14)).strftime('%%Y-%%m-%%d 00:00:00'))]"/> -->
+        <!-- </filter> -->
+
+        <!-- Increase the months and years in the date filter of the search bar
+            for this you can use start_month attribute
+            if you provide start_month="-3" then this will show you 3 months before the current month.
+         -->
+        <filter name="joining_date" string="Student's joining date" date="joining_date" start_year="-3" end_year="3" start_month="-3" end_month="3">
            <filter name="14_days" string="Show students that joined 14 days ago"
           domain="[('joining_date', '>=', (context_today() - relativedelta(days=14)).strftime('%%Y-%%m-%%d 00:00:00'))]"/>
         </filter>
