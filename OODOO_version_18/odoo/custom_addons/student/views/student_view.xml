@@ -127,12 +127,13 @@
       <field name="model">student</field>
       <field name="arch" type="xml">
         <form>
-          <header>
-            <button name="duplicate_records" type="object" string="Duplicate record (create)"></button>
-            <button name="search_record" type="object" string = "Search record button"></button>
-            <button name="custom_method" type="object" string = "Trigger custom_method in student's model"></button>
-          </header>
+          <!-- <header> -->
+          <!--   <button name="duplicate_records" type="object" string="Duplicate record (create)"></button> -->
+          <!--   <button name="search_record" type="object" string = "Search record button"></button> -->
+          <!--   <button name="custom_method" type="object" string = "Trigger custom_method in student's model"></button> -->
+          <!-- </header> -->
           <sheet>
+            <!-- Group tag is used to display fields column wise -->
               <group>
                   <field name="id"/>
                   <field name="profile_picture" widget="image" class="oe_avatar"/>
