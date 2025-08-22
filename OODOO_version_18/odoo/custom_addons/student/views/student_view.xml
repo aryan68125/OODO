@@ -131,30 +131,49 @@
           <!--   <button name="duplicate_records" type="object" string="Duplicate record (create)"></button> -->
           <!--   <button name="search_record" type="object" string = "Search record button"></button> -->
           <!--   <button name="custom_method" type="object" string = "Trigger custom_method in student's model"></button> -->
-          <!-- </header> -->
-          <group string="Set profile picture and name">
-            <group string="Profile pic and name section">
-              <field name="profile_picture" widget="image" class="oe_avatar"/>
-              <field name="name"/>
-            </group>
+            <!-- </header> -->
 
-            <group string="Roll and email section">
-              <field name="roll"/>
-              <field name="email"/>
-            </group>
-          </group>
+          <notebook>
+            <page string="Set profile picture and name">
+              <group>
+                <group >
+                  <group string="Profile pic and name section">
+                    <field name="profile_picture" widget="image" class="oe_avatar"/>
+                    <field name="name"/>
+                  </group>
+
+                  <group string="Roll and email section">
+                    <field name="roll"/>
+                    <field name="email"/>
+                  </group>
+                </group>
+              </group>
+            </page>
+
+            <page>
+              <group>
+                <group string="Set some miscellinous info">
+                  <group string="Hobby and gender section">
+                    <field name="hobby_list" widget="many2many_tags"/>
+                    <field name="gender" placeholder="Select Gender"/>
+                  </group>
+
+                  <group string="Joining date and address section">
+                    <field name="joining_date" placeholder="Enter the joining date for the student." invisible="0"/>
+                    <field name="address" placeholder = "Enter student's address here..."/>
+                  </group>
+                </group>
+              </group>
+            </page>
+
+            <page>
+            </page>
+
+            <page>
+            </page>
+          </notebook>
+                    
           
-          <group string="Set some miscellinous info">
-            <group string="Hobby and gender section">
-              <field name="hobby_list" widget="many2many_tags"/>
-              <field name="gender" placeholder="Select Gender"/>
-            </group>
-
-            <group string="Joining date and address section">
-              <field name="joining_date" placeholder="Enter the joining date for the student." invisible="0"/>
-              <field name="address" placeholder = "Enter student's address here..."/>
-            </group>
-          </group>
           
           
 
