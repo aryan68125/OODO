@@ -126,7 +126,9 @@
       <field name="name">student.form.view</field>
       <field name="model">student</field>
       <field name="arch" type="xml">
-        <form>
+        <!-- <form> -->
+        <!--When you set the attribute edit to zero then the form becomes non-editable -->  
+        <form edit="0">
           <!-- <header> -->
           <!--   <button name="duplicate_records" type="object" string="Duplicate record (create)"></button> -->
           <!--   <button name="search_record" type="object" string = "Search record button"></button> -->
