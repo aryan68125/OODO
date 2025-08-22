@@ -183,7 +183,7 @@
               </group>
             </page>
 
-            <page string="Other fields">
+            <page string="Other fields" invisible="gender == 'Male'">
               <group>
                 <group>
                   <!-- Group tag is used to display fields column wise -->
