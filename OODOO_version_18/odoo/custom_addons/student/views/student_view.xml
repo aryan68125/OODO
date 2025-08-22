@@ -172,20 +172,23 @@
             </group>
           </group>
           
-          <group string="Other fields">
+          <group string="Other fields" col="12">
             <!-- Group tag is used to display fields column wise -->
-            <group string="HTML field section">
+            <group string="HTML field section" colspan="3">
               <field name="id"/> 
               <field name="school_data" placeholder="Enter student's data here!"/>
               <!-- <field name="html_field_demo" options="{'sandboxedPreview':True}"/> -->
-              <field name="html_field_demo"/>
             </group>
 
-            <group string="Json feed and agreement section">
-              <field name="is_agreed"/>
+            <group string="Json feed and agreement section" colspan="3">
+              <field name="html_field_demo"/>
               <!-- <button name="json_data_store" type="object" string="JSON FEED" invisible = "fees > 0"></button> -->
               <button name="json_data_store" type="object" string="JSON FEED"></button>
               <!-- <field name="joining_date" placeholder="Enter the joining date for the student." invisible="1"/> -->
+            </group>
+
+            <group string="Agreement section" colspan="3">
+              <field name="is_agreed"/>
               <field name="active"/>
             </group>
           </group>
