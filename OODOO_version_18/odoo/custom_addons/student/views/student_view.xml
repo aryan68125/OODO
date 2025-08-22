@@ -132,7 +132,7 @@
           <!--   <button name="search_record" type="object" string = "Search record button"></button> -->
           <!--   <button name="custom_method" type="object" string = "Trigger custom_method in student's model"></button> -->
             <!-- </header> -->
-
+          <sheet>
           <notebook>
             <page string="Set profile picture and name">
               <group>
@@ -150,9 +150,9 @@
               </group>
             </page>
 
-            <page>
+            <page string="Set some miscellinous info">
               <group>
-                <group string="Set some miscellinous info">
+                <group>
                   <group string="Hobby and gender section">
                     <field name="hobby_list" widget="many2many_tags"/>
                     <field name="gender" placeholder="Select Gender"/>
@@ -166,51 +166,49 @@
               </group>
             </page>
 
-            <page>
+            <page  string="Set details realted to school,fees and major">
+              <group>
+                <group>
+                  <!-- This is the child group -->
+                  <group string="School and major section">
+                      <field name="school_id"/>
+                      <field name="school_address"/>
+                      <field name="major" placeholder="Select Major in which you want to study"/>
+                  </group>
+                  <group string="Fees section">
+                      <field name="fees"/>
+                      <field name="currency"/>
+                  </group>
+                </group>
+              </group>
             </page>
 
-            <page>
+            <page string="Other fields">
+              <group>
+                <group>
+                  <!-- Group tag is used to display fields column wise -->
+                  <group string="Json feed and agreement section">
+                    <field name="html_field_demo"/>
+                    <!-- <button name="json_data_store" type="object" string="JSON FEED" invisible = "fees > 0"></button> -->
+                    <button name="json_data_store" type="object" string="JSON FEED"></button>
+                    <!-- <field name="joining_date" placeholder="Enter the joining date for the student." invisible="1"/> -->
+                  </group>
+
+                  <group string="Agreement section" >
+                    <field name="is_agreed"/>
+                    <field name="active"/>
+                  </group>
+
+                  <group string="HTML field section" >
+                    <field name="id"/> 
+                    <field name="school_data" placeholder="Enter student's data here!"/>
+                    <!-- <field name="html_field_demo" options="{'sandboxedPreview':True}"/> -->
+                  </group>
+                </group>
+              </group>
             </page>
           </notebook>
-                    
-          
-          
-          
-
-          <!-- This is the parent group -->
-          <group string="Set details realted to school,fees and major">
-            <!-- This is the child group -->
-            <group string="School and major section">
-                <field name="school_id"/>
-                <field name="school_address"/>
-                <field name="major" placeholder="Select Major in which you want to study"/>
-            </group>
-            <group string="Fees section">
-                <field name="fees"/>
-                <field name="currency"/>
-            </group>
-          </group>
-          
-          <group string="Other fields" col="12">
-            <!-- Group tag is used to display fields column wise -->
-            <group string="Json feed and agreement section" colspan="3">
-              <field name="html_field_demo"/>
-              <!-- <button name="json_data_store" type="object" string="JSON FEED" invisible = "fees > 0"></button> -->
-              <button name="json_data_store" type="object" string="JSON FEED"></button>
-              <!-- <field name="joining_date" placeholder="Enter the joining date for the student." invisible="1"/> -->
-            </group>
-
-            <group string="Agreement section" colspan="3">
-              <field name="is_agreed"/>
-              <field name="active"/>
-            </group>
-
-            <group string="HTML field section" colspan="3">
-              <field name="id"/> 
-              <field name="school_data" placeholder="Enter student's data here!"/>
-              <!-- <field name="html_field_demo" options="{'sandboxedPreview':True}"/> -->
-            </group>
-          </group>
+          </sheet>
         </form>
       </field>
     </record>
