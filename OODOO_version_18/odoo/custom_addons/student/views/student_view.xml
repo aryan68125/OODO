@@ -134,8 +134,12 @@
           <sheet>
             <!-- This will automatically manage the button layout in UI for the student's module in odoo -->
             <div class="oe_button_box" name="button_box">
-              <button name="duplicate_records" type="object" string="Duplicate record (create)" icon="fa-bars">
+              <!-- A fancy button that has a label duplicate record , shows real data in the fees field from the model, has an icon to be displayed on the front-end side and triggers a custom_function in the model when clicked -->
+              <button name="duplicate_records" type="object" string="Duplicate record (create)" icon="fa-copy">
                 <div class="o_stat_info">
+                  <span class="o_stat_value">
+                    <field name="fees"/>
+                  </span>
                   <span class="o_stat_text">
                     Duplicate record
                   </span>
