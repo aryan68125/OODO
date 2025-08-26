@@ -128,14 +128,22 @@
       <field name="arch" type="xml">
         <!-- <form> -->
         <!--When you set the attribute edit to zero then the form becomes non-editable -->  
-        <form edit="0">
+          <form edit="1">
           <!-- <header> -->
           <!-- </header> -->
           <sheet>
             <!-- This will automatically manage the button layout in UI for the student's module in odoo -->
             <div class="oe_button_box" name="button_box">
-              <button name="duplicate_records" type="object" string="Duplicate record (create)"></button>
+              <button name="duplicate_records" type="object" string="Duplicate record (create)" icon="fa-bars">
+                <div class="o_stat_info">
+                  <span class="o_stat_text">
+                    Duplicate record
+                  </span>
+                </div>
+              </button>
+
               <button name="search_record" type="object" string = "Search record button"></button>
+              
               <button name="custom_method" type="object" string = "Trigger custom_method in student's model"></button>
             </div>
             <notebook>
