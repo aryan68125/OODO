@@ -230,6 +230,53 @@
       </field>
     </record>
 
+
+    <record id="wb_student_kanban_view" model="ir.ui.view">
+      <field name="name">student.kanban.views</field>
+      <field name="model">student</field>
+      <field name="arch" type="xml">
+        <kanban class="o_kanban_mobile">
+          <templates>
+            <t t-name="card">
+              <div>
+                <field name="profile_picture" widget="image" class="oe_avatar"/>
+              </div>
+
+              <div class="row">
+                <div class="col-8">
+                  <strong>
+                    Name : 
+                  </strong>
+                  <field name="name"/>
+                  <strong>
+                    Joining Date : 
+                  </strong>
+                  <field name="joining_date" placeholder="Enter the joining date for the student." invisible="0"/>
+                </div>
+                <div class="col-4">
+                  <strong>
+                    Roll no:
+                  </strong>
+                  <field name="roll"/>
+                  <strong>
+                    Email:
+                  </strong>
+                  <field name="email"/>
+                </div>
+              </div>
+
+              <div>
+                <strong>
+                  School:
+                </strong>
+                <field name="school_id"/>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
     <!-- For showing all student's school -->
     <record id="wb_student_school_tree_view" model="ir.ui.view">
       <field name="name">student.list.view</field>
@@ -331,7 +378,7 @@
     <record id="wb_student_action" model="ir.actions.act_window">
       <field name="name">Student</field>
       <field name="res_model">student</field>
-      <field name="view_mode">list,form</field>
+      <field name="view_mode">list,form,kanban</field>
       <!-- Apply default filters in the search view -->
       <field name="context">{"search_default_male_students":1}</field>
     </record>
