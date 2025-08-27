@@ -90,6 +90,8 @@ class Student(models.Model):
     status = fields.Selection([("Draft","Draft"),
                                ("In Progress","In Progress"),
                                ("Finish","Finish")],default="Draft", group_expand="_read_group_stage_ids")
+    
+    # After adding this method the statuses in kanban view when you hit reload page button the statuses will not get disappear
     @api.model
     def _read_group_stage_ids(self,stages,domain):
         return [key for key,_ in self._fields['status'].selection]
