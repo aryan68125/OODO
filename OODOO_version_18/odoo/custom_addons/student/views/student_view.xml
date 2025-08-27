@@ -230,7 +230,7 @@
       </field>
     </record>
 
-
+    <!-- Implemented kanban view to show data in cards instead of table when using listView instead -->
     <record id="wb_student_kanban_view" model="ir.ui.view">
       <field name="name">student.kanban.views</field>
       <field name="model">student</field>
@@ -243,7 +243,7 @@
               </div>
 
               <div class="row">
-                <div class="col-8">
+                <div class="col-6">
                   <strong>
                     Name : 
                   </strong>
@@ -253,7 +253,7 @@
                   </strong>
                   <field name="joining_date" placeholder="Enter the joining date for the student." invisible="0"/>
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                   <strong>
                     Roll no:
                   </strong>
