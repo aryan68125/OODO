@@ -89,7 +89,10 @@ class Student(models.Model):
     # field selection status
     status = fields.Selection([("Draft","Draft"),
                                ("In Progress","In Progress"),
-                               ("Finish","Finish")],default="Draft")
+                               ("Finish","Finish")],default="Draft", group_expand="_read_group_stage_ids")
+    @api.model
+    def _read_group_stage_ids(self,stages,domain):
+        return [key for key,_ in self._fields['status'].selection]
 
     # model fields
     # to make model soft delete instead of hard delete
