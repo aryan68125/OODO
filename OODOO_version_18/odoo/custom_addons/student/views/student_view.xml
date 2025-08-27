@@ -130,8 +130,11 @@
         <!-- <form> -->
         <!--When you set the attribute edit to zero then the form becomes non-editable -->  
           <form edit="1">
-          <!-- <header> -->
-          <!-- </header> -->
+           
+          <header>
+            <field name="status" widget="statusbar"/>
+          </header>
+
           <sheet>
             <!-- This will automatically manage the button layout in UI for the student's module in odoo -->
             <div class="oe_button_box" name="button_box">
