@@ -253,7 +253,8 @@
                 <div class="col-4">
                   <aside class="o_kanban_aside_full">
                     <div class="o_kanban_image_fill position-relative w-100">
-                      <field name="profile_picture" widget="image" class="oe_avatar"/>
+                      <!-- oe_avatar -->
+                      <field name="profile_picture" widget="image" class="h-100"/>
                     </div>
                   </aside>
                 </div>
