@@ -249,12 +249,15 @@
             <!-- Add this to make the card draggable between different status (just like what we see for tickets in JIRA) -->
             <field name="status"/>
             <t t-name="card">
-              <div>
-                <field name="profile_picture" widget="image" class="oe_avatar"/>
-              </div>
-
               <div class="row">
-                <div class="col-6">
+                <div class="col-4">
+                  <aside class="o_kanban_aside_full">
+                    <div class="o_kanban_image_fill position-relative w-100">
+                      <field name="profile_picture" widget="image" class="oe_avatar"/>
+                    </div>
+                  </aside>
+                </div>
+                <div class="col-4">
                   <strong>
                     Name : 
                   </strong>
@@ -264,7 +267,7 @@
                   </strong>
                   <field name="joining_date" placeholder="Enter the joining date for the student." invisible="0"/>
                 </div>
-                <div class="col-6">
+                <div class="col-4">
                   <strong>
                     Roll no:
                   </strong>
