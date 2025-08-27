@@ -253,8 +253,8 @@
                 <div class="col-4">
                   <aside class="o_kanban_aside_full">
                     <div class="o_kanban_image_fill position-relative w-100">
-                      <!-- oe_avatar -->
-                      <field name="profile_picture" widget="image" class="h-100"/>
+                      <!-- class = oe_avatar can also be used in this situation-->
+                      <field name="profile_picture" widget="image" class="h-100" option="{'img_class':'object-fit-cover'}"/>
                     </div>
                   </aside>
                 </div>
