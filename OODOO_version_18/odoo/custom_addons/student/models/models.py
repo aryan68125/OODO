@@ -86,7 +86,7 @@ class Student(models.Model):
     _description = "Student Model"
    
 
-    # field selection status
+    # field selection status : This field is used to drag and drop the cards in kanban View between different statuses.
     status = fields.Selection([("Draft","Draft"),
                                ("In Progress","In Progress"),
                                ("Finish","Finish")],default="Draft", group_expand="_read_group_stage_ids")
@@ -95,6 +95,9 @@ class Student(models.Model):
     @api.model
     def _read_group_stage_ids(self,stages,domain):
         return [key for key,_ in self._fields['status'].selection]
+
+    # This field is used to make the records that are being shown in the ListView 
+    sequence = fields.Integer(string="Sequence", default=10)
 
     # model fields
     # to make model soft delete instead of hard delete
