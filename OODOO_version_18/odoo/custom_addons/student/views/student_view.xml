@@ -239,6 +239,7 @@
       </field>
     </record>
 
+    
     <!-- Implemented kanban view to show data in cards instead of table when using listView instead -->
     <record id="wb_student_kanban_view" model="ir.ui.view">
       <field name="name">student.kanban.views</field>
