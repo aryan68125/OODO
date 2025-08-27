@@ -89,7 +89,7 @@ class Student(models.Model):
     # field selection status
     status = fields.Selection([("Draft","Draft"),
                                ("In Progress","In Progress"),
-                               ("Finish","Finish")])
+                               ("Finish","Finish")],default="Draft")
 
     # model fields
     # to make model soft delete instead of hard delete
