@@ -309,7 +309,8 @@
         </list>
       </field>
     </record>
-    
+
+    <!-- student's form dynamic statusbar  -->
     <!-- For showing adding/updating student's statusbar school -->
     <record id="wb_student_statusbar_form_view" model="ir.ui.view">
       <field name="name">student_statusbar.form.view</field>
