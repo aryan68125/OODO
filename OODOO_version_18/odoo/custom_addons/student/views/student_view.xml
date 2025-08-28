@@ -296,6 +296,36 @@
       </field>
     </record>
 
+    <!-- Imeplementing dynamic statusbar for student's profile -->
+    <!-- For showing all student_status -->
+    <record id="wb_student_statusbar_tree_view" model="ir.ui.view">
+      <field name="name">student_statusbar.list.view</field>
+      <field name="model">student_statusbar</field>
+      <field name="arch" type="xml">
+        <list>  
+          <!-- <field name="id"/> -->
+          <field name="id"/>
+          <field name="name"/>
+        </list>
+      </field>
+    </record>
+    
+    <!-- For showing adding/updating student's statusbar school -->
+    <record id="wb_student_statusbar_form_view" model="ir.ui.view">
+      <field name="name">student_statusbar.form.view</field>
+      <field name="model">student_statusbar</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+              <group>
+                <field name="id"/>
+                <field name="name"/>
+              </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
     <!-- For showing all student's school -->
     <record id="wb_student_school_tree_view" model="ir.ui.view">
       <field name="name">student.list.view</field>
@@ -402,6 +432,13 @@
       <field name="context">{"search_default_male_students":1}</field>
     </record>
 
+    <record id="wb_student_statusbar_action" model="ir.actions.act_window">
+      <field name="name">student_statusbar</field>
+      <field name="res_model">student_statusbar</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+
     <record id="wb_student_school_action" model="ir.actions.act_window">
       <field name="name">school</field>
       <field name="res_model">school</field>
@@ -428,6 +465,7 @@
     <!-- menu list items -->
     <menuitem id="wb_student_menu" action="wb_student_action" name="Students List" parent="wb_student_sub_root_menu"/>
     <menuitem id="wb_student_school_menu" action="wb_student_school_action" name="Student's School List" parent="wb_student_sub_root_menu"/>
+    <menuitem id="wb_student_statusbar_menu" action="wb_student_statusbar_action" name="Student's Dynamic Statusbar" parent="wb_student_sub_root_menu"/>
     <menuitem id="wb_student_hobby_menu" action="wb_student_hobby_action" name="Student's Hobby List" parent="wb_student_sub_root_menu"/>
     <menuitem id="student_currency_menu" action="student_currency_action" name="Student's currency List" parent="wb_student_sub_root_menu"/>
   </data>

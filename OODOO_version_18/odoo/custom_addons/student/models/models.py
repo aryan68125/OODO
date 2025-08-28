@@ -79,7 +79,16 @@ class Curreny(models.Model):
         print(f"Result IDs: {result}")
         return self.browse(result).name_get()
     
-    
+"""Implementation of dynamic statusbar"""
+class StatusBArSchool(models.Model):
+    # model meta-data
+    _name = "student_statusbar"
+    _description = "This is status of Student's profile"
+
+    # fields of this model.
+    name = fields.Char("Status")
+
+
 class Student(models.Model):
     # model meta-data
     _name = "student"  # Correct model name format
