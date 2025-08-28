@@ -85,12 +85,14 @@ class Student(models.Model):
     _name = "student"  # Correct model name format
     _description = "Student Model"
    
-
+    
+    """This is for static statusbar"""
     # field selection status : This field is used to drag and drop the cards in kanban View between different statuses.
     status = fields.Selection([("Draft","Draft"),
                                ("In Progress","In Progress"),
                                ("Finish","Finish")],default="Draft", group_expand="_read_group_stage_ids")
     
+    """This is for static statusbar"""
     # After adding this method the statuses in kanban view when you hit reload page button the statuses will not get disappear
     @api.model
     def _read_group_stage_ids(self,stages,domain):
