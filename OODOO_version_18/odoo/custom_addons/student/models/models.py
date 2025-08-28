@@ -83,9 +83,11 @@ class Curreny(models.Model):
 class StatusBArSchool(models.Model):
     # model meta-data
     _name = "student_statusbar"
+    _order = "id"
     _description = "This is status of Student's profile"
 
     # fields of this model.
+    sequence = fields.Integer("Sequence",default=10)
     name = fields.Char("Status")
 
 

@@ -303,7 +303,7 @@
       <field name="model">student_statusbar</field>
       <field name="arch" type="xml">
         <list>  
-          <!-- <field name="id"/> -->
+          <field name="sequence" widget="handle"/>
           <field name="id"/>
           <field name="name"/>
         </list>
