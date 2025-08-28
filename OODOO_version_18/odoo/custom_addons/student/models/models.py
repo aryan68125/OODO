@@ -80,7 +80,7 @@ class Curreny(models.Model):
         return self.browse(result).name_get()
     
 """Implementation of dynamic statusbar"""
-class StatusBArSchool(models.Model):
+class StatusBarSchool(models.Model):
     # model meta-data
     _name = "student_statusbar"
     _order = "id"
@@ -95,6 +95,9 @@ class Student(models.Model):
     # model meta-data
     _name = "student"  # Correct model name format
     _description = "Student Model"
+
+    """This code is for dynamic statusbar implementation"""
+    status_id = fields.Many2one("student_statusbar",string="Student's status")
    
     
     """This is for static statusbar"""
