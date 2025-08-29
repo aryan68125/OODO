@@ -256,9 +256,12 @@
       <field name="name">student.kanban.views</field>
       <field name="model">student</field>
       <field name="arch" type="xml">
+        
         <!-- This is the implementation of static statusbar -->
         <!-- <kanban class="o_kanban_mobile" default_group_by="status"> -->
         <kanban class="o_kanban_mobile" default_group_by="status_id">
+          <!-- This is the implementation of progressbar in kanbanView -->
+          <!-- <progressbar field="status_id"/> -->
           <templates>
             <!-- this is the implementation of static statusbar -->
             <!-- add this to make the card draggable between different status (just like what we see for tickets in jira) static statusbar-->
