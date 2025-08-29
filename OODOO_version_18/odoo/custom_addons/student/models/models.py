@@ -97,9 +97,12 @@ class Student(models.Model):
     _description = "Student Model"
 
     """This code is for dynamic statusbar implementation"""
+    # status_id = fields.Many2one("student_statusbar",string="Student's status", group_expand="_read_group_status_id",)
     status_id = fields.Many2one("student_statusbar",string="Student's status")
-   
-    
+    # """This code is for dynamic statusbar implementation"""
+    # def _read_group_status_id(self, stages, domain, order):
+    #     return self.env["student_statusbar"].search([], order="sequence, id").ids
+
     """This is for static statusbar"""
     # field selection status : This field is used to drag and drop the cards in kanban View between different statuses.
     status = fields.Selection([("Draft","Draft"),
