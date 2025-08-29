@@ -313,6 +313,19 @@
       </field>
     </record>
 
+    <!-- Implementing student profile graph view  -->
+    <record id="student_profile_graph_view" model="ir.ui.view">
+      <field name="name">student.graph.view</field>
+      <field name="model">student</field>
+      <field name="arch" type="xml">
+        <graph>
+          <field name="name"/>
+          <field name="school_id"/>
+          <field name="gender"/>
+        </graph>
+      </field>
+    </record>
+
     <!-- Imeplementing dynamic statusbar for student's profile -->
     <!-- For showing all student_status -->
     <record id="wb_student_statusbar_tree_view" model="ir.ui.view">
@@ -445,7 +458,7 @@
     <record id="wb_student_action" model="ir.actions.act_window">
       <field name="name">Student</field>
       <field name="res_model">student</field>
-      <field name="view_mode">list,form,kanban</field>
+      <field name="view_mode">list,form,kanban,graph</field>
       <!-- Apply default filters in the search view -->
       <field name="context">{"search_default_male_students":1}</field>
     </record>
