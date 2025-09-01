@@ -320,9 +320,9 @@
       <field name="model">student</field>
       <field name="arch" type="xml">
         <!-- <graph string="Student's Graph"> -->
-        <graph string="Student's Graph" type="pie">
+        <!-- <graph string="Student's Graph" type="pie"> -->
         <!-- <graph string="Student's Graph" type="pie" stacked="0"> -->
-        <!-- <graph string="Student's Graph" type="pie" stacked="0" disable_linking="1"> -->
+        <graph string="Student's Graph" type="pie" stacked="0" disable_linking="1">
           <field name="name"/>
           <field name="school_id"/>
           <field name="gender"/>
