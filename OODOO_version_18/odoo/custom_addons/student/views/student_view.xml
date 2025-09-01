@@ -314,6 +314,7 @@
     </record>
 
     <!-- Implementing student profile graph view  -->
+    <!-- This is to show different types of charts on the front-end side  -->
     <record id="student_profile_graph_view" model="ir.ui.view">
       <field name="name">student.graph.view</field>
       <field name="model">student</field>
