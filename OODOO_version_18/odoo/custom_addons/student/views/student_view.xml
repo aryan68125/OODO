@@ -334,6 +334,20 @@
       </field>
     </record>
 
+    <!-- Implementing student profile pivot view -->
+    <record id="student_profile_pivot_view" model="ir.ui.view">
+      <field name="name">student.profile.pivot.view</field>
+      <field name="model">student</field>
+      <field name="arch" type="xml">
+        <pivot string="From Student Pivot View">
+          <field name="school_id"/>
+          <field name="name"/>
+          <field name="gender" type="col"/>
+          <field name="fees" type="measure"/>
+        </pivot>
+      </field>
+    </record>
+
     <!-- Imeplementing dynamic statusbar for student's profile -->
     <!-- For showing all student_status -->
     <record id="wb_student_statusbar_tree_view" model="ir.ui.view">
@@ -466,7 +480,7 @@
     <record id="wb_student_action" model="ir.actions.act_window">
       <field name="name">Student</field>
       <field name="res_model">student</field>
-      <field name="view_mode">list,form,kanban,graph</field>
+      <field name="view_mode">list,form,kanban,graph,pivot</field>
       <!-- Apply default filters in the search view -->
       <field name="context">{"search_default_male_students":1}</field>
     </record>
