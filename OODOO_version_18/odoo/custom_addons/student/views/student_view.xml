@@ -323,9 +323,13 @@
         <!-- <graph string="Student's Graph" type="pie"> -->
         <!-- <graph string="Student's Graph" type="pie" stacked="0"> -->
         <graph string="Student's Graph" type="pie" stacked="0" disable_linking="1">
-          <field name="name"/>
+          <field name="id" type="measure" string="Count"/>
+          <!-- <field name="name"/> -->
           <field name="school_id"/>
           <field name="gender"/>
+          <field name="fees" type="measure"/>
+          <!-- interval = week, year, month, quater -->
+          <field name="joining_date" interval="week"/>
         </graph>
       </field>
     </record>
